@@ -4,6 +4,11 @@
 
 ### 1.1.1. Descripción de la Startup
 
+
+Descripción general:
+OptiFlow nace para cerrar la brecha entre la gestión oftalmológica empírica y la innovación tecnológica. Somos una startup comprometida con la unificación de los procesos clínicos, comerciales y de producción en establecimientos ópticos, asegurando que la toma de decisiones basada en datos reemplace a la intuición, maximizando la conversión de ventas, la retención de clientes y la trazabilidad de los pedidos.
+
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <img src = "/assets/foto-juan-pablo-azama.png" alt = "jp-photo" width="150" height="150">
