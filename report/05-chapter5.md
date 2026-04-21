@@ -121,19 +121,24 @@ La integración de cambios se realiza mediante **Pull Requests** hacia la rama `
 
 
 #### Aspect Leaders and Collaborators
-[Tabla de líderes y colaboradores por aspecto del sprint, con responsabilidades asignadas.]
-| Team Member (Last Name, First Name) | GitHub Username | Aspect Name 1 Leader (L) / Collaborator (C) | Aspect Name 2 Leader (L) / Collaborator (C) | ... | Aspect Name n Leader (L) / Collaborator (C) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Azama Fukuda, Juan Pablo | ajimenezrosas | L | C | ... | |
+En el sprint principalmente se tomó enfoque en el desarrollo de la parte de diseño de la solución tanto en la parte de backend, como frontend, además del desarrollo del landing page. Por ello, se decidió dividir el equipo en sub-equipos
+los cuales puedan especializarse únicamente tanto en frontend o backend, esto con el objetivo de hacer que el avance de cada punto fluya de corrido. De tal forma, se evitaría crear una cantidad de
+micro tareas abismal que ocasionarían que los participantes no tengan hilación en los apartados del proyecto, debido a todo lo que abarcarían a niveles minimalistas. 
+
+
+| Team Member (Last Name, First Name) | GitHub Username | Aspect Name 1 Leader (L) / Collaborator (C) | Aspect Name 2 Leader (L) / Collaborator (C) | Aspect Name 3 Leader (L) / Collaborator (C) | Aspect Name 4 Leader (L) / Collaborator (C) |
+| :--- | :--- | :--- |  :--- | :--- | :--- |
+| Azama Fukuda, Juan Pablo | llummo | Landing page elaboration (L) | Bounded context development (C) | Prototyping (L) | Scrum Master Role(L) |
+| Atoche Gonzales, Nicolas Fernando | Japr91 | C | C | ... | L |
+| Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
+| Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
 | Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
 
-
-#### Sprint Backlog 1
 <table>
   <thead>
     <tr>
       <th>Sprint #</th>
-      <th colspan="7">Sprint n</th>
+      <th colspan="7">Sprint 1</th>
     </tr>
     <tr>
       <th colspan="2">User Story</th>
@@ -152,18 +157,8 @@ La integración de cambios se realiza mediante **Pull Requests** hacia la rama `
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
+      <td>US-01S</td>
+      <td>Autenticación de Usuarios</td>
       <td></td>
       <td></td>
       <td></td>
@@ -172,8 +167,448 @@ La integración de cambios se realiza mediante **Pull Requests** hacia la rama `
       <td></td>
     </tr>
     <tr>
+      <td>US-02S</td>
+      <td>Recuperación de Contraseña</td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-03A</td>
+      <td>Gestión de Roles</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-04A</td>
+      <td>Auditoría de Inventario</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-05P</td>
+      <td>Seguimiento de Orden Web</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-06P</td>
+      <td>Gestión de Perfil de Usuario</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-07P</td>
+      <td>Solicitud de Demostración</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-08P</td>
+      <td>Consulta de Saldo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-09P</td>
+      <td>Probador Virtual</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-10P</td>
+      <td>Calculador de Grosor</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-11G</td>
+      <td>Registro de Historia Clínica</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-12G</td>
+      <td>Registro de Anamnesis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-13G</td>
+      <td>Historial de Receta</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-14G</td>
+      <td>Consentimiento Digital</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-15G</td>
+      <td>Registro Offline</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-16G</td>
+      <td>Carga de Exámenes Externos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-17G</td>
+      <td>Registro de Clientes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-18F</td>
+      <td>Gestión de Ventas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-19F</td>
+      <td>Cotización desde Receta</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-20F</td>
+      <td>Registro de Pago de Saldo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-21F</td>
+      <td>Aplicación de Descuentos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-22F</td>
+      <td>Pagos con Múltiples Métodos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-23F</td>
+      <td>Recuperación de Cotizaciones</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-24F</td>
+      <td>Registro de Devoluciones</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-25F</td>
+      <td>Cierre de Caja</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-26F</td>
+      <td>Notificaciones de Recojo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-27F</td>
+      <td>Recordatorios Anuales</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-28F</td>
+      <td>Encuestas de Satisfacción</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-29F</td>
+      <td>Fuga de Clientes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-30F</td>
+      <td>Tracking por Pasos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-31F</td>
+      <td>Programa de Referidos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-32F</td>
+      <td>Segmentación para Campañas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-33L</td>
+      <td>Consulta de Inventario en Tiempo Real</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-34L</td>
+      <td>Alertas de Bajo Stock</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-35L</td>
+      <td>Registro de Nuevo Producto</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-36L</td>
+      <td>Gestión de Variantes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-37L</td>
+      <td>Búsqueda Avanzada</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-38L</td>
+      <td>Control de Órdenes y Tablero Kanban</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-39G</td>
+      <td>Vinculación de Receta a Orden</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-40L</td>
+      <td>Motivos de Retrabajo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-41L</td>
+      <td>Gestión de Urgencias</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-42L</td>
+      <td>Control de Insumos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-43A</td>
+      <td>Dashboard de Ventas</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-44A</td>
+      <td>Auditoría de Eficiencia</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-45A</td>
+      <td>Productividad de Laboratorio</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US-46</td>
+      <td>Inicio de sesión de cliente con DNI</td>
       <td></td>
       <td></td>
       <td></td>
@@ -183,7 +618,6 @@ La integración de cambios se realiza mediante **Pull Requests** hacia la rama `
     </tr>
   </tbody>
 </table>
-
 
 #### Development Evidence for Sprint Review
 [Evidencia del desarrollo: commits, pull requests y capturas de avance por cada ítem completado.]
