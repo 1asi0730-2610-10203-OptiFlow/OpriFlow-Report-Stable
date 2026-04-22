@@ -76,59 +76,61 @@
 
 
 ## Product Backlog
+## Product Backlog
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | US-46L | Propuesta de Valor (Hero Section) | Como visitante, quiero ver la propuesta de valor principal al inicio de la página para entender rápidamente de qué trata el sistema. | 2 |
-| 2 | US-47L | Catálogo de Características | Como visitante, quiero explorar los módulos del sistema en la web para saber qué problemas específicos resuelve en mi óptica. | 2 |
-| 3 | US-48L | Consulta de Planes y Precios | Como visitante, quiero ver los planes de suscripción disponibles para comparar opciones según el tamaño y presupuesto de mi óptica. | 3 |
-| 4 | US-49L | Formulario de Contacto General | Como visitante, quiero enviar un mensaje con dudas generales al equipo comercial para recibir atención directa. | 3 |
-| 5 | US-50L | Redirección a Login | Como empleado de la óptica, quiero encontrar un botón de acceso claro en la web principal para entrar a mi cuenta sin escribir la URL completa del sistema. | 1 |
-| 6 | US-17F | Gestión de Ventas | Como empleado de la óptica, quiero registrar la venta de un cliente, para poder registrarla en la base de datos y enviar la orden de producción. | 5 |
-| 7 | US-10G | Registro de Historia Clínica | Como empleado de la óptica, quiero registrar los resultados del examen visual digitalmente para centralizar la información médica del paciente. | 5 |
-| 8 | US-16G | Registro de Clientes | Como empleado de la óptica, quiero poder registrar clientes al momento que solicitan una orden en la óptica, para tenerlos registrados en la base de datos. | 3 |
-| 9 | US-32L | Consulta de Inventario en Tiempo Real | Como empleado de la óptica, quiero consultar el stock de monturas para informar al cliente sobre la disponibilidad inmediata. | 3 |
-| 10 | US-37L | Control de Órdenes y Tablero Kanban | Como empleado de la óptica, quiero gestionar el estado de las órdenes de laboratorio mediante un tablero Kanban para reflejar el progreso de fabricación en tiempo real y dar visibilidad a todo el equipo. | 8 |
-| 11 | US-18F | Cotización desde Receta | Como empleado de la óptica, quiero generar una cotización directamente a partir de la receta médica para evitar la transcripción manual. | 3 |
-| 12 | US-38G | Vinculación de Receta a Orden | Como empleado de la óptica, quiero que la receta se vincule automáticamente a la orden de trabajo para evitar errores de laboratorio. | 3 |
-| 13 | US-19F | Registro de Pago de Saldo | Como empleado de la óptica, quiero registrar el pago del saldo pendiente al entregar los lentes para cerrar formalmente la transacción. | 2 |
-| 14 | US-41L | Control de Insumos | Como empleado de la óptica, quiero que la creación de micas descuente materia prima base (bloques) para que compras sepa cuándo pedir más. | 5 |
-| 15 | US-01S | Autenticación de Usuarios | Como empleado de la óptica, quiero iniciar sesión con mis credenciales para acceder a las funcionalidades del sistema según mi rol. | 3 |
-| 16 | US-02S | Recuperación de Contraseña | Como empleado de la óptica, quiero restablecer mi clave mediante un enlace a mi correo para recuperar mi cuenta autónomamente. | 3 |
-| 17 | US-03A | Gestión de Roles | Como empleado de la óptica, quiero asignar roles específicos a cada usuario para garantizar que accedan únicamente a las funciones de su competencia. | 5 |
-| 18 | US-04A | Auditoría de Inventario | Como empleado de la óptica, quiero inspeccionar un registro histórico de las alteraciones manuales de stock para evitar robos. | 5 |
-| 19 | US-05P | Seguimiento de Orden Web | Como cliente de la óptica, quiero consultar el estado de mis lentes para saber cuándo recogerlos sin llamar a la sucursal. | 3 |
-| 20 | US-06P | Gestión de Perfil de Usuario | Como cliente de la óptica, quiero actualizar mis datos de contacto para asegurar que las notificaciones lleguen correctamente. | 2 |
-| 21 | US-07P | Consulta de Saldo | Como cliente de la óptica, quiero consultar el saldo pendiente de mi pedido para saber cuánto debo llevar al momento del recojo. | 2 |
-| 22 | US-08P | Probador Virtual | Como cliente de la óptica, quiero usar mi cámara web para superponer lentes en 3D sobre mi rostro desde casa. | 8 |
-| 23 | US-09P | Calculador de Grosor | Como cliente de la óptica, quiero ingresar mi nivel de miopía para previsualizar si la luna será muy gruesa. | 5 |
-| 24 | US-11G | Registro de Anamnesis | Como empleado de la óptica, quiero registrar los síntomas del paciente antes del examen para tener contexto clínico. | 3 |
-| 25 | US-12G | Historial de Receta | Como empleado de la óptica, quiero versionar las recetas médicas para comparar la evolución visual del paciente. | 5 |
-| 26 | US-13G | Consentimiento Digital | Como empleado de la óptica, quiero recolectar la firma táctil del paciente para evitar archivar papeles legales. | 3 |
-| 27 | US-14G | Registro Offline | Como empleado de la óptica, quiero guardar perfiles sin conexión a internet en zonas rurales para no paralizar las campañas. | 8 |
-| 28 | US-15G | Carga de Exámenes Externos | Como empleado de la óptica, quiero adjuntar PDFs médicos al perfil para consolidar la historia de intervenciones foráneas. | 3 |
-| 29 | US-20F | Aplicación de Descuentos | Como empleado de la óptica, quiero ingresar códigos de descuento en la boleta para cerrar ventas promocionales. | 2 |
-| 30 | US-21F | Pagos con Múltiples Métodos | Como empleado de la óptica, quiero dividir el cobro entre efectivo y tarjeta para facilitar la transacción al paciente. | 5 |
-| 31 | US-22F | Recuperación de Cotizaciones | Como empleado de la óptica, quiero cargar presupuestos armados días atrás para no hacer esperar al paciente que regresó a comprar. | 2 |
-| 32 | US-23F | Registro de Devoluciones | Como empleado de la óptica, quiero anular ventas pasadas para reingresar el producto dañado y emitir una nota de crédito. | 3 |
-| 33 | US-24F | Cierre de Caja | Como empleado de la óptica, quiero realizar el corte de caja para cuadrar el dinero físico con las ventas del software. | 5 |
-| 34 | US-25F | Notificaciones de Recojo | Como cliente de la óptica, quiero recibir un aviso automático cuando mis lentes estén listos para ahorrar tiempo de viaje. | 3 |
-| 35 | US-26F | Recordatorios Anuales | Como empleado de la óptica, quiero que el sistema envíe correos a clientes tras un año de su compra para fomentar su regreso. | 3 |
-| 36 | US-27F | Encuestas de Satisfacción | Como empleado de la óptica, quiero que se manden encuestas al celular del usuario posterior a la compra para cuantificar nuestro trato. | 3 |
-| 37 | US-28F | Fuga de Clientes | Como empleado de la óptica, quiero filtrar a los inactivos de más de dos años para mandarles una promoción agresiva. | 5 |
-| 38 | US-29F | Tracking por Pasos | Como cliente de la óptica, quiero recibir mensajes de WhatsApp en cada salto de etapa de mi fabricación. | 5 |
-| 39 | US-30F | Programa de Referidos | Como cliente de la óptica, quiero obtener un código personal para dárselo a mis amigos y ganar recompensas mutuas. | 3 |
-| 40 | US-31F | Segmentación para Campañas | Como empleado de la óptica, quiero extraer correos segmentados por marca favorita para rentabilizar la publicidad digital. | 5 |
-| 41 | US-33L | Alertas de Bajo Stock | Como empleado de la óptica, quiero recibir alertas automáticas cuando el stock cae por debajo del umbral para reabastecer a tiempo. | 3 |
-| 42 | US-34L | Registro de Nuevo Producto | Como empleado de la óptica, quiero registrar nuevas monturas en el inventario para mantener el catálogo actualizado. | 2 |
-| 43 | US-35L | Gestión de Variantes | Como empleado de la óptica, quiero registrar diferentes tipos de materiales de lunas para ampliar las opciones del catálogo. | 3 |
-| 44 | US-36L | Búsqueda Avanzada | Como empleado de la óptica, quiero aplicar múltiples filtros cruzados para ubicar modelos específicos requeridos por el paciente. | 3 |
-| 45 | US-39L | Motivos de Retrabajo | Como empleado de la óptica, quiero tipificar los errores cuando un lente se malogra para medir las pérdidas del laboratorio. | 2 |
-| 46 | US-40L | Gestión de Urgencias | Como empleado de la óptica, quiero marcar un ticket como máxima prioridad para que los técnicos pausen otras labores. | 2 |
-| 47 | US-42A | Dashboard de Ventas | Como empleado de la óptica, quiero ver métricas de conversión, ingresos y rendimiento del negocio en un panel centralizado para evaluar el desempeño general de la óptica. | 5 |
-| 48 | US-43A | Auditoría de Eficiencia | Como empleado de la óptica, quiero visualizar un reporte de conversiones por asesor para medir el rendimiento de la tienda. | 3 |
-| 49 | US-44A | Productividad de Laboratorio | Como empleado de la óptica, quiero leer promedios de tiempo de fabricación para descubrir si nuestro equipo se demora mucho. | 3 |
-| 50 | TS-01 | API Endpoint para Seguimiento | Como desarrollador, deseo implementar un endpoint REST para la consulta de estados de órdenes para integrar la web con el sistema de rastreo. | 5 |
-| 51 | TS-02 | Seguridad por Tokens JWT | Como desarrollador, deseo implementar autenticación basada en JWT para asegurar que solo personal autorizado acceda a la data sensible. | 5 |
-| 52 | TS-03 | API Endpoint para Registro y Consulta de Pacientes | Como desarrollador, deseo implementar un endpoint REST para el registro y consulta de pacientes, para que el frontend pueda crear y recuperar historias clínicas desde el servicio backend. | 3 |
-| 53 | TS-04 | API Endpoint para Gestión de Órdenes de Trabajo | Como desarrollador, deseo implementar endpoints REST para crear y actualizar el estado de las órdenes de trabajo, para que el módulo Kanban del frontend se mantenga sincronizado con el estado real de fabricación en el laboratorio. | 5 |
+| 1 | US-01S | Autenticación de Usuarios | Como empleado de la óptica, quiero iniciar sesión con mis credenciales para acceder a las funcionalidades del sistema según mi rol. | 3 |
+| 2 | US-02S | Recuperación de Contraseña | Como empleado de la óptica, quiero restablecer mi clave mediante un enlace a mi correo para recuperar mi cuenta autónomamente. | 3 |
+| 3 | US-03A | Gestión de Roles | Como empleado de la óptica, quiero asignar roles específicos a cada usuario para garantizar que accedan únicamente a las funciones de su competencia. | 5 |
+| 4 | US-04A | Auditoría de Inventario | Como empleado de la óptica, quiero inspeccionar un registro histórico de las alteraciones manuales de stock para evitar robos. | 5 |
+| 5 | US-05P | Seguimiento de Orden Web | Como cliente de la óptica, quiero consultar el estado de mis lentes para saber cuándo recogerlos sin llamar a la sucursal. | 3 |
+| 6 | US-06P | Gestión de Perfil de Usuario | Como cliente de la óptica, quiero actualizar mis datos de contacto para asegurar que las notificaciones lleguen correctamente. | 2 |
+| 7 | US-07P | Consulta de Saldo | Como cliente de la óptica, quiero consultar el saldo pendiente de mi pedido para saber cuánto debo llevar al momento del recojo. | 2 |
+| 8 | US-08P | Probador Virtual | Como cliente de la óptica, quiero usar mi cámara web para superponer lentes en 3D sobre mi rostro desde casa. | 8 |
+| 9 | US-09P | Calculador de Grosor | Como cliente de la óptica, quiero ingresar mi nivel de miopía para previsualizar si la luna será muy gruesa. | 5 |
+| 10 | US-10G | Registro de Historia Clínica | Como empleado de la óptica, quiero registrar los resultados del examen visual digitalmente para centralizar la información médica del paciente. | 5 |
+| 11 | US-11G | Registro de Anamnesis | Como empleado de la óptica, quiero registrar los síntomas del paciente antes del examen para tener contexto clínico. | 3 |
+| 12 | US-12G | Historial de Receta | Como empleado de la óptica, quiero versionar las recetas médicas para comparar la evolución visual del paciente. | 5 |
+| 13 | US-13G | Consentimiento Digital | Como empleado de la óptica, quiero recolectar la firma táctil del paciente para evitar archivar papeles legales. | 3 |
+| 14 | US-14G | Registro Offline | Como empleado de la óptica, quiero guardar perfiles sin conexión a internet en zonas rurales para no paralizar las campañas. | 8 |
+| 15 | US-15G | Carga de Exámenes Externos | Como empleado de la óptica, quiero adjuntar PDFs médicos al perfil para consolidar la historia de intervenciones foráneas. | 3 |
+| 16 | US-16G | Registro de Clientes | Como empleado de la óptica, quiero poder registrar clientes al momento que solicitan una orden en la óptica, para tenerlos registrados en la base de datos. | 3 |
+| 17 | US-17F | Gestión de Ventas | Como empleado de la óptica, quiero registrar la venta de un cliente, para poder registrarla en la base de datos y enviar la orden de producción. | 5 |
+| 18 | US-18F | Cotización desde Receta | Como empleado de la óptica, quiero generar una cotización directamente a partir de la receta médica para evitar la transcripción manual. | 3 |
+| 19 | US-19F | Registro de Pago de Saldo | Como empleado de la óptica, quiero registrar el pago del saldo pendiente al entregar los lentes para cerrar formalmente la transacción. | 2 |
+| 20 | US-20F | Aplicación de Descuentos | Como empleado de la óptica, quiero ingresar códigos de descuento en la boleta para cerrar ventas promocionales. | 2 |
+| 21 | US-21F | Pagos con Múltiples Métodos | Como empleado de la óptica, quiero dividir el cobro entre efectivo y tarjeta para facilitar la transacción al paciente. | 5 |
+| 22 | US-22F | Recuperación de Cotizaciones | Como empleado de la óptica, quiero cargar presupuestos armados días atrás para no hacer esperar al paciente que regresó a comprar. | 2 |
+| 23 | US-23F | Registro de Devoluciones | Como empleado de la óptica, quiero anular ventas pasadas para reingresar el producto dañado y emitir una nota de crédito. | 3 |
+| 24 | US-24F | Cierre de Caja | Como empleado de la óptica, quiero realizar el corte de caja para cuadrar el dinero físico con las ventas del software. | 5 |
+| 25 | US-25F | Notificaciones de Recojo | Como cliente de la óptica, quiero recibir un aviso automático cuando mis lentes estén listos para ahorrar tiempo de viaje. | 3 |
+| 26 | US-26F | Recordatorios Anuales | Como empleado de la óptica, quiero que el sistema envíe correos a clientes tras un año de su compra para fomentar su regreso. | 3 |
+| 27 | US-27F | Encuestas de Satisfacción | Como empleado de la óptica, quiero que se manden encuestas al celular del usuario posterior a la compra para cuantificar nuestro trato. | 3 |
+| 28 | US-28F | Fuga de Clientes | Como empleado de la óptica, quiero filtrar a los inactivos de más de dos años para mandarles una promoción agresiva. | 5 |
+| 29 | US-29F | Tracking por Pasos | Como cliente de la óptica, quiero recibir mensajes de WhatsApp en cada salto de etapa de mi fabricación. | 5 |
+| 30 | US-30F | Programa de Referidos | Como cliente de la óptica, quiero obtener un código personal para dárselo a mis amigos y ganar recompensas mutuas. | 3 |
+| 31 | US-31F | Segmentación para Campañas | Como empleado de la óptica, quiero extraer correos segmentados por marca favorita para rentabilizar la publicidad digital. | 5 |
+| 32 | US-32L | Consulta de Inventario en Tiempo Real | Como empleado de la óptica, quiero consultar el stock de monturas para informar al cliente sobre la disponibilidad inmediata. | 3 |
+| 33 | US-33L | Alertas de Bajo Stock | Como empleado de la óptica, quiero recibir alertas automáticas cuando el stock cae por debajo del umbral para reabastecer a tiempo. | 3 |
+| 34 | US-34L | Registro de Nuevo Producto | Como empleado de la óptica, quiero registrar nuevas monturas en el inventario para mantener el catálogo actualizado. | 2 |
+| 35 | US-35L | Gestión de Variantes | Como empleado de la óptica, quiero registrar diferentes tipos de materiales de lunas para ampliar las opciones del catálogo. | 3 |
+| 36 | US-36L | Búsqueda Avanzada | Como empleado de la óptica, quiero aplicar múltiples filtros cruzados para ubicar modelos específicos requeridos por el paciente. | 3 |
+| 37 | US-37L | Control de Órdenes y Tablero Kanban | Como empleado de la óptica, quiero gestionar el estado de las órdenes de laboratorio mediante un tablero Kanban para reflejar el progreso de fabricación en tiempo real y dar visibilidad a todo el equipo. | 8 |
+| 38 | US-38G | Vinculación de Receta a Orden | Como empleado de la óptica, quiero que la receta se vincule automáticamente a la orden de trabajo para evitar errores de laboratorio. | 3 |
+| 39 | US-39L | Motivos de Retrabajo | Como empleado de la óptica, quiero tipificar los errores cuando un lente se malogra para medir las pérdidas del laboratorio. | 2 |
+| 40 | US-40L | Gestión de Urgencias | Como empleado de la óptica, quiero marcar un ticket como máxima prioridad para que los técnicos pausen otras labores. | 2 |
+| 41 | US-41L | Control de Insumos | Como empleado de la óptica, quiero que la creación de micas descuente materia prima base (bloques) para que compras sepa cuándo pedir más. | 5 |
+| 42 | US-42A | Dashboard de Ventas | Como empleado de la óptica, quiero ver métricas de conversión, ingresos y rendimiento del negocio en un panel centralizado para evaluar el desempeño general de la óptica. | 5 |
+| 43 | US-43A | Auditoría de Eficiencia | Como empleado de la óptica, quiero visualizar un reporte de conversiones por asesor para medir el rendimiento de la tienda. | 3 |
+| 44 | US-44A | Productividad de Laboratorio | Como empleado de la óptica, quiero leer promedios de tiempo de fabricación para descubrir si nuestro equipo se demora mucho. | 3 |
+| 45 | US-45P | Inicio de sesión de cliente con DNI | Como cliente de la óptica, quiero iniciar sesión en el portal web utilizando mi DNI para acceder a mi perfil, ver mis órdenes y gestionar mis citas. | 2 |
+| 46 | US-46LA | Propuesta de Valor (Hero Section) | Como visitante, quiero ver la propuesta de valor principal al inicio de la página para entender rápidamente de qué trata el sistema. | 2 |
+| 47 | US-47LA | Catálogo de Características | Como visitante, quiero explorar los módulos del sistema en la web para saber qué problemas específicos resuelve en mi óptica. | 2 |
+| 48 | US-48LA | Consulta de Planes y Precios | Como visitante, quiero ver los planes de suscripción disponibles para comparar opciones según el tamaño y presupuesto de mi óptica. | 3 |
+| 49 | US-49LA | Formulario de Contacto General | Como visitante, quiero enviar un mensaje con dudas generales al equipo comercial para recibir atención directa. | 3 |
+| 50 | US-50LA | Redirección a Login | Como empleado de la óptica, quiero encontrar un botón de acceso claro en la web principal para entrar a mi cuenta sin escribir la URL completa del sistema. | 1 |
+| 51 | TS-01 | API Endpoint para Seguimiento | Como desarrollador, deseo implementar un endpoint REST para la consulta de estados de órdenes para integrar la web con el sistema de rastreo. | 5 |
+| 52 | TS-02 | Seguridad por Tokens JWT | Como desarrollador, deseo implementar autenticación basada en JWT para asegurar que solo personal autorizado acceda a la data sensible. | 5 |
+| 53 | TS-03 | API Endpoint para Registro y Consulta de Pacientes | Como desarrollador, deseo implementar un endpoint REST para el registro y consulta de pacientes, para que el frontend pueda crear y recuperar historias clínicas desde el servicio backend. | 3 |
+| 54 | TS-04 | API Endpoint para Gestión de Órdenes de Trabajo | Como desarrollador, deseo implementar endpoints REST para crear y actualizar el estado de las órdenes de trabajo, para que el módulo Kanban del frontend se mantenga sincronizado con el estado real de fabricación en el laboratorio. | 5 |
