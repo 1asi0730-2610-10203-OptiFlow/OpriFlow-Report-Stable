@@ -46,8 +46,12 @@ Preguntas generales:
 [Mapas de viaje del usuario que ilustran las etapas, acciones, emociones y puntos de dolor en la experiencia actual.]
 
 ### Empathy Mapping
+Empleado de la óptica: Marco Ruiz
+<img src = "/assets/optic-employee-em.png">
 
-[Mapas de empatía por segmento: qué piensan, sienten, dicen y hacen los usuarios.]
+Cliente de la óptica: Adrian Geraldo Huamán Villacorta
+<img src = "/assets/client-em.png">
+
 
 ## Big Picture Event Storming
 
