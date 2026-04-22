@@ -61,7 +61,116 @@ Preguntas generales:
 
 ### Registro de entrevistas
 
-[Transcripciones o resúmenes de cada entrevista realizada, con datos del entrevistado y fecha.]
+**PRIMER SEGMENTO OBJETIVO**
+
+<u>Entrevista 1:</u>
+
+Entrevistador: 
+
+Datos del entrevistado
+
+- **Nombre:** 
+- **Apellidos:** 
+- **Edad:** 
+- **Distrito:** 
+- **Inicio:**
+- **Duración:** 
+- **Link de la entrevista individual:** 
+  
+  **Resumen descriptivo:**
+
+
+<u>Entrevista 2:</u>
+
+Entrevistador: 
+
+Datos del entrevistado
+
+- **Nombre:** 
+- **Apellidos:** 
+- **Edad:** 
+- **Distrito:** 
+- **Inicio:**
+- **Duración:** 
+- **Link de la entrevista individual:** 
+  
+  **Resumen descriptivo:**
+
+<u>Entrevista 3:</u>
+
+Entrevistador: 
+
+Datos del entrevistado
+
+- **Nombre:** 
+- **Apellidos:** 
+- **Edad:** 
+- **Distrito:** 
+- **Inicio:**
+- **Duración:** 
+- **Link de la entrevista individual:** 
+  
+  **Resumen descriptivo:**
+
+**SEGUNDO SEGMENTO OBJETIVO**
+
+<u>Entrevista 1:</u>
+
+Entrevistador: Luciana Mechan
+
+Datos del entrevistado
+
+- **Nombre:** Carla 
+- **Apellidos:** Gallardo Morales
+- **Edad:** 19 años
+- **Distrito:** La Molina
+- **Inicio:** 01:32:52
+- **Duración:** 00:10:24
+- **Link de la entrevista individual:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b843_upc_edu_pe/IQAZEDLQjb3TQI-KfPgpdzw_ATQXFe5OTK8RGiCotvF5-TU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jkQVAh)
+
+<img src="../assets/entrevista-luciana.png" width="500"/>
+
+**Resumen descriptivo:**
+
+La entrevistada Carla Gallardo, de 19 años, residente en La Molina y estudiante universitaria de ingeniería, presenta un perfil digitalmente activo, utilizando principalmente la computadora y el teléfono móvil en su rutina diaria. Sus canales preferidos de interacción incluyen WhatsApp, Instagram y TikTok, siendo este último incluso utilizado como medio de búsqueda de información. Sus objetivos se centran en el ámbito académico, buscando avanzar en su carrera y aplicar sus conocimientos en el futuro profesional, lo que evidencia una necesidad de eficiencia y organización en los servicios que utiliza.
+
+En cuanto a su experiencia en ópticas, describe el proceso como generalmente simple, iniciando con la medición visual y seguido por la elección de monturas según su estilo personal. Sin embargo, identifica que el tiempo puede incrementarse cuando no encuentra modelos de su agrado. Asimismo, el tiempo de entrega de los lentes varía dependiendo del establecimiento, pudiendo ser inmediato o tardar algunos días, lo cual resulta crítico debido a su dependencia de los lentes para sus actividades académicas. En relación con el seguimiento del pedido, indica que no existe visibilidad del proceso, ya que solo se le comunica una fecha de entrega sin actualizaciones intermedias, lo que evidencia una falta de comunicación proactiva por parte de las ópticas.
+
+Finalmente, la entrevistada menciona experiencias negativas como errores en la medida de los lentes, así como la importancia de factores como la higiene, la calidad del servicio y el cumplimiento de las especificaciones solicitadas. Considera inaceptable la falta de limpieza o errores en el producto final. Además, destaca que en establecimientos más digitalizados se conserva su historial, mientras que en ópticas pequeñas este suele perderse. También señala la ausencia de seguimiento posterior a la compra, lo que refleja oportunidades de mejora en fidelización. En conjunto, se trata de una usuaria con expectativas de eficiencia, transparencia y control, influenciada por experiencias digitales modernas y con baja tolerancia a errores o desorganización.
+
+<u>Entrevista 2:</u>
+
+Entrevistador: 
+
+Datos del entrevistado
+
+- **Nombre:** 
+- **Apellidos:** 
+- **Edad:** 
+- **Distrito:** 
+- **Inicio:**
+- **Duración:** 
+- **Link de la entrevista individual:** 
+  
+  **Resumen descriptivo:**
+
+<u>Entrevista 3:</u>
+
+Entrevistador: 
+
+Datos del entrevistado
+
+- **Nombre:** 
+- **Apellidos:** 
+- **Edad:** 
+- **Distrito:** 
+- **Inicio:**
+- **Duración:**  
+- **Link de la entrevista individual:** 
+  
+**Resumen descriptivo:**
+
+**Enlace del video único de las entrevistas:** [ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b843_upc_edu_pe/IQBQcjn6Xii8QZurFaFX-gjHAb6EPimDCPRiufDcZfNdTk8?e=DQ8O6O&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ### Análisis de entrevistas
 
