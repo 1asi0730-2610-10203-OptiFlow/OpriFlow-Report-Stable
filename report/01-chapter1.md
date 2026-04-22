@@ -24,6 +24,9 @@ Soy Juan Pablo Azama Fukuda (Código: u202411310), estudiante de quinto ciclo de
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
+Nuestro servicio ofrece una aplicación web centralizada (ERP/CRM) orientada a la gestión del ciclo comercial, el historial clínico y la logística de producción en ópticas medianas con alto volumen de pacientes, incluyendo administradores, optómetras y personal de ventas que requieren operar de forma coordinada.
+Hemos observado que, en este tipo de establecimientos, la carencia de un sistema unificado genera una fragmentación de procesos entre consultorio, ventas y laboratorio, provocando silos de información, pérdida de trazabilidad en las órdenes de trabajo, errores de transcripción, descuadres de inventario y deficiencias en la gestión de cobranzas. Esta situación evidencia una brecha entre el estado actual, basado en procesos manuales y desconectados, y un estado ideal con operaciones integradas, automatizadas y basadas en datos en tiempo real, lo que ocasiona retrasos, reprocesos y una experiencia negativa para el cliente.
+¿De qué manera podríamos digitalizar e integrar el flujo de ventas, atención clínica y producción en ópticas con alta demanda, para optimizar la toma de decisiones de la gerencia, reducir errores operativos y garantizar entregas eficientes, trazables y rentables?
 
 #### 1.2.2.2. Lean UX Assumptions
 
