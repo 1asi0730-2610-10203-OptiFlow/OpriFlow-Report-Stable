@@ -35,3 +35,35 @@ Hemos observado que, en este tipo de establecimientos, la carencia de un sistema
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
+Nuestra propuesta aborda dos grupos clave dentro del ecosistema del servicio óptico, diferenciando entre los usuarios internos que interactúan directamente con el sistema y los clientes finales que se ven impactados por la eficiencia de los procesos operativos.
+
+**Usuarios internos del centro óptico (Administración y personal operativo)**
+* Aspectos demográficos:
+    * Sexo: Masculino o femenino.
+    * Edad: 22 – 55 años.
+    * Nivel socioeconómico: B y C (media y media-alta).
+    * Ocupación: Administradores de sede, gerentes de operaciones, optómetras, personal de ventas y atención al cliente.
+* Aspectos geográficos:
+    * Nacionalidad: Peruana o extranjera.
+    * Zona geográfica: Urbana.
+    * Departamento: Lima Metropolitana y principales ciudades del país con presencia de centros ópticos.
+* Aspectos psicográficos:
+    * Son responsables de ejecutar y supervisar los procesos clave del negocio, incluyendo la atención clínica, la gestión de ventas, el control de inventario y el seguimiento de órdenes de trabajo.
+    * Experimentan frustración al trabajar con sistemas fragmentados o procesos manuales que requieren duplicidad de registros y dificultan la coordinación entre áreas.
+    * Valoran herramientas tecnológicas que les permitan centralizar la información, reducir errores operativos, optimizar tiempos de atención y mejorar la trazabilidad de los procesos.
+    * Buscan operar con mayor eficiencia y contar con información confiable en tiempo real para la toma de decisiones y la correcta ejecución de sus funciones.
+
+**Clientes de la óptica (Pacientes)**
+* Aspectos demográficos:
+    * Sexo: Masculino o femenino.
+    * Edad: 18 – 60+ años.
+    * Nivel socioeconómico: Transversal (A, B, C y D), dependiendo del tipo de cadena óptica.
+    * Ocupación: Estudiantes, trabajadores dependientes, profesionales y adultos mayores que requieren servicios de evaluación y corrección visual.
+* Aspectos geográficos:
+    * Nacionalidad: Peruana o extranjera.
+    * Zona geográfica: Urbana.
+    * Departamento: Zonas con acceso a centros ópticos y servicios de salud visual.
+* Aspectos psicográficos:
+    * Cuentan con agendas ajustadas, por lo que valoran una atención ágil y sin interrupciones durante su experiencia en la óptica.
+    * Experimentan frustración ante demoras en la atención, pérdida de información clínica, falta de coordinación entre áreas o retrasos en la entrega de productos.
+    * Asocian una atención fluida, organizada y sin errores con un servicio de mayor calidad y confianza.
