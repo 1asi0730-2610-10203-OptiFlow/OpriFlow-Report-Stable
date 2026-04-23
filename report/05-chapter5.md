@@ -130,7 +130,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
 | :--- | :--- | :--- |  :--- | :--- | :--- |
 | Azama Fukuda, Juan Pablo | llummo | Landing page elaboration (L) | Bounded context development (C) | Prototyping (L) | Scrum Master Role(L) |
 | Atoche Gonzales, Nicolas Fernando | Japr91 | C | C | ... | L |
-| Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
+| Capillo Lema, Mia Valentina | Miavcl | C | C | ... | L |
 | Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
 | Rodríguez Peña, Jorge Andrés | Japr91 | C | C | ... | L |
 
@@ -212,15 +212,25 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
       <td></td>git
       <td>T06</td>
       <td>Source Code Management & Styles</td>
-      <td>Configurar repositorios en GitHub, GitFlow y definir el Style Guide del código.</td>
+      <td>Definir el Style Guide del código y parte del Information Architecture.</td>
       <td>2 hrs</td>
-      <td>Nicolas</td>
+      <td>Mia</td>
+      <td>Done</td>
+    </tr>
+        <tr>
+      <td></td>
+      <td></td>git
+      <td>T07</td>
+      <td>Segmento objetivo & Lean UX Process</td>
+      <td>Definir segmento objetivo, Lean UX Canvas y User Task Matrix.</td>
+      <td>2 hrs</td>
+      <td>Mia</td>
       <td>Done</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>T07</td>
+      <td>T08</td>
       <td>Software Deployment Configuration</td>
       <td>Configurar el servicio de hosting cloud estático (ej. Vercel/Netlify) para la Landing.</td>
       <td>3 hrs</td>
@@ -230,7 +240,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td></td>
       <td></td>
-      <td>T08</td>
+      <td>T09</td>
       <td>Sprint 1 Planning & Backlog</td>
       <td>Redactar el Sprint Planning, Aspect Leaders, y este Sprint Backlog en el informe.</td>
       <td>2 hrs</td>
@@ -240,7 +250,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td></td>
       <td></td>
-      <td>T09</td>
+      <td>T10</td>
       <td>Development & Execution Evidence</td>
       <td>Recolectar capturas de commits (Development) y video/capturas de ejecución (Execution).</td>
       <td>2 hrs</td>
@@ -250,7 +260,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td></td>
       <td></td>
-      <td>T10</td>
+      <td>T11</td>
       <td>Deployment & Services Evidence</td>
       <td>Documentar el link de producción y métricas de colaboración (Team Collaboration Insights).</td>
       <td>2 hrs</td>
@@ -260,7 +270,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td>US-46L</td>
       <td>Propuesta de Valor (Hero Section)</td>
-      <td>T11</td>
+      <td>T12</td>
       <td>Desarrollo: Hero Section</td>
       <td>Maquetar en HTML/CSS/JS la cabecera principal, textos persuasivos y botones CTA.</td>
       <td>4 hrs</td>
@@ -270,27 +280,27 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td>US-47L</td>
       <td>Catálogo de Características</td>
-      <td>T12</td>
+      <td>T13</td>
       <td>Desarrollo: Módulos del Sistema</td>
       <td>Programar la sección de módulos (Ventas, Laboratorio) de forma responsive.</td>
-      <td>4 hrs</td>
-      <td>Luciana</td>
-      <td>To-Do</td>
-    </tr>
-    <tr>
-      <td>US-48L</td>
-      <td>Consulta de Planes y Precios</td>
-      <td>T13</td>
-      <td>Desarrollo: Pricing Table</td>
-      <td>Maquetar la tabla de precios comparativa interactiva para la web.</td>
       <td>4 hrs</td>
       <td>Mia</td>
       <td>To-Do</td>
     </tr>
     <tr>
+      <td>US-48L</td>
+      <td>Consulta de Planes y Precios</td>
+      <td>T14</td>
+      <td>Desarrollo: Pricing Table</td>
+      <td>Maquetar la tabla de precios comparativa interactiva para la web.</td>
+      <td>4 hrs</td>
+      <td> </td>
+      <td>To-Do</td>
+    </tr>
+    <tr>
       <td>US-49L</td>
       <td>Formulario de Contacto General</td>
-      <td>T14</td>
+      <td>T15</td>
       <td>Desarrollo: Formulario & Validaciones</td>
       <td>Codificar el formulario de contacto y agregar validaciones de campos en JavaScript.</td>
       <td>4 hrs</td>
@@ -300,7 +310,7 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
     <tr>
       <td>US-50L</td>
       <td>Redirección a Login</td>
-      <td>T15</td>
+      <td>T16</td>
       <td>Desarrollo: Navbar & Footer</td>
       <td>Implementar la barra de navegación superior anclada y el botón de acceso al sistema.</td>
       <td>3 hrs</td>
