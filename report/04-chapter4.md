@@ -56,7 +56,8 @@
 [Event Storming a nivel de diseño: agregados, bounded contexts, comandos y eventos del dominio.]
 
 ### Software Architecture Context Diagram
-[Diagrama de contexto C4 que muestra el sistema y sus interacciones con usuarios y sistemas externos.]
+
+<img src = "/assets/C4-d1.png" alt = "jp-photo" width="500">
 
 ### Software Architecture Container Diagrams
 [Diagrama de contenedores C4 que detalla los componentes de alto nivel y sus responsabilidades.]
