@@ -75,26 +75,58 @@ Gestor de bases de datos relacionales encargado del almacenamiento seguro y estr
 
 ---
 
-**Spring Boot (Java)**
+**ASP.NET Core (C#)**
 
 <p align="center">
-  <img src="https://e4developer.com/posts/microservices-toolbox-spring-boot/images/spring-boot.png" alt="springboot-logo" width="150">
+  <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="csharp-logo" width="150">
 </p>
 
-Framework de desarrollo para el lado del servidor que simplifica la creación de microservicios y servicios web RESTful en Java. Administra la lógica operativa, protocolos de seguridad y la exposición de datos hacia el front-end.
+Framework de desarrollo para el lado del servidor que simplifica la creación de microservicios y servicios web RESTful en C#. Administra la lógica operativa, protocolos de seguridad y la exposición de datos hacia el front-end.
 
-* **Documentación y descarga:** [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)
+* **Documentación y descarga:** [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
+
 ### Source Code Management
-
 El proyecto utiliza **GitHub** como sistema de control de versiones mediante un repositorio público. Se adoptó una estrategia basada en **GitFlow**:
 * La rama `main` contiene versiones estables del sistema.
 * La rama `develop` funciona como entorno de integración.
 * Las nuevas funcionalidades se desarrollan en ramas `feature/*`.
+* En caso del repositorio de documentación, se utiliza `docs/*`.
 
 La integración de cambios se realiza mediante **Pull Requests** hacia la rama `develop`, asegurando un control previo antes de incorporar modificaciones. Se emplea una convención de commits semánticos (`feat`, `fix`).
 
 ### Source Code Style Guide & Conventions
+Para mantener la consistencia, legibilidad y escalabilidad del código fuente durante todo el ciclo de vida del proyecto, el equipo ha adoptado un conjunto estricto de convenciones de codificación. La regla transversal para todos los lenguajes y frameworks (HTML, CSS, JavaScript, Vue.js, C#) es el uso estricto del idioma **inglés** para la nomenclatura de variables, clases, métodos, archivos y comentarios.
 
+A continuación, se detallan las convenciones adoptadas por tecnología, sustentadas en sus respectivas guías oficiales:
+
+#### 1. HTML & CSS
+Se adoptan las directrices de la "Google HTML/CSS Style Guide" y "HTML Style Guide and Coding Conventions" de W3Schools.
+* **Nomenclatura (Classes e IDs):** Se utilizará estrictamente `kebab-case` (letras minúsculas separadas por guiones). Ejemplo: `hero-section`, `three-canvas`, `benefit-item`.
+* **Estructura CSS:** Se priorizará el encapsulamiento visual mediante estilos en bloque y alcance local (uso del atributo `scoped` en Vue).
+* **Semántica HTML:** Uso de etiquetas semánticas (`<section>`, `<nav>`, `<main>`, `<canvas>`) en lugar de contenedores `<div>` genéricos cuando sea posible.
+
+#### 2. JavaScript
+Se toman como referencia la "Google JavaScript Style Guide", "MDN JavaScript guidelines" y "W3C JavaScript Style Guide".
+* **Variables y Funciones:** Se utilizará `camelCase` para su declaración (ej. `activeItem`, `initThree`, `createObjects`).
+* **Clases y Constructores:** Se utilizará `PascalCase` (ej. `PerspectiveCamera`, `WebGLRenderer`).
+* **Constantes:** Se utilizará `UPPER_SNAKE_CASE` para valores inmutables globales.
+* **Sintaxis:** Uso exclusivo de características modernas de ECMAScript 6+ (`let`, `const`, arrow functions).
+
+#### 3. Vue.js (Frontend Framework)
+El desarrollo del front-end seguirá las normativas de la "Vue Style Guide" oficial.
+* **Componentes:** Los archivos Single-File Components (.vue) se nombrarán utilizando `PascalCase` (ej. `HeroSection.vue`, `BenefitsList.vue`).
+* **Estructura de Componentes:** Se utilizará la sintaxis de Composition API (`<script setup>`) estandarizando el orden de declaración: imports primero, seguido de variables reactivas (`ref`, `reactive`), funciones de lógica de negocio, y finalmente hooks del ciclo de vida (`onMounted`, `onUnmounted`).
+* **Atributos en Templates:** Las directivas de Vue se escribirán de forma abreviada (`:` para `v-bind` y `@` para `v-on`).
+
+#### 4. C# y ASP.NET Core (Backend & Web Services)
+El desarrollo de la RESTful API se rige por las "C# Coding Conventions" y las "Microsoft ASP.NET Core Coding Guidelines".
+* **Clases, Métodos y Propiedades:** Se utilizará `PascalCase` (ej. `GetMedicalRecords`, `PatientController`).
+* **Variables Locales y Parámetros:** Se utilizará `camelCase` (ej. `patientId`, `requestBody`).
+* **Interfaces:** Siempre deben iniciar con la letra "I" mayúscula seguida de `PascalCase` (ej. `IPatientRepository`).
+* **Modificadores de Acceso:** Declaración explícita obligatoria para establecer el nivel de protección (`public`, `private`, `protected`).
+
+#### 5. Specifications (BDD)
+* **Gherkin Conventions for Readable Specifications:** Para la redacción de criterios de aceptación, se respetará el formato estándar `Given-When-Then`, redactado en tercera persona, en tiempo presente y enfocado en el comportamiento esperado sin involucrar detalles de la interfaz de usuario.
 
 ### Software Deployment Configuration
 
@@ -105,20 +137,22 @@ La integración de cambios se realiza mediante **Pull Requests** hacia la rama `
 ### Sprint 1
 
 #### Sprint Planning 1
+En esta sección se especifican los aspectos principales del Sprint Planning Meeting correspondiente a la primera iteración del proyecto. El enfoque principal de este Sprint abarca la elaboración de los artefactos fundacionales de Lean UX, especificación de requerimientos, diseño de base de datos, modelado DDD, diseño de interfaces en Figma y el despliegue inicial del Landing Page.
+
+#### Sprint Planning 1
 | Aspect | Details |
 | :--- | :--- |
-| **Sprint #** | Sprint n |
-| **Date** | YYYY-MM-DD |
-| **Time** | HH:MM AM/PM |
-| **Location** | (Descripción de la ubicación de la reunión, física o virtual) |
-| **Prepared By** | Jiménez Rosas, Arturo Eduardo |
-| **Attendees (to planning meeting)** | Jiménez Rosas, Arturo Eduardo / Rodríguez Peña, Jorge Andrés / … |
-| **Sprint n – 1 Review Summary** | (Resumen del Sprint anterior, en términos de resultados alcanzados a nivel de productos de software, opiniones de miembros y feedback de product owner.) |
-| **Sprint n – 1 Retrospective Summary** | (Resumen del Sprint anterior, en términos de opiniones de miembros del equipo sobre aciertos u oportunidades de mejora en su forma de trabajo) |
-| **Sprint n Goal** | (Definir el Goal del Sprint n y la métrica de cumplimiento.) |
-| **Sprint n Velocity** | (Definir el Velocity establecido para el Sprint n, es decir cuántos Story Points puede aceptar el equipo para este Sprint n.) |
-| **Sum of Story Points** | (Colocar la suma de los Story Points para los User Stories que se están incluyendo en este Sprint n.) |
-
+| **Sprint #** | Sprint 1 |
+| **Date** | 2026-04-23 |
+| **Time** | 10:00 AM |
+| **Location** | Reunión Virtual (Discord / Microsoft Teams) |
+| **Prepared By** | Azama Fukuda, Juan Pablo |
+| **Attendees (to planning meeting)** | Atoche Gonzales, Nicolas Fernando / Azama Fukuda, Juan Pablo / Capillo Lema, Mía Valentina / Mechan Montenegro, Luciana Carolina / Morocho Pinedo, Mariana |
+| **Sprint n – 1 Review Summary** | No aplica (Primer Sprint del proyecto). |
+| **Sprint n – 1 Retrospective Summary** | No aplica (Primer Sprint del proyecto). |
+| **Sprint Goal** | Our focus is on setting up the foundational UX/UI design, domain architecture, and the initial landing page deployment. We believe it delivers a clear project structure and an early digital touchpoint to our target segments. This will be confirmed when the Lean UX, Database design, DDD, and Figma artifacts are completed, and the Landing Page is publicly deployed and functional. |
+| **Sprint n Velocity** | 45 Story Points |
+| **Sum of Story Points** | 45 |
 
 #### Aspect Leaders and Collaborators
 En el sprint principalmente se tomó enfoque en el desarrollo de la parte de diseño de la solución tanto en la parte de backend, como frontend, además del desarrollo del landing page. Por ello, se decidió dividir el equipo en sub-equipos
@@ -342,6 +376,7 @@ Durante la iteración inicial del proyecto OptiFlow, se consolidó el diseño es
 
 #### Team Collaboration Insights during Sprint
 [Análisis de la colaboración del equipo: métricas de contribución, reuniones y herramientas utilizadas.]
+
 
 ## Validation Interviews
 
