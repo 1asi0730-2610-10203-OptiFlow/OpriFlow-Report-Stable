@@ -32,6 +32,28 @@ Hemos observado que, en este tipo de establecimientos, la carencia de un sistema
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+### Hipótesis 1
+**Creemos que** si integramos el historial clínico (EHR) directamente con el módulo de cotización y ventas (POS),  
+**entonces** se reducirá la fuga de pacientes que no compran sus lentes.
+
+Métrica de éxito: Sabremos que funcionó cuando la tasa de conversión *(recetas emitidas vs. ventas concretadas)* aumente en un **15% en el primer trimestre**.
+
+---
+
+### Hipótesis 2
+**Creemos que** si proporcionamos un tablero Kanban de Órdenes de Trabajo para el laboratorio, conectado a la base de datos central,  
+**entonces** se erradicarán los errores por transcripción manual.
+
+Métrica de éxito: Sabremos que funcionó cuando los reportes demuestren una disminución del **90% en los costos por refabricación de lentes (mermas)** en los **primeros tres meses**.
+
+---
+
+### Hipótesis 3
+**Creemos que** automatizar el envío de notificaciones (Email/SMS) sobre el estado del pedido  
+**entonces** reducirá la carga de atención al cliente y mejorará la percepción del servicio.
+
+Métrica de éxito: Sabremos que funcionó cuando las llamadas o mensajes de pacientes consultando *"¿dónde están mis lentes?"* se reduzcan en un **80%**.
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
