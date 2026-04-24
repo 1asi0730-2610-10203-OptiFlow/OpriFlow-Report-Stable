@@ -92,7 +92,18 @@ Filtros granulares para agilizar la operación diaria y la auditoría:
 
 
 ### Navigation Systems
-[Esquema de navegación: menús, breadcrumbs, flujos de navegación y patrones de interacción.]
+Estructura de navegación diseñada para guiar al usuario hacia la resolución de metas.
+
+| Sección | Descripción |
+| :--- | :--- |
+| **Dashboard** | Hub central con resúmenes críticos de ventas, inventario y citas del día. |
+| **Módulo Clínico** | Acceso directo a Anamnesis, Recetas y Firma de Expedientes. |
+| **Módulo de Órdenes** | Gestión de pedidos, calendario de entregas y cambio de estados logísticos. |
+| **Portal Staff / RRHH** | Panel lateral para marcar asistencia, revisar adiestramientos y gestionar permisos. |
+| **Configuración** | Ajustes globales de idioma, términos legales y preferencias de notificación. |
+| **Gestión CRM** | Panel de fidelización, configuración de notificaciones automáticas y vinculación de órdenes con clientes. |
+| **Seguridad y Acceso** | Centro de control de identidad: gestión de contraseñas, verificación de 2 pasos (2FA) y cierre de sesión. |
+
 
 ## Landing Page UI Design
 
