@@ -38,7 +38,21 @@ interacción:
 ## Information Architecture
 
 ### Organization Systems
-[Estructura de organización del contenido: jerárquica, secuencial o matricial, según el contexto de uso.]
+OptiFlow utiliza esquemas de organización lógica para manejar procesos complejos:
+
+* Organización Jerárquica: Navegación adaptativa por roles. El Optometrista prioriza "Consultas", el Asesor prioriza "Ventas e Inventario", y el Dueño/Gerente accede al Dashboard de métricas y auditoría.
+* Organización Secuencial (Step-by-Step): Crítica para el Onboarding Técnico (Registro -> Auth JWT -> Perfil) y el Flujo Logístico del Kanban (Pendiente -> Proceso -> Control Calidad -> Listo).
+
+| Tópico | Definición |
+| :--- | :--- |
+| **Gestión de Pacientes** | Acceso centralizado a Historias Clínicas, consentimientos y deudas. |
+| **Laboratorio Kanban** | Visualización del progreso de fabricación (Biselado, Montaje, Calidad) y gestión de urgencias SOS. |
+| **Marketing y CRM** | Automatización de avisos WhatsApp, referidos y fidelización. |
+| **Caja e Inventario** | Cierres de caja diarios, control de insumos y alertas de bajo stock. |
+| **Seguridad Técnica** | Autenticación JWT, gestión de roles y auditoría de logs. |
+| **Gerencia y BI** | Reportes de productividad, conversión de ventas y eficiencia. |
+| **Recursos Humanos** | Control de asistencia, planes de adiestramiento de personal y gestión de vacantes. |
+
 
 ### Labeling Systems
 [Definición de etiquetas, nomenclaturas y taxonomías utilizadas en la interfaz.]
