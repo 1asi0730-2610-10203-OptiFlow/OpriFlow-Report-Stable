@@ -329,13 +329,14 @@ micro tareas extensa que ocasionarían que los participantes no tengan hilación
 </table>
 
 #### Development Evidence for Sprint Review
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| OptiFlow/landing-page | feature/US-46L-hero-section | a1b2c3d | feat: implement hero section and value proposition | Added responsive HTML/CSS structure for the main hero section including the primary CTA button. | YYYY-MM-DD |
-| OptiFlow/landing-page | feature/US-47L-features | e4f5g6h | feat: build system features grid | Developed the features catalog section displaying Sales, Lab, and Inventory modules. | YYYY-MM-DD |
-| OptiFlow/landing-page | feature/US-48L-pricing | i7j8k9l | feat: create pricing comparison table | Implemented responsive pricing table for subscription plan comparison. | YYYY-MM-DD |
-| OptiFlow/landing-page | feature/US-49L-contact-form | m0n1o2p | feat: add contact form with JS validation | Constructed the general contact form and implemented frontend validation logic for required fields. | YYYY-MM-DD |
-| OptiFlow/landing-page | feature/US-50L-navbar | q3r4s5t | feat: implement main navigation bar | Added sticky navbar with anchor links and the primary redirect button to the login portal. | YYYY-MM-DD |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-section | ead6b53 | fix(hero): fix hero-title padding-top | - | 2026-04-20 |
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-section | 78ec519 | feat(hero): added login button and upgraded animations | - | 2026-04-20 |
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-section | 168670e | feat(hero): add 3d shapes | - | 2026-04-20 |
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-section | e4f6bf8 | fix(hero): fix hero background | - | 2026-04-20 |
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-section | e1884df | feat(hero): add hero section | - | 2026-04-20 |
+| 1asi0730-2610-10203-OptiFlow/landing-page | feature/hero-navbar | 0e314f8 | feat(nav): add hero header navbar | - | 2026-04-20 |
 
 #### Execution Evidence for Sprint Review
 Durante la iteración inicial del proyecto OptiFlow, se consolidó el diseño estratégico del sistema mediante la elaboración de artefactos de Domain-Driven Design y el modelado estructural de la base de datos, estableciendo una arquitectura técnica escalable que fue complementada por una exhaustiva investigación de Experiencia de Usuario (UX/UI) y prototipado de alta fidelidad basado en la elicitación de requerimientos de los segmentos objetivo; sobre esta integración teórico-práctica, se ejecutó exitosamente la codificación frontend y el despliegue en entorno cloud de la Landing Page comercial para la captación de prospectos (historias US-46L a US-50L), operando de manera transversal dentro de un entorno de desarrollo colaborativo estrictamente gestionado bajo la estrategia GitFlow para garantizar la integridad, control de versiones y trazabilidad de los aportes del equipo.
