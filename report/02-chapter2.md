@@ -235,10 +235,10 @@ Cada User Persona sintetiza estas características con el objetivo de facilitar 
 
 ### Empathy Mapping
 Empleado de la óptica: Marco Ruiz
-<img src = "/assets/optic-employee-em.png">
+<img src = "../assets/optic-employee-em.png">
 
 Cliente de la óptica: Adrian Geraldo Huamán Villacorta
-<img src = "/assets/client-em.png">
+<img src = "../assets/client-em.png">
 
 
 ## Big Picture Event Storming
@@ -247,4 +247,65 @@ Cliente de la óptica: Adrian Geraldo Huamán Villacorta
 
 ## Ubiquitous Language
 
-[Glosario de términos del dominio acordados por el equipo para asegurar una comunicación uniforme.]
+### Cliente(Cliente)
+ Persona que acude a la óptica para recibir una evaluación visual o adquirir productos ópticos. Es el sujeto central del historial clínico y el destinatario final del pedido. En el contexto comercial puede ser considerado cliente, pero en el contexto clínico se denomina Patient.
+
+### Optical Employee (Empleado de la óptica)
+ Usuario interno del sistema que opera las funcionalidades del negocio, incluyendo atención clínica, ventas, inventario y gestión de órdenes.
+
+### Clinical Record (Historia Clínica)
+ Registro de las evaluaciones visuales de un paciente a lo largo del tiempo. Contiene prescripciones, diagnósticos y observaciones clínicas, y sirve como referencia para la atención médica y la toma de decisiones comerciales.
+
+### Prescription (Receta Óptica)
+Resultado del examen visual que contiene los valores necesarios para la corrección de la visión (como sphere, cylinder y axis). Es utilizada como base para generar cotizaciones y órdenes.
+
+### Anamnesis (Anamnesis)
+ Registro de síntomas y antecedentes del cliente antes de realizar el examen visual.
+
+### Appointment (Cita)
+ Reserva de fecha y hora para la atención clínica de un paciente en la óptica. Puede encontrarse en estados como agendada, confirmada, completada o cancelada.
+
+### Frame (Montura)
+ Producto físico que sostiene los lentes. Forma parte del inventario de la óptica y posee atributos como marca, modelo, material y color.
+
+### Lens (Luna / Lente)
+ Componente óptico fabricado de acuerdo con la prescripción del paciente. Puede variar en material, tratamiento y tipo según las necesidades visuales.
+
+### Quotation (Cotización)
+ Propuesta comercial que combina la prescripción del paciente con una montura y lentes seleccionados, indicando el precio total y las condiciones de pago.
+
+### Sale (Venta)
+ Acuerdo comercial mediante el cual el paciente adquiere productos ópticos. Representa la transición entre la atención clínica y el proceso de fabricación.
+
+### Deposit (Adelanto)
+Pago parcial realizado por el paciente al confirmar una venta, que permite iniciar el proceso de fabricación de los lentes.
+
+### Outstanding Balance (Saldo Pendiente) 
+Monto restante que el paciente debe pagar luego de realizar un adelanto. Debe ser cancelado antes o al momento de la entrega.
+
+### Work Order (Orden de Trabajo)
+ Registro que contiene las especificaciones necesarias para la fabricación de los lentes, incluyendo la prescripción, la montura seleccionada y los detalles del producto.
+
+### Order Status (Estado del Pedido)
+ Indicador que refleja la etapa en la que se encuentra un pedido, como en fabricación, en control de calidad o listo para entrega.
+
+### Laboratory (Laboratorio)
+ Entidad responsable de fabricar los lentes de acuerdo con las especificaciones de la orden de trabajo.
+
+### Rework (Retrabajo / Refabricación)
+ Proceso de fabricación nuevamente de un lente debido a errores o incumplimiento de las especificaciones originales.
+
+### Inventory (Inventario)
+ Conjunto de monturas disponibles en la óptica, junto con su cantidad y características. Permite conocer la disponibilidad de productos para la venta.
+
+### Stock (Stock)
+Cantidad disponible de un producto específico. 
+
+### Conversion Rate (Tasa de Conversión)
+Indicador que mide la relación entre cotizaciones generadas y ventas concretadas. 
+
+### Notification (Notificación)
+ Comunicación enviada al paciente para informarle sobre cambios relevantes en el estado de su pedido o disponibilidad de sus lentes.
+
+### Optical Center (Centro Óptico / Óptica)
+ Establecimiento donde se integran la atención clínica, la venta de productos ópticos y la coordinación con el laboratorio.
