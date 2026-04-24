@@ -135,3 +135,6 @@
 | 53 | TS-02 | Seguridad por Tokens JWT | Como desarrollador, deseo implementar autenticación basada en JWT para asegurar que solo personal autorizado acceda a la data sensible. | 5 |
 | 54 | TS-03 | API Endpoint para Registro y Consulta de Pacientes | Como desarrollador, deseo implementar un endpoint REST para el registro y consulta de pacientes, para que el frontend pueda crear y recuperar historias clínicas desde el servicio backend. | 3 |
 | 55 | TS-04 | API Endpoint para Gestión de Órdenes de Trabajo | Como desarrollador, deseo implementar endpoints REST para crear y actualizar el estado de las órdenes de trabajo, para que el módulo Kanban del frontend se mantenga sincronizado con el estado real de fabricación en el laboratorio. | 5 |
+
+**Product Backlog (Trello):**  
+[Ver tablero de Trello](https://trello.com/invite/b/69eba124179d41cdbf1d256e/ATTI3167beb4688f2da975bd23cdf51f144c3C1DA6E6/optiflow)
