@@ -1,12 +1,39 @@
 # Capítulo IV: Product Design
 
 ## Style Guidelines
+Esta sección constituye el pilar visual de OptiFlow, diseñado para proyectar una imagen de innovación tecnológica y precisión médica. El objetivo es estandarizar la interfaz para que tanto el personal de la óptica como el cliente externo perciban una plataforma robusta y profesional.
 
 ### General Style Guidelines
-[Definición de tipografías, paleta de colores, iconografía y tono de comunicación visual del producto.]
+**Branding:**
+El ecosistema visual de OptiFlow se centra en la convergencia entre la salud y la optimización de procesos. El logotipo principal utiliza una tipografía sans-serif de grosores variables para denotar dinamismo. El isotipo principal es un "ojo digital" formado por trazos circulares que simulan una lente y un sensor, representando el Probador Virtual y la Anamnesis Digital. Se han definido variaciones: una versión horizontal para el header de la web y una versión compacta (monograma) para aplicaciones móviles y favicons.
+
+<img src = "/assets/branding.png">
+
+**Typography:**
+Se ha seleccionado una familia tipográfica de corte tecnológico y alta legibilidad:
+* Josefin Sans / Montserrat: Se utilizarán pesos Light para descripciones de beneficios y SemiBold para títulos de secciones y métricas en el Dashboard.
+
+<img src = "/assets/typography.png">
+
+* Tono de comunicación: El sistema emplea un lenguaje Formal-Tecnológico. Se busca transmitir autoridad médica en el módulo clínico y eficiencia en el módulo de ventas, utilizando verbos de acción directa ("Confirmar Cita", "Finalizar Venta").
+
+<img src = "/assets/language.png">
+
+**Colors:**
+La paleta de colores se basa en una combinación de alto contraste para entornos
+digitales, seleccionada bajo principios de modernidad y confianza:
+
+<img src = "/assets/colors.png">
 
 ### Web Style Guidelines
-[Especificaciones de diseño web: grillas, espaciado, componentes reutilizables y estándares de accesibilidad.]
+Para la interfaz web responsive, se implementan los siguientes estándares de
+interacción:
+
+* Patrones de Lectura: Se aplica el Patrón F en los paneles administrativos para priorizar la lectura de datos del paciente a la izquierda..
+* Componentes: Botones con bordes redondeados y estados de hover con degradados cian-verde.
+* Responsive: Las métricas de ventas y el tablero Kanban se reorganizan en una sola columna en dispositivos móviles para mantener la operatividad del asesor de ventas en tienda.
+
+<img src = "/assets/spacing.png">
 
 ## Information Architecture
 
