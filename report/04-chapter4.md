@@ -72,7 +72,12 @@ Estandarización de etiquetas para alinear al equipo clínico, técnico y comerc
 
 
 ### SEO Tags and Meta Tags
-[Especificación de metaetiquetas, títulos, descripciones y palabras clave para posicionamiento en buscadores.]
+Optimización para la Landing Page orientada a la captación de clientes:
+
+* Title: OptiFlow - Gestión Integral para Ópticas y Laboratorios
+* Meta Description: Digitaliza tu óptica con OptiFlow: Historias clínicas, probador virtual, control de inventarios y auditoría de laboratorio en tiempo real con seguridad JWT.
+* Keywords: software ópticas, historia clínica digital, gestión laboratorio óptico, CRM óptico, receta digital, ERP óptica, API óptica.
+* Author: OptiFlow Corp.
 
 ### Searching Systems
 [Descripción del sistema de búsqueda: filtros, criterios y mecanismos de recuperación de información.]
