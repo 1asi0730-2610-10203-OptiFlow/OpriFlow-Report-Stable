@@ -2,7 +2,7 @@
 
 ## Impact Mapping
 
-[Mapa de impacto que conecta los objetivos de negocio con los actores, sus impactos y los entregables necesarios.]
+![ImpactMap.png](../assets/ImpactMap.png)
 
 ## Epics
 

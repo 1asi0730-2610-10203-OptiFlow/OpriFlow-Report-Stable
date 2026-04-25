@@ -195,4 +195,5 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ## Database Design
 
 ### Database Diagrams
-[Diagramas entidad-relación o de esquema de base de datos, incluyendo tablas, claves y relaciones.]
+
+![DataBase-diagram.png](../assets/DataBase-diagram.png)
