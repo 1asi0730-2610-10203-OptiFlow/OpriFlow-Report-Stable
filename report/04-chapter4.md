@@ -7,23 +7,23 @@ Esta sección constituye el pilar visual de OptiFlow, diseñado para proyectar u
 **Branding:**
 El ecosistema visual de OptiFlow se centra en la convergencia entre la salud y la optimización de procesos. El logotipo principal utiliza una tipografía sans-serif de grosores variables para denotar dinamismo. El isotipo principal es un "ojo digital" formado por trazos circulares que simulan una lente y un sensor, representando el Probador Virtual y la Anamnesis Digital. Se han definido variaciones: una versión horizontal para el header de la web y una versión compacta (monograma) para aplicaciones móviles y favicons.
 
-<img src = "/assets/branding.png">
+<img src = "../assets/branding.png">
 
 **Typography:**
 Se ha seleccionado una familia tipográfica de corte tecnológico y alta legibilidad:
 * Josefin Sans / Montserrat: Se utilizarán pesos Light para descripciones de beneficios y SemiBold para títulos de secciones y métricas en el Dashboard.
 
-<img src = "/assets/typography.png">
+<img src = "../assets/typography.png">
 
 * Tono de comunicación: El sistema emplea un lenguaje Formal-Tecnológico. Se busca transmitir autoridad médica en el módulo clínico y eficiencia en el módulo de ventas, utilizando verbos de acción directa ("Confirmar Cita", "Finalizar Venta").
 
-<img src = "/assets/language.png">
+<img src = "../assets/language.png">
 
 **Colors:**
 La paleta de colores se basa en una combinación de alto contraste para entornos
 digitales, seleccionada bajo principios de modernidad y confianza:
 
-<img src = "/assets/colors.png">
+<img src = "../assets/colors.png">
 
 ### Web Style Guidelines
 Para la interfaz web responsive, se implementan los siguientes estándares de
@@ -148,7 +148,26 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ### Class Diagrams
 [Diagramas de clases UML con atributos, métodos y relaciones entre entidades del dominio.]
+### IAM (Identity and Access Management)
+![IAM Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-iam.puml)
 
+### Clinical (Gestión Clínica y Optometría)
+![Clinical Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-clinical.puml)
+
+### Sales (Ventas y CRM)
+![Sales Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-sales.puml)
+
+### Order Fulfillment (Laboratorio y Producción)
+![Orders Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-orders.puml)
+
+### Inventory (Inventario y Suministros)
+![Inventory Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-inventory.puml)
+
+### Analytics (Métricas y Reportes)
+![Analytics Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-analytics.puml)
+
+### App (Componentes Compartidos y Core)
+![App Class Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagram-app.puml)
 ## Database Design
 
 ### Database Diagrams
