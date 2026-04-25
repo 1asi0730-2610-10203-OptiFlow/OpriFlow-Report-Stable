@@ -1,0 +1,139 @@
+@startuml
+title Clinical ↔ Sales & Billing Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "ProductId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+package "Clinical Context" {
+
+entity "Customer" <<AggregateRoot>> {
+- id : CustomerId
+--
+name : String
+--
++ updateData(name: String)
+}
+
+entity "ClinicalRecord" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+--
++ addPrescription(p: Prescription)
++ getLatestPrescription(): Prescription
+}
+
+
+
+entity "Prescription" <<Entity>> {
+- id : PrescriptionId
+--
+sphere : float
+cylinder : float
+axis : int
+--
++ updateValues(sphere: float, cylinder: float, axis: int)
++ validate(): Boolean
+}
+
+
+
+Customer --> CustomerId
+ClinicalRecord --> CustomerId
+
+ClinicalRecord *--> "0..*" Prescription
+Prescription --> PrescriptionId
+}
+
+package "Sales & Billing Context" {
+
+entity "Quotation" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+prescriptionId : PrescriptionId
+total : Money
+--
++ calculateTotal()
+}
+
+entity "Sale" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+quotationId : UUID
+status : SaleStatus
+--
++ registerDeposit(amount: Money)
++ completePayment(amount: Money)
++ calculateOutstandingBalance(): Money
+}
+
+class "Deposit" <<ValueObject>> {
+- amount : Money
+--
++ isValid(minAmount: Money): Boolean
+}
+
+class "OutstandingBalance" <<ValueObject>> {
+- amount : Money
+--
++ isZero(): Boolean
++ reduce(amount: Money)
+}
+
+enum SaleStatus {
+PENDING
+PARTIAL
+PAID
+DELIVERED
+}
+
+Quotation --> CustomerId
+Quotation --> PrescriptionId
+Quotation --> Money
+
+Sale --> CustomerId
+Sale --> SaleStatus
+Sale --> Quotation
+
+Sale *--> "0..1" Deposit
+Sale *--> "0..1" OutstandingBalance
+
+Deposit --> Money
+OutstandingBalance --> Money
+}
+
+@enduml

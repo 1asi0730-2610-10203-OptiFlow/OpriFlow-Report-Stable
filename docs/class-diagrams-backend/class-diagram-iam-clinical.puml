@@ -1,0 +1,134 @@
+@startuml
+title Identity & Access ↔ Clinical Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "ProductId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+package "Identity & Access Context" {
+
+entity "OpticalEmployee" <<AggregateRoot>> {
+- id : EmployeeId
+--
+email : String
+password : String
+role : EmployeeRole
+--
++ login()
++ changePassword(newPassword: String)
++ validateCredentials(): Boolean
+}
+
+entity "Session" <<Entity>> {
+- id : UUID
+--
+token : String
+expiresAt : DateTime
+--
++ invalidate()
++ isActive(): Boolean
+}
+
+enum EmployeeRole {
+ADMIN
+SALES_ADVISOR
+OPTOMETRIST
+LAB_TECHNICIAN
+}
+
+OpticalEmployee *--> "0..*" Session
+OpticalEmployee --> EmployeeRole
+Session --> DateTime
+}
+
+package "Clinical Context" {
+
+entity "Customer" <<AggregateRoot>> {
+- id : CustomerId
+--
+name : String
+--
++ updateData(name: String)
++ validateProfile(): Boolean
+}
+
+entity "ClinicalRecord" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+--
++ addPrescription(p: Prescription)
++ getLatestPrescription(): Prescription
+}
+
+entity "Appointment" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+status : AppointmentStatus
+--
++ schedule()
++ cancel()
++ complete()
++ reschedule(newDate: DateTime)
+}
+
+entity "Prescription" <<Entity>> {
+- id : PrescriptionId
+--
+sphere : float
+cylinder : float
+axis : int
+--
++ updateValues(sphere: float, cylinder: float, axis: int)
++ validate(): Boolean
+}
+
+enum AppointmentStatus {
+SCHEDULED
+COMPLETED
+CANCELLED
+}
+
+Customer --> CustomerId
+ClinicalRecord --> CustomerId
+Appointment --> CustomerId
+Appointment --> AppointmentStatus
+
+ClinicalRecord *--> "0..*" Prescription
+Prescription --> PrescriptionId
+}
+
+@enduml
+

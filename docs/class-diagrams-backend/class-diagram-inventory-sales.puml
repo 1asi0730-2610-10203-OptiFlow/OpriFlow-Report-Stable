@@ -1,0 +1,153 @@
+@startuml
+title Inventory ↔ Sales Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "ProductId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+package "Inventory Context" {
+
+entity "Product" <<AggregateRoot>> {
+  - id : ProductId
+  --
+  name : String
+  type : ProductType
+  price : Money
+  stock : Stock
+  details : ProductDetails
+  --
+  + updateStock(qty: int)
+  + isAvailable(): Boolean
+}
+
+
+class "Stock" <<ValueObject>> {
+  - quantity : int
+  --
+  + increase(qty: int)
+  + decrease(qty: int)
+  + isAvailable(): Boolean
+}
+
+
+enum "ProductType" {
+  FRAME
+  LENS
+  CONTACT_LENS
+  CLEANING_KIT
+  SOLUTION
+}
+
+class "ProductDetails" <<ValueObject>> {
+  // flexible attributes depending on type
+  material : String
+  brand : String
+  color : String
+  lensType : String
+  expirationDate : Date
+}
+
+Product --> ProductId
+Product *-- Stock
+Product *-- ProductDetails
+Product --> ProductType
+Product --> Money
+Money -- Currency
+
+}
+
+package "Sales & Billing Context" {
+
+entity "Quotation" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+prescriptionId : PrescriptionId
+productId : ProductId
+total : Money
+--
++ calculateTotal()
+}
+
+entity "Sale" <<AggregateRoot>> {
+- id : SaleId
+--
+customerId : CustomerId
+quotationId : UUID
+status : SaleStatus
+--
++ registerDeposit(amount: Money)
++ completePayment(amount: Money)
++ calculateOutstandingBalance(): Money
++ markAsDelivered()
+}
+
+class "Deposit" <<ValueObject>> {
+- amount : Money
+--
++ isValid(minAmount: Money): Boolean
+}
+
+class "OutstandingBalance" <<ValueObject>> {
+- amount : Money
+--
++ isZero(): Boolean
++ reduce(amount: Money)
+}
+
+enum SaleStatus {
+PENDING
+PARTIAL
+PAID
+DELIVERED
+}
+
+Quotation --> CustomerId
+Quotation --> PrescriptionId
+Quotation --> Money
+
+Sale --> SaleId
+Sale --> CustomerId
+Sale --> SaleStatus
+Sale --> Quotation
+
+Sale *--> "0..1" Deposit
+Sale *--> "0..1" OutstandingBalance
+
+Deposit --> Money
+OutstandingBalance --> Money
+
+}
+
+@enduml

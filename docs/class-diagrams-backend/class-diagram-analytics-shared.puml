@@ -1,0 +1,89 @@
+@startuml
+title Analytics Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "FrameId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+
+package "Analytics Context" {
+
+
+class "AnalyticsReportId" <<ValueObject>> {
+- value : UUID
+}
+
+class "AnalyticsReport" <<AggregateRoot>> {
+- id : AnalyticsReportId
+- generatedAt : DateTime
+--
+conversionRate : ConversionRate
+salesMetric : SalesMetric
+orderMetric : OrderMetric
+--
++ calculateMetrics()
+}
+
+class "ConversionRate" <<ValueObject>> {
+- value : decimal
+--
++ calculate(totalConversions: int, totalVisitors: int)
+}
+
+class "SalesMetric" <<ValueObject>> {
+- totalSales : Money
+- totalTransactions : int
+--
++ calculateAverageSale(): Money
+}
+
+class "OrderMetric" <<ValueObject>> {
+- completedOrders : int
+- totalOrders : int
+--
++ calculateCompletionRate(): decimal
+}
+
+' Relaciones internas (correctas)
+AnalyticsReport *--> ConversionRate
+AnalyticsReport *--> SalesMetric
+AnalyticsReport *--> OrderMetric
+
+AnalyticsReport --> DateTime
+SalesMetric --> Money
+AnalyticsReport --> AnalyticsReportId
+
+}
+
+@enduml
