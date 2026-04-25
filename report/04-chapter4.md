@@ -1,6 +1,7 @@
 # Capítulo IV: Product Design
 
-## Style Guidelines
+## Style Gu
+idelines
 Esta sección constituye el pilar visual de OptiFlow, diseñado para proyectar una imagen de innovación tecnológica y precisión médica. El objetivo es estandarizar la interfaz para que tanto el personal de la óptica como el cliente externo perciban una plataforma robusta y profesional.
 
 ### General Style Guidelines
@@ -136,13 +137,22 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 [Event Storming a nivel de diseño: agregados, bounded contexts, comandos y eventos del dominio.]
 
 ### Software Architecture Context Diagram
-[Diagrama de contexto C4 que muestra el sistema y sus interacciones con usuarios y sistemas externos.]
+![img.png](../assets/C4/img.png)
 
 ### Software Architecture Container Diagrams
-[Diagrama de contenedores C4 que detalla los componentes de alto nivel y sus responsabilidades.]
+![components.png](../assets/C4/components.png)
 
 ### Software Architecture Components Diagrams
-[Diagramas de componentes C4 por contenedor, mostrando módulos internos y sus relaciones.]
+![container.png](../assets/C4/container.png)
+
+#### Clinica Module
+![context1.png](../assets/C4/context1.png)
+
+#### Retail Module
+![context2.png](../assets/C4/context2.png)
+
+#### Lab Module
+![context3.png](../assets/C4/context3.png)
 
 ## Software Object-Oriented Design
 
