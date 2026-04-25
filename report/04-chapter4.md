@@ -173,9 +173,23 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 
 ## Backend Class Diagrams
-#### Identity & Access ↔ Clinical
-![IAM - Clinical](../docs/class-diagrams-backend/class-diagram-iam-clinical.png)
+### Identity & Access ↔ Clinical
+![IAM - Clinical](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-iam-clinical.puml)
 
+### Clinical ↔ Sales & Billing
+![Clinical - Sales](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-clinical-sales-billing.puml)
+
+### Sales ↔ Order Fulfillment
+![Sales - Order Fulfillment](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-sales-order-fulfillment.puml)
+
+### Inventory ↔ Sales
+![Inventory - Sales](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-inventory-sales.puml)
+
+### Order Fulfillment ↔ CRM
+![Order Fulfillment - CRM](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-order-fulfillment-crm.puml)
+
+### Analytics ↔ Shared Context
+![Analytics - Shared](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-analytics-shared.puml)
 
 ## Database Design
 
