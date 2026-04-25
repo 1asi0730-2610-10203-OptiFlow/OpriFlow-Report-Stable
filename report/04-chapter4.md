@@ -173,23 +173,24 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 
 ## Backend Class Diagrams
-### Identity & Access ↔ Clinical
-![IAM - Clinical](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-iam-clinical.puml)
 
-### Clinical ↔ Sales & Billing
-![Clinical - Sales](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-clinical-sales-billing.puml)
+### Analytics & Shared
+![Analytics Shared](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-analytics-shared.puml)
 
-### Sales ↔ Order Fulfillment
-![Sales - Order Fulfillment](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-sales-order-fulfillment.puml)
+### Clinical, Sales & Billing
+![Clinical Sales Billing](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-clinical-sales-billing.puml)
 
-### Inventory ↔ Sales
-![Inventory - Sales](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-inventory-sales.puml)
+### IAM & Clinical
+![IAM Clinical](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-iam-clinical.puml)
 
-### Order Fulfillment ↔ CRM
-![Order Fulfillment - CRM](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-order-fulfillment-crm.puml)
+### Inventory & Sales
+![Inventory Sales](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-inventory-sales.puml)
 
-### Analytics ↔ Shared Context
-![Analytics - Shared](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/develop/docs/class-diagrams-backend/class-diagram-analytics-shared.puml)
+### Order Fulfillment & CRM
+![Order Fulfillment CRM](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-order-fulfillment-crm.puml)
+
+### Sales & Order Fulfillment
+![Sales Order Fulfillment](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable/refs/heads/develop/docs/class-diagrams-backend/class-diagram-sales-order-fulfillment.puml)
 
 ## Database Design
 
