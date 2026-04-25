@@ -1,0 +1,122 @@
+@startuml BC-04_OrderFulfillment
+
+package "fulfillment.domain.model" {
+  class WorkOrder {
+    + id: number
+    + saleId: number
+    + recipeId: number
+    + labId: number
+    + status: OrderStatus
+    + deliveryDate: string
+    + constructor()
+  }
+  class Laboratory {
+    + id: number
+    + name: string
+    + contactInfo: string
+    + constructor()
+  }
+  enum OrderStatus {
+    PENDING
+    IN_PRODUCTION
+    QUALITY_CONTROL
+    READY
+    DELIVERED
+  }
+}
+
+package "fulfillment.infrastructure" {
+  interface WorkOrderResource {
+    + order_id: number
+    + sale_id: number
+    + recipe_id: number
+    + lab_id: number
+    + status: string
+    + delivery_date: string
+  }
+  interface LaboratoryResource {
+    + lab_id: number
+    + name: string
+    + contact_info: string
+  }
+  class WorkOrderAssembler {
+    + toEntityFromResource(r: WorkOrderResource): WorkOrder
+    + toEntitiesFromResponse(r: WorkOrderResource[]): WorkOrder[]
+    + toResourceFromEntity(wo: WorkOrder): WorkOrderResource
+  }
+  class LaboratoryAssembler {
+    + toEntityFromResource(r: LaboratoryResource): Laboratory
+    + toEntitiesFromResponse(r: LaboratoryResource[]): Laboratory[]
+  }
+  class WorkOrderApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getWorkOrders(): Promise<WorkOrder[]>
+    + createWorkOrder(wo: WorkOrder): Promise<WorkOrder>
+    + updateOrderStatus(id: number, status: OrderStatus): Promise<WorkOrder>
+  }
+  class LaboratoryApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getLaboratories(): Promise<Laboratory[]>
+  }
+}
+
+package "fulfillment.application" {
+  class FulfillmentStore {
+    - workOrdersRef: Ref<WorkOrder[]>
+    - laboratoriesRef: Ref<Laboratory[]>
+    - workOrderApi: WorkOrderApi
+    - laboratoryApi: LaboratoryApi
+    - workOrderAssembler: WorkOrderAssembler
+    - laboratoryAssembler: LaboratoryAssembler
+    + workOrders: ComputedRef<WorkOrder[]>
+    + laboratories: ComputedRef<Laboratory[]>
+    + pendingOrders: ComputedRef<WorkOrder[]>
+    + loadWorkOrders(): void
+    + loadLaboratories(): void
+    + createWorkOrder(wo: WorkOrder): void
+    + updateOrderStatus(id: number, status: OrderStatus): void
+  }
+}
+
+package "fulfillment.presentation.components" {
+  class WorkOrderList <<component>> {
+    + workOrders: WorkOrder[] (input)
+    + orderSelected: WorkOrder (output)
+    + emitOrderSelected(wo: WorkOrder): void
+  }
+  class WorkOrderItem <<component>> {
+    + workOrder: WorkOrder (input)
+    + statusChanged: OrderStatus (output)
+    + emitStatusChanged(status: OrderStatus): void
+  }
+  class KanbanBoard <<component>> {
+    + workOrders: WorkOrder[] (input)
+    + statusChanged: WorkOrder (output)
+    + emitStatusChanged(wo: WorkOrder, status: OrderStatus): void
+  }
+}
+
+WorkOrderApi ..> WorkOrderResource : uses
+WorkOrderAssembler ..> WorkOrderResource : transforms
+WorkOrderAssembler --> WorkOrder : creates
+LaboratoryApi ..> LaboratoryResource : uses
+LaboratoryAssembler ..> LaboratoryResource : transforms
+LaboratoryAssembler --> Laboratory : creates
+FulfillmentStore --> WorkOrderApi : uses
+FulfillmentStore --> LaboratoryApi : uses
+FulfillmentStore --> WorkOrderAssembler : uses
+FulfillmentStore --> LaboratoryAssembler : uses
+WorkOrderList *-- WorkOrderItem : composes
+WorkOrderList ..> Layout : emits
+KanbanBoard ..> Layout : emits
+WorkOrderItem --> WorkOrder : input
+WorkOrder --> OrderStatus
+
+note "Layout (shared) uses\nFulfillmentStore and composes\nWorkOrderList, KanbanBoard" as N1
+WorkOrderList .. N1
+
+@enduml

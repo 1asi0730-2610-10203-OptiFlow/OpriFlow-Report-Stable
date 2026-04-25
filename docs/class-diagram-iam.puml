@@ -1,0 +1,92 @@
+@startuml BC-01_IAM
+
+package "iam.domain.model" {
+  class User {
+    + id: number
+    + username: string
+    + passwordHash: string
+    + role: UserRole
+    + constructor()
+  }
+  enum UserRole {
+    ADMIN
+    EMPLOYEE
+    OPTOMETRIST
+  }
+}
+
+package "iam.infrastructure" {
+  interface UserResource {
+    + user_id: number
+    + username: string
+    + password_hash: string
+    + role_id: number
+  }
+  interface RoleResource {
+    + role_id: number
+    + name: string
+  }
+  interface AuthResponse {
+    + token: string
+    + user: UserResource
+  }
+  class UserAssembler {
+    + toEntityFromResource(r: UserResource): User
+  }
+  class AuthApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + login(username: string, password: string): Promise<AuthResponse>
+    + register(username: string, password: string, roleId: number): Promise<AuthResponse>
+  }
+}
+
+package "iam.application" {
+  class AuthStore {
+    - currentUserRef: Ref<User | null>
+    - tokenRef: Ref<string | null>
+    - authApi: AuthApi
+    - userAssembler: UserAssembler
+    + currentUser: ComputedRef<User | null>
+    + token: ComputedRef<string | null>
+    + isAuthenticated: ComputedRef<boolean>
+    + isAdmin: ComputedRef<boolean>
+    + login(username: string, password: string): void
+    + logout(): void
+    + register(username: string, password: string, roleId: number): void
+  }
+}
+
+package "iam.presentation.components" {
+  class LoginForm <<component>> {
+    + username: string (input)
+    + password: string (input)
+    + submitted: Function (output)
+    + emitSubmitted(): void
+  }
+  class RegisterForm <<component>> {
+    + username: string (input)
+    + password: string (input)
+    + roleId: number (input)
+    + submitted: Function (output)
+    + emitSubmitted(): void
+  }
+}
+
+AuthApi ..> AuthResponse : returns
+AuthResponse *-- UserResource : contains
+AuthStore --> AuthApi : uses
+AuthStore --> UserAssembler : uses
+UserAssembler ..> UserResource : transforms
+UserAssembler --> User : creates
+LoginForm ..> Layout : emits
+RegisterForm ..> Layout : emits
+User --> UserRole
+RoleResource --* UserResource
+
+note "Layout (shared) uses\nAuthStore and composes\nLoginForm, RegisterForm" as N1
+LoginForm .. N1
+RegisterForm .. N1
+
+@enduml

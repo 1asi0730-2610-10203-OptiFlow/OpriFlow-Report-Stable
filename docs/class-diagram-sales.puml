@@ -1,0 +1,188 @@
+@startuml BC-03_Sales
+
+package "sales.domain.model" {
+  class Sale {
+    + id: number
+    + patientId: number
+    + userId: number
+    + totalAmount: number
+    + createdAt: string
+    + status: SaleStatus
+    + constructor()
+  }
+  class SaleDetail {
+    + id: number
+    + saleId: number
+    + productId: number
+    + quantity: number
+    + unitPrice: number
+    + constructor()
+  }
+  class Payment {
+    + id: number
+    + saleId: number
+    + amountPaid: number
+    + method: string
+    + paidAt: string
+    + constructor()
+  }
+  class Feedback {
+    + id: number
+    + saleId: number
+    + patientId: number
+    + rating: number
+    + comment: string
+    + constructor()
+  }
+  enum SaleStatus {
+    PENDING
+    PARTIAL
+    PAID
+    DELIVERED
+  }
+}
+
+package "sales.infrastructure" {
+  interface SaleResource {
+    + sale_id: number
+    + patient_id: number
+    + user_id: number
+    + total_amount: number
+    + created_at: string
+    + status: string
+  }
+  interface SaleDetailResource {
+    + detail_id: number
+    + sale_id: number
+    + product_id: number
+    + quantity: number
+    + unit_price: number
+  }
+  interface PaymentResource {
+    + payment_id: number
+    + sale_id: number
+    + amount_paid: number
+    + method: string
+    + paid_at: string
+  }
+  interface FeedbackResource {
+    + feedback_id: number
+    + sale_id: number
+    + patient_id: number
+    + rating: number
+    + comment: string
+  }
+  class SaleAssembler {
+    + toEntityFromResource(r: SaleResource): Sale
+    + toEntitiesFromResponse(r: SaleResource[]): Sale[]
+    + toResourceFromEntity(s: Sale): SaleResource
+  }
+  class SaleDetailAssembler {
+    + toEntityFromResource(r: SaleDetailResource): SaleDetail
+    + toEntitiesFromResponse(r: SaleDetailResource[]): SaleDetail[]
+  }
+  class PaymentAssembler {
+    + toEntityFromResource(r: PaymentResource): Payment
+    + toResourceFromEntity(p: Payment): PaymentResource
+  }
+  class FeedbackAssembler {
+    + toEntityFromResource(r: FeedbackResource): Feedback
+    + toResourceFromEntity(f: Feedback): FeedbackResource
+  }
+  class SaleApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getSales(): Promise<Sale[]>
+    + getSaleById(id: number): Promise<Sale>
+    + createSale(s: Sale): Promise<Sale>
+    + updateSaleStatus(id: number, status: SaleStatus): Promise<Sale>
+  }
+  class PaymentApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getPaymentsBySaleId(saleId: number): Promise<Payment[]>
+    + registerPayment(p: Payment): Promise<Payment>
+  }
+  class FeedbackApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + createFeedback(f: Feedback): Promise<Feedback>
+  }
+}
+
+package "sales.application" {
+  class SalesStore {
+    - salesRef: Ref<Sale[]>
+    - paymentsRef: Ref<Payment[]>
+    - saleApi: SaleApi
+    - paymentApi: PaymentApi
+    - feedbackApi: FeedbackApi
+    - saleAssembler: SaleAssembler
+    - paymentAssembler: PaymentAssembler
+    - feedbackAssembler: FeedbackAssembler
+    + sales: ComputedRef<Sale[]>
+    + payments: ComputedRef<Payment[]>
+    + currentSalePayments: ComputedRef<Payment[]>
+    + loadSales(): void
+    + createSale(s: Sale): void
+    + registerPayment(p: Payment): void
+    + updateSaleStatus(id: number, status: SaleStatus): void
+    + submitFeedback(f: Feedback): void
+  }
+}
+
+package "sales.presentation.components" {
+  class SaleList <<component>> {
+    + sales: Sale[] (input)
+    + saleSelected: Sale (output)
+    + emitSaleSelected(s: Sale): void
+  }
+  class SaleItem <<component>> {
+    + sale: Sale (input)
+    + saleSelected: Sale (output)
+    + emitSaleSelected(): void
+  }
+  class PaymentForm <<component>> {
+    + sale: Sale (input)
+    + payments: Payment[] (input)
+    + paymentRegistered: Payment (output)
+    + emitPaymentRegistered(p: Payment): void
+  }
+  class FeedbackForm <<component>> {
+    + saleId: number (input)
+    + feedbackSubmitted: Feedback (output)
+    + emitFeedbackSubmitted(f: Feedback): void
+  }
+}
+
+SaleApi ..> SaleResource : uses
+SaleAssembler ..> SaleResource : transforms
+SaleAssembler --> Sale : creates
+PaymentApi ..> PaymentResource : uses
+PaymentAssembler ..> PaymentResource : transforms
+PaymentAssembler --> Payment : creates
+FeedbackApi ..> FeedbackResource : uses
+FeedbackAssembler ..> FeedbackResource : transforms
+FeedbackAssembler --> Feedback : creates
+SaleDetailAssembler ..> SaleDetailResource : transforms
+SaleDetailAssembler --> SaleDetail : creates
+SalesStore --> SaleApi : uses
+SalesStore --> PaymentApi : uses
+SalesStore --> FeedbackApi : uses
+SalesStore --> SaleAssembler : uses
+SalesStore --> PaymentAssembler : uses
+SalesStore --> FeedbackAssembler : uses
+SaleList *-- SaleItem : composes
+SaleList ..> Layout : emits
+PaymentForm ..> Layout : emits
+FeedbackForm ..> Layout : emits
+SaleItem --> Sale : input
+Sale --> SaleStatus
+
+note "Layout (shared) uses\nSalesStore and composes\nSaleList, PaymentForm, FeedbackForm" as N1
+SaleList .. N1
+
+@enduml
