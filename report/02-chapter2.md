@@ -251,7 +251,7 @@ Cliente de la óptica: Adrian Geraldo Huamán Villacorta
 
 ## Big Picture Event Storming
 
-[Modelado colaborativo de los eventos del dominio a alto nivel, identificando actores, comandos, políticas y sistemas externos.]
+![Big.jpg](../assets/impactMap/Big.jpg)
 
 ## Ubiquitous Language
 

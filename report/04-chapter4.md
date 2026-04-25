@@ -134,7 +134,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ## Domain-Driven Software Architecture
 
 ### Design-Level Event Storming
-[Event Storming a nivel de diseño: agregados, bounded contexts, comandos y eventos del dominio.]
+![level.jpg](../assets/impactMap/level.jpg)
 
 ### Software Architecture Context Diagram
 ![img.png](../assets/C4/img.png)
