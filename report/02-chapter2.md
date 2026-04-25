@@ -140,19 +140,25 @@ Finalmente, la entrevistada menciona experiencias negativas como errores en la m
 
 <u>Entrevista 2:</u>
 
-Entrevistador: 
+Entrevistador: Mía Capillo
 
 Datos del entrevistado
 
-- **Nombre:** 
-- **Apellidos:** 
-- **Edad:** 
-- **Distrito:** 
-- **Inicio:**
-- **Duración:** 
-- **Link de la entrevista individual:** 
+- **Nombre:** Isabella Lourdes
+- **Apellidos:** Martinez Parra
+- **Edad:** 19
+- **Distrito:** La Molina
+- **Inicio:** 01:24:15
+- **Duración:** 00:11:44
+- **Link de la entrevista individual:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQD6_x6LnGFrRI1oRJKsXr-0AX0ZlYAGWkN-V3deJtd0eJw?e=VoLxyX 
   
   **Resumen descriptivo:**
+
+La entrevistada Isabella Martínez Parra, de 19 años, residente en La Molina y estudiante universitaria, presenta un perfil altamente familiarizado con la tecnología, la cual integra en su vida diaria. Sus hábitos de consumo incluyen marcas reconocidas y una interacción constante con herramientas digitales, lo que eleva sus expectativas sobre la eficiencia y modernidad de los servicios que recibe. Su principal objetivo es el rendimiento académico, el cual se ve directamente comprometido ante cualquier falla en su salud visual, evidenciando una dependencia crítica de sus lentes para actividades cotidianas como tomar apuntes o visualizar proyecciones en clase.
+
+En cuanto a su experiencia en ópticas, prefiere el uso de citas programadas para garantizar un proceso ágil. Si bien considera que la elección de monturas y la atención del oftalmólogo suelen ser fluidas, identifica el tiempo de entrega como el factor más crítico y problemático. Ha tenido experiencias negativas donde el incumplimiento de fechas y la falta de soluciones proactivas la llevaron a abandonar establecimientos de forma definitiva. Además, señala una carencia de visibilidad durante la fabricación del producto, teniendo que ser ella quien contacte a la óptica para obtener actualizaciones, lo que refleja una gestión de comunicación reactiva por parte de los proveedores.
+
+Finalmente, Isabella destaca errores técnicos, como medidas incorrectas en el producto final, como una falla inaceptable que agrava su situación académica. Valora positivamente que las ópticas mantengan un historial clínico para facilitar sus controles anuales y sugiere la implementación de plataformas digitales de seguimiento en tiempo real. En conjunto, se trata de una usuaria que demanda competencia técnica y puntualidad extrema, con una clara inclinación hacia procesos digitalizados que le brinden autonomía y seguridad sobre el estado de su compra.
 
 <u>Entrevista 3:</u>
 
