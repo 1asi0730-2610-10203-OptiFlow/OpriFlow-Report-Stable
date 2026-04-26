@@ -1,0 +1,118 @@
+@startuml
+title Order Fulfillment ↔ CRM Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "ProductId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+package "Order Fulfillment Context" {
+
+entity "WorkOrder" <<AggregateRoot>> {
+- id : UUID
+--
+saleId : SaleId
+prescriptionId : PrescriptionId
+status : OrderStatus
+createdAt : DateTime
+--
++ createFromSale(saleId: SaleId, prescriptionId: PrescriptionId)
++ updateStatus(status: OrderStatus)
++ validatePrescription(): Boolean
+}
+
+class "KanbanFlow" {
+- currentStatus : OrderStatus
+--
++ moveNext()
++ moveTo(status: OrderStatus)
+}
+
+enum OrderStatus {
+PENDING
+IN_PRODUCTION
+QUALITY_CONTROL
+READY
+DELIVERED
+}
+
+WorkOrder --> SaleId
+WorkOrder --> PrescriptionId
+WorkOrder --> OrderStatus
+WorkOrder --> DateTime
+WorkOrder --> KanbanFlow
+
+KanbanFlow --> OrderStatus
+}
+
+package "CRM & Notifications Context" {
+
+interface INotificationService {
+  + send(notification: Notification)
+}
+
+class "External SMS System" <<external>>
+class "Gmail" <<external>>
+
+entity "Notification" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+message : String
+status : NotificationStatus
+createdAt : DateTime
+--
++ send()
++ markAsSent()
++ markAsFailed()
+}
+
+enum NotificationStatus {
+PENDING
+SENT
+FAILED
+}
+
+Notification --> CustomerId
+Notification --> NotificationStatus
+Notification --> DateTime
+
+INotificationService --> Notification
+SmsNotificationService ..|> INotificationService
+EmailNotificationService ..|> INotificationService
+
+SmsNotificationService --> "External SMS System"
+EmailNotificationService --> Gmail
+}
+
+@enduml

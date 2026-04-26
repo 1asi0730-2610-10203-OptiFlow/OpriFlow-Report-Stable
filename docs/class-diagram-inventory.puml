@@ -1,0 +1,160 @@
+@startuml BC-05_Inventory
+
+package "inventory.domain.model" {
+  class Product {
+    + id: number
+    + categoryId: number
+    + supplierId: number
+    + brand: string
+    + model: string
+    + price: number
+    + stock: number
+    + constructor()
+  }
+  class Category {
+    + id: number
+    + name: string
+    + constructor()
+  }
+  class Supplier {
+    + id: number
+    + name: string
+    + contactPerson: string
+    + phone: string
+    + email: string
+    + constructor()
+  }
+}
+
+package "inventory.infrastructure" {
+  interface ProductResource {
+    + product_id: number
+    + category_id: number
+    + supplier_id: number
+    + brand: string
+    + model: string
+    + price: number
+    + stock: number
+  }
+  interface CategoryResource {
+    + category_id: number
+    + name: string
+  }
+  interface SupplierResource {
+    + supplier_id: number
+    + name: string
+    + contact_person: string
+    + phone: string
+    + email: string
+  }
+  class ProductAssembler {
+    + toEntityFromResource(r: ProductResource): Product
+    + toEntitiesFromResponse(r: ProductResource[]): Product[]
+    + toResourceFromEntity(p: Product): ProductResource
+  }
+  class CategoryAssembler {
+    + toEntityFromResource(r: CategoryResource): Category
+    + toEntitiesFromResponse(r: CategoryResource[]): Category[]
+  }
+  class SupplierAssembler {
+    + toEntityFromResource(r: SupplierResource): Supplier
+    + toEntitiesFromResponse(r: SupplierResource[]): Supplier[]
+    + toResourceFromEntity(s: Supplier): SupplierResource
+  }
+  class ProductApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getProducts(): Promise<Product[]>
+    + createProduct(p: Product): Promise<Product>
+    + updateProduct(p: Product): Promise<Product>
+    + deleteProduct(id: number): Promise<void>
+  }
+  class CategoryApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getCategories(): Promise<Category[]>
+  }
+  class SupplierApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getSuppliers(): Promise<Supplier[]>
+    + createSupplier(s: Supplier): Promise<Supplier>
+  }
+}
+
+package "inventory.application" {
+  class InventoryStore {
+    - productsRef: Ref<Product[]>
+    - categoriesRef: Ref<Category[]>
+    - suppliersRef: Ref<Supplier[]>
+    - productApi: ProductApi
+    - categoryApi: CategoryApi
+    - supplierApi: SupplierApi
+    - productAssembler: ProductAssembler
+    - categoryAssembler: CategoryAssembler
+    - supplierAssembler: SupplierAssembler
+    + products: ComputedRef<Product[]>
+    + categories: ComputedRef<Category[]>
+    + suppliers: ComputedRef<Supplier[]>
+    + lowStockProducts: ComputedRef<Product[]>
+    + loadProducts(): void
+    + loadCategories(): void
+    + loadSuppliers(): void
+    + createProduct(p: Product): void
+    + updateProduct(p: Product): void
+    + deleteProduct(id: number): void
+  }
+}
+
+package "inventory.presentation.components" {
+  class ProductList <<component>> {
+    + products: Product[] (input)
+    + productSelected: Product (output)
+    + emitProductSelected(p: Product): void
+  }
+  class ProductItem <<component>> {
+    + product: Product (input)
+    + productSelected: Product (output)
+    + emitProductSelected(): void
+  }
+  class SupplierList <<component>> {
+    + suppliers: Supplier[] (input)
+    + supplierSelected: Supplier (output)
+    + emitSupplierSelected(s: Supplier): void
+  }
+  class SupplierItem <<component>> {
+    + supplier: Supplier (input)
+    + supplierSelected: Supplier (output)
+    + emitSupplierSelected(): void
+  }
+}
+
+ProductApi ..> ProductResource : uses
+ProductAssembler ..> ProductResource : transforms
+ProductAssembler --> Product : creates
+CategoryApi ..> CategoryResource : uses
+CategoryAssembler ..> CategoryResource : transforms
+CategoryAssembler --> Category : creates
+SupplierApi ..> SupplierResource : uses
+SupplierAssembler ..> SupplierResource : transforms
+SupplierAssembler --> Supplier : creates
+InventoryStore --> ProductApi : uses
+InventoryStore --> CategoryApi : uses
+InventoryStore --> SupplierApi : uses
+InventoryStore --> ProductAssembler : uses
+InventoryStore --> CategoryAssembler : uses
+InventoryStore --> SupplierAssembler : uses
+ProductList *-- ProductItem : composes
+SupplierList *-- SupplierItem : composes
+ProductList ..> Layout : emits
+SupplierList ..> Layout : emits
+ProductItem --> Product : input
+SupplierItem --> Supplier : input
+
+note "Layout (shared) uses\nInventoryStore and composes\nProductList, SupplierList" as N1
+ProductList .. N1
+
+@enduml

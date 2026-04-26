@@ -1,0 +1,80 @@
+@startuml BC-00_Shared
+
+package "app" {
+  class App <<component>> {
+    + title: string
+  }
+}
+
+package "shared.infrastructure" {
+  class AuthInterceptor {
+    + intercept(req: Request): Request
+  }
+  class I18nService {
+    - translateService: TranslateService
+    + setLanguage(lang: string): void
+    + getAvailableLanguages(): string[]
+  }
+}
+
+package "shared.application" {
+  class LanguageStore {
+    - currentLangRef: Ref<string>
+    - i18nService: I18nService
+    + currentLang: ComputedRef<string>
+    + availableLanguages: string[]
+    + changeLanguage(lang: string): void
+  }
+}
+
+package "shared.presentation.components" {
+  class Layout <<component>> {
+    + authStore: AuthStore
+    + clinicalStore: ClinicalStore
+    + salesStore: SalesStore
+    + fulfillmentStore: FulfillmentStore
+    + inventoryStore: InventoryStore
+    + appointmentStore: AppointmentStore
+    + patients: ComputedRef<Patient[]>
+    + prescriptions: ComputedRef<Prescription[]>
+    + sales: ComputedRef<Sale[]>
+    + workOrders: ComputedRef<WorkOrder[]>
+    + products: ComputedRef<Product[]>
+    + appointments: ComputedRef<Appointment[]>
+    + ngOnInit(): void
+    + onLogin(username: string, password: string): void
+    + onLogout(): void
+    + updatePrescriptionsByPatient(p: Patient): void
+    + onRegisterPayment(p: Payment): void
+    + onUpdateOrderStatus(id: number, status: OrderStatus): void
+    + onCreateProduct(p: Product): void
+    + onCancelAppointment(id: number): void
+  }
+  class LanguageSwitcher <<component>> {
+    + languageStore: LanguageStore
+    + currentLang: ComputedRef<string>
+    + onChangeLanguage(lang: string): void
+  }
+  class Footer <<component>> {
+  }
+  class Sidebar <<component>> {
+    + navItems: string[]
+    + activeRoute: string
+  }
+  class Header <<component>> {
+    + authStore: AuthStore
+    + currentUser: ComputedRef<User | null>
+    + onLogout(): void
+  }
+}
+
+App *-- Layout : composes
+Layout *-- Sidebar : composes
+Layout *-- Header : composes
+Layout *-- LanguageSwitcher : composes
+Layout *-- Footer : composes
+LanguageStore --> I18nService : uses
+LanguageSwitcher --> LanguageStore : uses
+AuthInterceptor --> AuthStore : reads token
+
+@enduml

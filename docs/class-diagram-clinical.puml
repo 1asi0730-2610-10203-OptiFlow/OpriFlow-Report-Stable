@@ -1,0 +1,139 @@
+@startuml BC-02_Clinical
+
+package "clinical.domain.model" {
+  class Patient {
+    + id: number
+    + firstName: string
+    + lastName: string
+    + dni: string
+    + phone: string
+    + email: string
+    + constructor()
+  }
+  class Prescription {
+    + id: number
+    + patientId: number
+    + odSphere: number
+    + odCylinder: number
+    + odAxis: number
+    + oiSphere: number
+    + oiCylinder: number
+    + oiAxis: number
+    + notes: string
+    + constructor()
+  }
+}
+
+package "clinical.infrastructure" {
+  interface PatientResource {
+    + patient_id: number
+    + first_name: string
+    + last_name: string
+    + dni: string
+    + phone: string
+    + email: string
+  }
+  interface PrescriptionResource {
+    + recipe_id: number
+    + patient_id: number
+    + od_sphere: number
+    + od_cylinder: number
+    + od_axis: number
+    + oi_sphere: number
+    + oi_cylinder: number
+    + oi_axis: number
+    + notes: string
+  }
+  class PatientAssembler {
+    + toEntityFromResource(r: PatientResource): Patient
+    + toEntitiesFromResponse(r: PatientResource[]): Patient[]
+    + toResourceFromEntity(p: Patient): PatientResource
+  }
+  class PrescriptionAssembler {
+    + toEntityFromResource(r: PrescriptionResource): Prescription
+    + toEntitiesFromResponse(r: PrescriptionResource[]): Prescription[]
+    + toResourceFromEntity(p: Prescription): PrescriptionResource
+  }
+  class PatientApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getPatients(): Promise<Patient[]>
+    + getPatientById(id: number): Promise<Patient>
+    + createPatient(p: Patient): Promise<Patient>
+    + updatePatient(p: Patient): Promise<Patient>
+  }
+  class PrescriptionApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    + getPrescriptionsByPatientId(patientId: number): Promise<Prescription[]>
+    + createPrescription(p: Prescription): Promise<Prescription>
+    + updatePrescription(p: Prescription): Promise<Prescription>
+  }
+}
+
+package "clinical.application" {
+  class ClinicalStore {
+    - patientsRef: Ref<Patient[]>
+    - prescriptionsRef: Ref<Prescription[]>
+    - patientApi: PatientApi
+    - prescriptionApi: PrescriptionApi
+    - patientAssembler: PatientAssembler
+    - prescriptionAssembler: PrescriptionAssembler
+    + patients: ComputedRef<Patient[]>
+    + prescriptions: ComputedRef<Prescription[]>
+    + loadPatients(): void
+    + loadPrescriptionsByPatient(patientId: number): void
+    + createPatient(p: Patient): void
+    + updatePatient(p: Patient): void
+    + createPrescription(p: Prescription): void
+    + updatePrescription(p: Prescription): void
+  }
+}
+
+package "clinical.presentation.components" {
+  class PatientList <<component>> {
+    + patients: Patient[] (input)
+    + patientSelected: Patient (output)
+    + emitPatientSelected(p: Patient): void
+  }
+  class PatientItem <<component>> {
+    + patient: Patient (input)
+    + patientSelected: Patient (output)
+    + emitPatientSelected(): void
+  }
+  class PrescriptionList <<component>> {
+    + prescriptions: Prescription[] (input)
+    + prescriptionSelected: Prescription (output)
+    + emitPrescriptionSelected(p: Prescription): void
+  }
+  class PrescriptionItem <<component>> {
+    + prescription: Prescription (input)
+    + prescriptionSelected: Prescription (output)
+    + emitPrescriptionSelected(): void
+  }
+}
+
+PatientApi ..> PatientResource : uses
+PatientAssembler ..> PatientResource : transforms
+PatientAssembler --> Patient : creates
+PrescriptionApi ..> PrescriptionResource : uses
+PrescriptionAssembler ..> PrescriptionResource : transforms
+PrescriptionAssembler --> Prescription : creates
+ClinicalStore --> PatientApi : uses
+ClinicalStore --> PrescriptionApi : uses
+ClinicalStore --> PatientAssembler : uses
+ClinicalStore --> PrescriptionAssembler : uses
+PatientList *-- PatientItem : composes
+PrescriptionList *-- PrescriptionItem : composes
+PatientList ..> Layout : emits
+PrescriptionList ..> Layout : emits
+PatientItem --> Patient : input
+PrescriptionItem --> Prescription : input
+
+note "Layout (shared) uses\nClinicalStore and composes\nPatientList, PrescriptionList" as N1
+PatientList .. N1
+PrescriptionList .. N1
+
+@enduml

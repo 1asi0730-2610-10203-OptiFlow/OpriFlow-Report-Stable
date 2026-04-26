@@ -1,0 +1,140 @@
+@startuml
+title Sales ↔ Order Fulfillment Context
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+
+package "Shared Kernel" {
+class "CustomerId" <<ValueObject>> {
+- value : UUID
+}
+class "EmployeeId" <<ValueObject>> {
+- value : UUID
+}
+class "SaleId" <<ValueObject>> {
+- value : UUID
+}
+class "PrescriptionId" <<ValueObject>> {
+- value : UUID
+}
+class "ProductId" <<ValueObject>> {
+- value : UUID
+}
+class "DateTime" <<ValueObject>> {
+- value : Date
+}
+class "Money" <<ValueObject>> {
+- amount : decimal
+- currency : Currency
+--
++ add(other: Money)
++ subtract(other: Money)
+}
+enum Currency {
+PEN
+USD
+}
+Money -- Currency
+}
+
+package "Sales & Billing Context" {
+
+entity "Quotation" <<AggregateRoot>> {
+- id : UUID
+--
+customerId : CustomerId
+prescriptionId : PrescriptionId
+total : Money
+--
++ calculateTotal(): Money
+}
+
+entity "Sale" <<AggregateRoot>> {
+- id : SaleId
+--
+customerId : CustomerId
+quotationId : UUID
+status : SaleStatus
+--
++ registerDeposit(amount: Money)
++ completePayment(amount: Money)
++ calculateOutstandingBalance(): Money
++ markAsDelivered()
+}
+
+class "Deposit" <<ValueObject>> {
+- amount : Money
+--
++ isValid(minAmount: Money): Boolean
+}
+
+class "OutstandingBalance" <<ValueObject>> {
+- amount : Money
+--
++ isZero(): Boolean
++ reduce(amount: Money)
+}
+
+enum SaleStatus {
+RECEIVED
+IN_PROGRESS
+QUALITY_CONTROL
+READY_FOR_DELIVERY
+DELIVERED
+}
+
+Quotation --> CustomerId
+Quotation --> PrescriptionId
+Quotation --> Money
+
+Sale --> SaleId
+Sale --> CustomerId
+Sale --> SaleStatus
+Sale --> Quotation
+
+Sale "1" *-- "0..1" Deposit
+Sale "1" *-- "0..1" OutstandingBalance
+
+Deposit --> Money
+OutstandingBalance --> Money
+}
+
+package "Order Fulfillment Context" {
+
+entity "WorkOrder" <<AggregateRoot>> {
+- id : UUID
+--
+saleId : SaleId
+prescriptionId : PrescriptionId
+status : OrderStatus
+createdAt : DateTime
+--
++ createFromSale(saleId: SaleId, prescriptionId: PrescriptionId)
++ updateStatus(status: OrderStatus)
++ validatePrescription(): Boolean
+}
+
+class "KanbanFlow" <<DomainService>> {
+- currentStatus : OrderStatus
+--
++ moveNext()
++ moveTo(status: OrderStatus)
+}
+
+enum OrderStatus {
+PENDING
+IN_PRODUCTION
+QUALITY_CONTROL
+READY
+DELIVERED
+}
+
+WorkOrder --> SaleId
+WorkOrder --> PrescriptionId
+WorkOrder --> OrderStatus
+WorkOrder --> DateTime
+
+KanbanFlow --> OrderStatus
+WorkOrder --> KanbanFlow
+}
+
+@enduml

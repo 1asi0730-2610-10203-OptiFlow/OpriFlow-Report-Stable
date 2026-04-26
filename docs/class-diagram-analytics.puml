@@ -1,0 +1,306 @@
+@startuml BC-07_Analytics
+
+package "analytics.domain.model" {
+  class SalesReport {
+    + id: number
+    + generatedAt: string
+    + totalSales: number
+    + totalRevenue: number
+    + conversionRate: number
+    + averageSaleValue: number
+    + period: string
+    + constructor()
+  }
+  class OrderReport {
+    + id: number
+    + generatedAt: string
+    + totalOrders: number
+    + completedOrders: number
+    + pendingOrders: number
+    + completionRate: number
+    + period: string
+    + constructor()
+  }
+  class RevenueBreakdown {
+    + period: string
+    + totalAmount: number
+    + paidAmount: number
+    + pendingAmount: number
+    + constructor()
+  }
+  class TopProduct {
+    + productId: number
+    + productName: string
+    + totalSold: number
+    + totalRevenue: number
+    + constructor()
+  }
+  class DashboardSummary {
+    + totalPatients: number
+    + patientsAttendedToday: number
+    + monthlyRevenue: number
+    + pendingLabOrders: number
+    + patientVariation: number
+    + revenueVariation: number
+    + salesVariation: number
+    + labOrderVariation: number
+    + constructor()
+  }
+  class WeeklyRevenueEntry {
+    + day: string
+    + prescriptions: number
+    + closedSales: number
+    + constructor()
+  }
+  class StockAlert {
+    + productId: number
+    + productName: string
+    + remainingUnits: number
+    + minimumReorder: number
+    + priority: StockAlertPriority
+    + constructor()
+  }
+  enum StockAlertPriority {
+    URGENT
+    NORMAL
+  }
+}
+
+package "analytics.infrastructure" {
+  interface SalesReportResource {
+    + id: number
+    + generated_at: string
+    + total_sales: number
+    + total_revenue: number
+    + conversion_rate: number
+    + average_sale_value: number
+    + period: string
+  }
+  interface OrderReportResource {
+    + id: number
+    + generated_at: string
+    + total_orders: number
+    + completed_orders: number
+    + pending_orders: number
+    + completion_rate: number
+    + period: string
+  }
+  interface RevenueBreakdownResource {
+    + period: string
+    + total_amount: number
+    + paid_amount: number
+    + pending_amount: number
+  }
+  interface TopProductResource {
+    + product_id: number
+    + product_name: string
+    + total_sold: number
+    + total_revenue: number
+  }
+  interface DashboardSummaryResource {
+    + total_patients: number
+    + patients_attended_today: number
+    + monthly_revenue: number
+    + pending_lab_orders: number
+    + patient_variation: number
+    + revenue_variation: number
+    + sales_variation: number
+    + lab_order_variation: number
+  }
+  interface WeeklyRevenueEntryResource {
+    + day: string
+    + prescriptions: number
+    + closed_sales: number
+  }
+  interface StockAlertResource {
+    + product_id: number
+    + product_name: string
+    + remaining_units: number
+    + minimum_reorder: number
+    + priority: string
+  }
+  class SalesReportAssembler {
+    + toEntityFromResource(r: SalesReportResource): SalesReport
+    + toEntitiesFromResponse(r: SalesReportResource[]): SalesReport[]
+  }
+  class OrderReportAssembler {
+    + toEntityFromResource(r: OrderReportResource): OrderReport
+    + toEntitiesFromResponse(r: OrderReportResource[]): OrderReport[]
+  }
+  class RevenueBreakdownAssembler {
+    + toEntityFromResource(r: RevenueBreakdownResource): RevenueBreakdown
+    + toEntitiesFromResponse(r: RevenueBreakdownResource[]): RevenueBreakdown[]
+  }
+  class TopProductAssembler {
+    + toEntityFromResource(r: TopProductResource): TopProduct
+    + toEntitiesFromResponse(r: TopProductResource[]): TopProduct[]
+  }
+  class DashboardSummaryAssembler {
+    + toEntityFromResource(r: DashboardSummaryResource): DashboardSummary
+  }
+  class WeeklyRevenueAssembler {
+    + toEntityFromResource(r: WeeklyRevenueEntryResource): WeeklyRevenueEntry
+    + toEntitiesFromResponse(r: WeeklyRevenueEntryResource[]): WeeklyRevenueEntry[]
+  }
+  class StockAlertAssembler {
+    + toEntityFromResource(r: StockAlertResource): StockAlert
+    + toEntitiesFromResponse(r: StockAlertResource[]): StockAlert[]
+  }
+  class AnalyticsApi {
+    - http: AxiosInstance
+    - baseUrl: string
+    - endpoint: string
+    - dashboardSummaryAssembler: DashboardSummaryAssembler
+    - weeklyRevenueAssembler: WeeklyRevenueAssembler
+    - stockAlertAssembler: StockAlertAssembler
+    - salesReportAssembler: SalesReportAssembler
+    - orderReportAssembler: OrderReportAssembler
+    - revenueBreakdownAssembler: RevenueBreakdownAssembler
+    - topProductAssembler: TopProductAssembler
+    + getDashboardSummary(): Promise<DashboardSummary>
+    + getWeeklyRevenue(): Promise<WeeklyRevenueEntry[]>
+    + getStockAlerts(): Promise<StockAlert[]>
+    + getSalesReport(period: string): Promise<SalesReport>
+    + getOrderReport(period: string): Promise<OrderReport>
+    + getRevenueBreakdown(period: string): Promise<RevenueBreakdown[]>
+    + getTopProducts(period: string): Promise<TopProduct[]>
+    + exportReportPdf(period: string): Promise<Blob>
+  }
+}
+
+package "analytics.application" {
+  class AnalyticsStore {
+    - dashboardSummaryRef: Ref<DashboardSummary | null>
+    - weeklyRevenueRef: Ref<WeeklyRevenueEntry[]>
+    - stockAlertsRef: Ref<StockAlert[]>
+    - salesReportRef: Ref<SalesReport | null>
+    - orderReportRef: Ref<OrderReport | null>
+    - revenueBreakdownRef: Ref<RevenueBreakdown[]>
+    - topProductsRef: Ref<TopProduct[]>
+    - analyticsApi: AnalyticsApi
+    + dashboardSummary: ComputedRef<DashboardSummary | null>
+    + weeklyRevenue: ComputedRef<WeeklyRevenueEntry[]>
+    + stockAlerts: ComputedRef<StockAlert[]>
+    + urgentStockAlerts: ComputedRef<StockAlert[]>
+    + salesReport: ComputedRef<SalesReport | null>
+    + orderReport: ComputedRef<OrderReport | null>
+    + revenueBreakdown: ComputedRef<RevenueBreakdown[]>
+    + topProducts: ComputedRef<TopProduct[]>
+    + selectedPeriod: Ref<string>
+    + loadDashboardSummary(): void
+    + loadWeeklyRevenue(): void
+    + loadStockAlerts(): void
+    + loadSalesReport(period: string): void
+    + loadOrderReport(period: string): void
+    + loadRevenueBreakdown(period: string): void
+    + loadTopProducts(period: string): void
+    + exportReportPdf(period: string): void
+    + changePeriod(period: string): void
+  }
+}
+
+package "analytics.presentation.components" {
+  class KpiCard <<component>> {
+    + label: string (input)
+    + value: string (input)
+    + variation: number (input)
+    + variationPositive: boolean (input)
+  }
+  class ConversionRateCard <<component>> {
+    + conversionRate: number (input)
+    + period: string (input)
+  }
+  class WeeklyRevenueChart <<component>> {
+    + weeklyRevenue: WeeklyRevenueEntry[] (input)
+    + totalWeekRevenue: number (input)
+    + periodChanged: string (output)
+    + emitPeriodChanged(period: string): void
+  }
+  class ActiveLabOrdersList <<component>> {
+    + pendingOrdersCount: number (input)
+  }
+  class StockAlertList <<component>> {
+    + stockAlerts: StockAlert[] (input)
+  }
+  class StockAlertItem <<component>> {
+    + alert: StockAlert (input)
+  }
+  class SalesMetricCard <<component>> {
+    + salesReport: SalesReport (input)
+  }
+  class OrderMetricCard <<component>> {
+    + orderReport: OrderReport (input)
+  }
+  class RevenueChart <<component>> {
+    + revenueBreakdown: RevenueBreakdown[] (input)
+    + periodChanged: string (output)
+    + emitPeriodChanged(period: string): void
+  }
+  class TopProductsList <<component>> {
+    + topProducts: TopProduct[] (input)
+  }
+  class TopProductItem <<component>> {
+    + product: TopProduct (input)
+  }
+}
+
+' ── Infrastructure internal relationships ──────────────────
+AnalyticsApi --> DashboardSummaryAssembler : uses
+AnalyticsApi --> WeeklyRevenueAssembler : uses
+AnalyticsApi --> StockAlertAssembler : uses
+AnalyticsApi --> SalesReportAssembler : uses
+AnalyticsApi --> OrderReportAssembler : uses
+AnalyticsApi --> RevenueBreakdownAssembler : uses
+AnalyticsApi --> TopProductAssembler : uses
+
+AnalyticsApi ..> DashboardSummaryResource : receives
+AnalyticsApi ..> WeeklyRevenueEntryResource : receives
+AnalyticsApi ..> StockAlertResource : receives
+AnalyticsApi ..> SalesReportResource : receives
+AnalyticsApi ..> OrderReportResource : receives
+AnalyticsApi ..> RevenueBreakdownResource : receives
+AnalyticsApi ..> TopProductResource : receives
+
+DashboardSummaryAssembler ..> DashboardSummaryResource : transforms
+DashboardSummaryAssembler --> DashboardSummary : creates
+WeeklyRevenueAssembler ..> WeeklyRevenueEntryResource : transforms
+WeeklyRevenueAssembler --> WeeklyRevenueEntry : creates
+StockAlertAssembler ..> StockAlertResource : transforms
+StockAlertAssembler --> StockAlert : creates
+SalesReportAssembler ..> SalesReportResource : transforms
+SalesReportAssembler --> SalesReport : creates
+OrderReportAssembler ..> OrderReportResource : transforms
+OrderReportAssembler --> OrderReport : creates
+RevenueBreakdownAssembler ..> RevenueBreakdownResource : transforms
+RevenueBreakdownAssembler --> RevenueBreakdown : creates
+TopProductAssembler ..> TopProductResource : transforms
+TopProductAssembler --> TopProduct : creates
+
+' ── Application relationships ───────────────────────────────
+AnalyticsStore --> AnalyticsApi : uses
+
+' ── Presentation internal relationships ─────────────────────
+StockAlertList *-- StockAlertItem : composes
+TopProductsList *-- TopProductItem : composes
+
+' ── Component → entity (input) ──────────────────────────────
+KpiCard ..> DashboardSummary : input
+ConversionRateCard ..> SalesReport : input
+WeeklyRevenueChart ..> WeeklyRevenueEntry : input
+StockAlertItem ..> StockAlert : input
+SalesMetricCard ..> SalesReport : input
+OrderMetricCard ..> OrderReport : input
+RevenueChart ..> RevenueBreakdown : input
+TopProductItem ..> TopProduct : input
+
+' ── Component → Layout (output events) ──────────────────────
+WeeklyRevenueChart ..> Layout : emits
+RevenueChart ..> Layout : emits
+
+' ── Domain enum relationship ─────────────────────────────────
+StockAlert --> StockAlertPriority
+
+note "Layout (shared) uses AnalyticsStore\nand composes: KpiCard x4,\nConversionRateCard, WeeklyRevenueChart,\nActiveLabOrdersList, StockAlertList,\nSalesMetricCard, OrderMetricCard,\nRevenueChart, TopProductsList" as N1
+KpiCard .. N1
+
+@enduml

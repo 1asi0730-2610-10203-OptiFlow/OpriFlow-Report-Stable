@@ -1,0 +1,48 @@
+name: Build PDF Report
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            pandoc \
+            texlive-xetex \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-lang-spanish
+
+      - name: Build PDF
+        run: |
+          cd report
+          pandoc 04-chapter4.md \
+            --pdf-engine=xelatex \
+            --output=04-chapter4.pdf \
+            --standalone \
+            -V geometry:margin=2cm \
+            -V documentclass=article \
+            -V lang=es \
+            -V mainfont="DejaVu Serif" \
+            -V monofont="DejaVu Sans Mono"
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter4-pdf
+          path: report/04-chapter4.pdf
+          retention-days: 30
