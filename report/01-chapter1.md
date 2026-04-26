@@ -23,6 +23,11 @@ Soy Luciana Carolina Mechan Montenegro (Código: u20241b843), estudiante del qui
 
 Mi nombre es Mía Valentina.
 Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir en el desarrollo de soluciones eficientes. Además, tengo habilidades en la recopilación y análisis de información, lo cual es fundamental para identificar áreas de mejora y optimizar procesos. También tengo conocimientos sobre estructuras de datos, que me permiten organizar y gestionar información de manera efectiva. Mi enfoque se centra en generar soluciones innovadoras y prácticas que aporten valor a los proyectos en los que participo.
+
+![img.png](../assets/img.png)
+
+Mi nombre es Nicolas Fernando Atoche Gonzales, actualmente estoy en el quinto ciclo de la carrera de ingeniería de software. Poseo un conocimiento básico/intermedio en programación con C++ y Lua. Además, cuento con conocimientos básicos en el desarrollo de videojuegos. Dentro del equipo, estoy encargado en el desarrollo de la interfaz de la aplicación del proyecto utilizando el entorno TypeScript. A su vez suelo orientarme por el conocimiento y el pensamiento lógico, con lo cual suelo buscar la solución más óptima y ágil dentro de un problema a través de pasos sencillos y definidos que construyan una base sólida donde pueda desarrollar respuestas claras y efectivas.
+
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
