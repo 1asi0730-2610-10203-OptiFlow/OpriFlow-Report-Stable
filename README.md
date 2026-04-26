@@ -48,11 +48,12 @@ u202411521 - Morocho Pinedo, Mariana
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |--------|------|------|-----------------------------|
-| | | | |
+| 1.0.0 |25/04/26 | u20241d317 - Atoche Gonzales, Nicolas Fernando u202411310 - Azama Fukuda, Juan Pablo  u20241c101 - Capillo Lema, Mía Valentina  u20241b843 - Mechan Montenegro, Luciana Carolina  u202411521 - Morocho Pinedo, Mariana  | Se desarrollaron los artefactos Lean UX, el DDD, el Needfinding, el prototipo del frontend, el despliegue del landing page y una retralimentación final en relación al sprint 1 |
 
 ---
 
 # Project Report Collaboration Insights
+https://github.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable.git
 
 ---
 
