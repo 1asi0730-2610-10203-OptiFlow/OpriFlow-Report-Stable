@@ -34,6 +34,7 @@ jobs:
           pandoc README.md report/*.md \
             --pdf-engine=xelatex \
             --output=report/output.pdf \
+            --resource-path=.:report \
             --toc \
             --standalone \
             -V geometry:margin=2cm \
