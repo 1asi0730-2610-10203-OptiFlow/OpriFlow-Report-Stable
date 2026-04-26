@@ -156,6 +156,10 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Wireframe US18 Cotización desde Receta – Mobile](<../docs/wireframes/jp/US-18_ Cotización desde Receta Mobile.png>){width=90%}
 
+#### US20 – Aplicación de Descuentos
+
+![Wireframe US10](../docs/wireframes/nico/US20-wfm.png)
+
 #### US25 – Notificaciones a Clientes
 
 ![Wireframe US25 Notificaciones Clientes – Vista 1](<../docs/wireframes/jp/US 25_ Notificaciones clientes.png>){width=90%}
@@ -179,6 +183,8 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ![Wireframe US42 Dashboard de Ventas – Desktop](<../docs/wireframes/jp/US-42_ Dashboard de ventas.png>){width=90%}
 
 ![Wireframe US42 Dashboard de Ventas – Mobile](<../docs/wireframes/jp/US-42_ Dashboard de ventas MOBILE.png>){width=90%}
+
+#### US43 – Dashboard de Ventas
 
 ### Web Applications Wireflow Diagrams
 
@@ -264,6 +270,16 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US-18_ Cotización desde Receta Mobile.png>){width=90%}
 
+#### US20 – Aplicación de Descuentos
+
+**Taskflow:**
+
+![task-20.jpg](../docs/taskflows/nico/task-20.jpg)
+
+**Wireflow:**
+
+![US20-wfw.png](../docs/wireflows/nico/US20-wfw.png)
+
 #### US25 – Notificaciones a Clientes
 
 **Taskflow:**
@@ -304,6 +320,15 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US-42_ Dashboard de ventas MOBILE.png>){width=90%}
 
+#### US43 – Auditoría de Eficiencia
+
+**Taskflow:**
+![task-43.jpg](../docs/taskflows/nico/task-43.jpg)
+
+**Wireflow:**
+
+![US43-wfw.png](../docs/wireflows/nico/US43-wfw.png)
+
 ### Web Applications Mock-ups
 
 #### US01 – Login
@@ -331,8 +356,6 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ![Mockup US10 Nuevo Examen – Desktop](<../docs/mockups/jp/US_ nuevo examen.png>){width=90%}
 
 ![Mockup US10 Nuevo Examen – Mobile](<../docs/mockups/jp/US_ Nuevo Examen Mobile.png>){width=90%}
-
-
 
 #### US18 – Cotización desde Receta
 
@@ -460,7 +483,10 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ![User Flow – Frame 79](<../docs/userflows/jp/Frame 79.png>){width=90%}
 
 ## Web Applications Prototyping
-[Descripción y enlace al prototipo interactivo de la aplicación web, con escenarios de prueba definidos.]
+El presente prototipo de aplicación web para una óptica, desarrollado en Figma, muestra de forma interactiva la estructura y diseño de una posible plataforma orientada a la gestión de servicios ópticos.
+
+Link del prototipo:
+https://www.figma.com/proto/Pa0pYLdGRk2dqT8JHkb6Sw/OptiFlow-Figma?node-id=513-71985&p=f&t=9Xhumn1xn1d4Jmm1-1&scaling=min-zoom&content-scaling=fixed&page-id=513%3A70640&starting-point-node-id=513%3A71985&show-proto-sidebar=1
 
 ## Domain-Driven Software Architecture
 
