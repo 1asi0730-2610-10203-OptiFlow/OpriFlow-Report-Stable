@@ -1,38 +1,28 @@
-name: Build PDF Report
+name: Build Report
 
 on:
   push:
-    branches:
-      - main
-      - develop
-  pull_request:
-    branches:
-      - main
+    branches: [ "main", "chore/pdf-build" ]
+  workflow_dispatch:
 
 jobs:
-  build-pdf:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Pandoc and LaTeX
+      - name: Install Pandoc and XeLaTeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y \
-            pandoc \
-            texlive-xetex \
-            texlive-fonts-recommended \
-            texlive-fonts-extra \
-            texlive-lang-spanish
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-fonts-extra
 
-      - name: Build PDF
+      - name: Build Full PDF
         run: |
-          cd report
-          pandoc 04-chapter4.md \
+          pandoc README.md report/*.md \
             --pdf-engine=xelatex \
-            --output=04-chapter4.pdf \
+            --output=report/output.pdf \
+            --toc \
             --standalone \
             -V geometry:margin=2cm \
             -V documentclass=article \
@@ -43,6 +33,6 @@ jobs:
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: chapter4-pdf
-          path: report/04-chapter4.pdf
+          name: full-report-pdf
+          path: report/output.pdf
           retention-days: 30
