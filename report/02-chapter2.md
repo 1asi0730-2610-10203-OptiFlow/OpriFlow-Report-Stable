@@ -150,7 +150,7 @@ Datos del entrevistado
 - **Distrito:** La Molina
 - **Inicio:** 01:24:15
 - **Duración:** 00:11:44
-- **Link de la entrevista individual:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQD6_x6LnGFrRI1oRJKsXr-0AX0ZlYAGWkN-V3deJtd0eJw?e=VoLxyX 
+- **Link de la entrevista individual:** [Ver grabación aquí] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQD6_x6LnGFrRI1oRJKsXr-0AX0ZlYAGWkN-V3deJtd0eJw?e=VoLxyX) 
 
 <img src="../assets/Entrevista-Mia.png" width="500"/>
   
@@ -164,19 +164,26 @@ Finalmente, Isabella destaca errores técnicos, como medidas incorrectas en el p
 
 <u>Entrevista 3:</u>
 
-Entrevistador: 
+Entrevistador: Juan Pablo
 
 Datos del entrevistado
 
-- **Nombre:** 
-- **Apellidos:** 
-- **Edad:** 
-- **Distrito:** 
-- **Inicio:**
-- **Duración:**  
-- **Link de la entrevista individual:** 
+- **Nombre:** Adrian Geraldo
+- **Apellidos:** Huaman Villacorta
+- **Edad:** 19
+- **Distrito:** Santiago de Surco
+- **Inicio:** 01:36:00
+- **Duración:**  12:05
+- **Link de la entrevista individual:** [Ver grabación aquí] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411310_upc_edu_pe/IQDlX7mUq1RlTYbdQ23FI-W-AXmVTCt_OM-xCDBmMeOrfkc?e=m175qg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) 
+
+<img src="../assets/Entrevista-JuanPablo.png" width="500"/>
   
 **Resumen descriptivo:**
+
+El entrevistado Adrián Huamán, de 19 años, residente en Santiago de Surco y estudiante universitario, presenta un perfil digital activo, utilizando principalmente el celular y la computadora. En su rutina destaca el uso de la marca Apple y el sistema Windows, lo que sugiere una familiaridad con entornos tecnológicos estructurados. Su principal motivación es el ámbito académico, donde depende estrictamente de sus lentes para actividades diarias como ver de lejos o escribir, lo que convierte la puntualidad y la precisión del servicio óptico en una necesidad crítica para su desempeño.
+En cuanto a su experiencia en ópticas, describe el proceso inicial como tedioso y poco personalizado, sintiéndose a menudo como "uno más del montón". Identifica una falla recurrente en la gestión de datos, ya que muchas veces debe repetir su información pese a ser cliente antiguo. Al elegir monturas, aunque suele ser decidido, nota que el proceso manual de los establecimientos ralentiza la experiencia. Respecto al tiempo de entrega, su percepción es negativa debido a la lentitud y la falta de canales formales de comunicación; critica el uso de WhatsApp por ser propenso al desorden y prefiere medios oficiales como el correo electrónico para rastrear las etapas de fabricación de su pedido.
+Finalmente, el entrevistado relata experiencias críticas como un retraso de tres semanas en la cadena GMO, donde la falta de notificación proactiva lo obligó a acudir físicamente para obtener información. Considera como errores imperdonables la entrega de productos en mal estado, las medidas incorrectas y la impuntualidad extrema. Asimismo, señala una clara deficiencia en el servicio post-venta, ya que nunca ha recibido seguimiento para mantenimientos o controles anuales, algo que valoraría positivamente para organizar su salud visual. En conjunto, Adrián es un usuario que busca formalidad, trazabilidad y eficiencia, con una baja tolerancia a la desorganización administrativa y a la falta de respeto por los tiempos de entrega.
+
 
 **Enlace del video único de las entrevistas:** [ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b843_upc_edu_pe/IQBQcjn6Xii8QZurFaFX-gjHAb6EPimDCPRiufDcZfNdTk8?e=DQ8O6O&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
