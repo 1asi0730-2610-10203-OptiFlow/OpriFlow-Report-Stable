@@ -191,7 +191,7 @@ Finalmente, el entrevistado relata experiencias críticas como un retraso de tre
 
 En la presente sección se desarrolla el análisis de las entrevistas realizadas a los segmentos objetivo definidos para la solución: empleados de ópticas y clientes. Este análisis tiene como finalidad identificar, con sustento en la evidencia recogida, las características objetivas y subjetivas más representativas de cada segmento, expresadas en términos porcentuales, de modo que sirvan como base para la construcción de los arquetipos (User Personas). 
 
-### Segmento: Empleados de la óptica
+#### Segmento 1: *Empleados de la óptica*
 Para este segmento se realizaron tres entrevistas a profesionales que desempeñan funciones dentro de ópticas, incluyendo roles como optometristas, vendedores y administradores. A partir del análisis de las respuestas, se identifican patrones comunes tanto en el uso de tecnología como en la gestión operativa del negocio.
 En primer lugar, se observa que el 100% de los entrevistados utiliza el teléfono celular como principal herramienta de trabajo, especialmente para la comunicación con pacientes y laboratorios, así como para el uso de aplicaciones y redes sociales. Esto se evidencia en el uso recurrente de plataformas como WhatsApp y llamadas telefónicas para coordinar pedidos y resolver consultas . No obstante, en relación con los sistemas de gestión, solo el 33% de los entrevistados cuenta con una plataforma digital integrada que permite gestionar información en tiempo real, mientras que el 67% restante utiliza herramientas básicas como Excel, Word o incluso registros manuales.
 Asimismo, el 100% de los entrevistados indicó que desempeña múltiples funciones dentro de la óptica, abarcando desde la atención al cliente hasta la gestión administrativa y clínica. Este fenómeno evidencia una baja especialización de roles y una alta carga operativa, lo cual impacta directamente en la eficiencia del negocio . En esa misma línea, el 67% de los entrevistados manifestó que la gestión del inventario se realiza de manera manual o visual, basándose en la observación directa del stock, mientras que solo un 33% cuenta con un sistema digital que permite un control más preciso.
@@ -199,7 +199,7 @@ Por otro lado, en cuanto a la comunicación con los laboratorios, el 100% de los
 Desde una perspectiva subjetiva, se identifica que el 100% de los entrevistados considera que el principal indicador de eficiencia del negocio es la satisfacción del cliente o paciente, destacando la importancia de cumplir con sus expectativas y brindar un servicio de calidad . Sin embargo, también se evidencian problemáticas recurrentes, como la falta de automatización de procesos, la dependencia del conocimiento empírico para la toma de decisiones y los inconvenientes en la coordinación con laboratorios, especialmente en casos de medidas complejas.
 Finalmente, los entrevistados expresaron la necesidad de implementar mejoras tecnológicas que permitan automatizar tareas como el seguimiento de pedidos y el envío de recordatorios a los clientes, así como centralizar la información en un sistema digital. En consecuencia, se concluye que este segmento presenta un nivel de digitalización heterogéneo, con una clara oportunidad de mejora en la integración de procesos y en la optimización de la gestión operativa.
 
-### Segmento: Clientes de la óptica
+#### Segmento 2: *Clientes de la óptica*
 Para el segmento de clientes se realizaron tres entrevistas a usuarios que han adquirido lentes en ópticas, lo cual permitió identificar sus percepciones, expectativas y principales puntos de dolor durante el proceso de compra.
 En primer lugar, se evidencia que el 100% de los entrevistados posee un alto nivel de familiaridad con la tecnología, utilizando de manera constante dispositivos como teléfonos móviles y computadoras, así como plataformas digitales y redes sociales . Este comportamiento influye directamente en sus expectativas respecto al servicio ofrecido por las ópticas.
 En cuanto al proceso de compra, el 67% de los entrevistados manifestó haber experimentado retrasos en la entrega de sus lentes, en algunos casos de varios días o incluso semanas, lo cual generó insatisfacción y pérdida de confianza en el establecimiento . Además, el 100% indicó que no recibe actualizaciones proactivas sobre el estado de su pedido, siendo el propio cliente quien debe comunicarse con la óptica para obtener información .
@@ -220,10 +220,10 @@ En esta sección se presentan las fichas de User Persona construidas a partir de
 
 Cada User Persona sintetiza estas características con el objetivo de facilitar la comprensión de los usuarios y orientar el diseño de la solución propuesta, asegurando que esta responda de manera efectiva a sus expectativas y problemáticas reales.
 
-## Empleados de la óptica
+#### Segmento 1: *Empleados de la óptica*
 <img src="../assets/user-persona-primer-segmento.png" width="500"/>
 
-## Clientes de la óptica
+#### Segmento 2: *Clientes de la óptica*
 <img src="../assets/user-persona-segundo-segmento.png" width="500"/>
 
 ### User Task Matrix
@@ -246,11 +246,22 @@ Cada User Persona sintetiza estas características con el objetivo de facilitar 
 
 ### User Journey Mapping
 
-[Mapas de viaje del usuario que ilustran las etapas, acciones, emociones y puntos de dolor en la experiencia actual.]
+#### Segmento 1: *Empleados de la óptica*
+
+![](../assets/Customer-journey-Administradores.png)
+
+#### Segmento 2: *Clientes de la óptica*
+
+![](../assets/Customer-journey-Cliente.png)
 
 ### Empathy Mapping
+
+#### Segmento 1: *Empleados de la óptica*
+
 Empleado de la óptica: Marco Ruiz
 <img src = "../assets/optic-employee-em.png">
+
+#### Segmento 2: *Clientes de la óptica*
 
 Cliente de la óptica: Adrian Geraldo Huamán Villacorta
 <img src = "../assets/client-em.png">
