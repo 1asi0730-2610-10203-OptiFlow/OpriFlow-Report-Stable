@@ -19,6 +19,10 @@ Soy Juan Pablo Azama Fukuda (Código: u202411310), estudiante de quinto ciclo de
 
 Soy Luciana Carolina Mechan Montenegro (Código: u20241b843), estudiante del quinto ciclo de la carrera de Ingeniería de Software. Cuento con conocimientos en lenguajes de programación como C++, Python y Java, los cuales he aplicado en distintos proyectos académicos orientados a la resolución de problemas y desarrollo de sistemas. Dentro del equipo, mi contribución se enfoca tanto en el desarrollo frontend como backend, participando en la implementación de funcionalidades y en la integración de los distintos componentes del sistema. Me caracterizo por ser responsable, proactiva y con una alta capacidad de aprendizaje, además de tener facilidad para el trabajo en equipo y la adaptación a nuevos retos dentro del proyecto.
 
+<img src="../assets/foto-Mia.png" width="350" >
+
+Mi nombre es Mía Valentina.
+Poseo experiencia en en el lenguaje C++ y Python, lo que me permite contribuir en el desarrollo de soluciones eficientes. Además, tengo habilidades en la recopilación y análisis de información, lo cual es fundamental para identificar áreas de mejora y optimizar procesos. También tengo conocimientos sobre estructuras de datos, que me permiten organizar y gestionar información de manera efectiva. Mi enfoque se centra en generar soluciones innovadoras y prácticas que aporten valor a los proyectos en los que participo.
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
