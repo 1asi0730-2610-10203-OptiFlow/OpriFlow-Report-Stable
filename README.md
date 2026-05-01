@@ -2,11 +2,11 @@
 
 <img src="assets/upc-logo.png" alt="UPC Logo" width="150"/>
 
-# Universidad Peruana de Ciencias Aplicadas
+# Universidad Peruana de Ciencias Aplicadas {.unnumbered}
 
-## Facultad de Ingeniería
+## Facultad de Ingeniería {.unnumbered}
 
-## Programa Académico de Ingeniería de Software
+## Programa Académico de Ingeniería de Software {.unnumbered}
 
 **Ciclo:** 2026-10  
 
@@ -18,17 +18,17 @@
 
 **Docente del curso:** Alex Humberto Sánchez Ponce  
 
----
+***
 
-# Informe de Trabajo Final
+# Informe de Trabajo Final {.unnumbered}
 
 **Nombre de la Startup:**  
 
 **Nombre del producto:** OptiFlow  
 
----
+***
 
-## Integrantes
+## Integrantes {.unnumbered}
 
 u20241d317 - Atoche Gonzales, Nicolas Fernando  
 u202411310 - Azama Fukuda, Juan Pablo  
@@ -36,30 +36,30 @@ u20241c101 - Capillo Lema, Mía Valentina
 u20241b843 - Mechan Montenegro, Luciana Carolina  
 u202411521 - Morocho Pinedo, Mariana  
 
----
+***
 
 *Abril, 2026*
 
 </div>
 
----
+***
 
-# Registro de Versiones del Informe
+# Registro de Versiones del Informe {.unnumbered}
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |--------|------|------|-----------------------------|
 | 1.0.0 |25/04/26 | u20241d317 - Atoche Gonzales, Nicolas Fernando u202411310 - Azama Fukuda, Juan Pablo  u20241c101 - Capillo Lema, Mía Valentina  u20241b843 - Mechan Montenegro, Luciana Carolina  u202411521 - Morocho Pinedo, Mariana  | Se desarrollaron los artefactos Lean UX, el DDD, el Needfinding, el prototipo del frontend, el despliegue del landing page y una retralimentación final en relación al sprint 1 |
 
----
+***
 
-# Project Report Collaboration Insights
+# Project Report Collaboration Insights {.unnumbered}
 https://github.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable.git
 
----
+***
 
-# Contenido
+# Contenido {.unnumbered}
 
-## Tabla de Contenidos
+## Tabla de Contenidos {.unnumbered}
 
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
@@ -126,9 +126,10 @@ https://github.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable.git
             - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
----
 
-# Student Outcome
+***
+
+# Student Outcome {.unnumbered}
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
 

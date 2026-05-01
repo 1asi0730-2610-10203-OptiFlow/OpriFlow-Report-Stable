@@ -1,0 +1,8 @@
+% Force 96 DPI for all images (LuaLaTeX syntax)
+% Prevents "Dimension too large" for Figma exports / low-DPI-metadata PNGs
+\directlua{pdf.setimageresolution(96)}
+
+% Second line of defense: cap any image that still exceeds the page
+\usepackage[export]{adjustbox}
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{\oldincludegraphics[max width=\linewidth,max height=0.85\textheight,keepaspectratio,#1]{#2}}

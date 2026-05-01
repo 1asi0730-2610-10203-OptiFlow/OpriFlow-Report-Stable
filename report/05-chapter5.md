@@ -4,7 +4,7 @@
 
 **Figma**
 
-![Figma-logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjih1p5gfTNIjPJ8wUgngz7_k8tUFdhHG42g&s)
+![Figma-logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjih1p5gfTNIjPJ8wUgngz7_k8tUFdhHG42g&s){width=30%}
 
 Herramienta SaaS enfocada en el diseño de interfaces de usuario (UX/UI). Se emplea para conceptualizar la estética y funcionalidad mediante Wireframes, Mock-ups y prototipos dinámicos para sitios web y aplicaciones, facilitando el trabajo cooperativo entre diseñadores en tiempo real.
 
@@ -14,7 +14,7 @@ Herramienta SaaS enfocada en el diseño de interfaces de usuario (UX/UI). Se emp
 
 **HTML5 & CSS3**
 
-![html_css-logo](https://i.pinimg.com/736x/fe/57/10/fe571020f2e476bca20e1ae6441569ec.jpg) 
+![html_css-logo](https://i.pinimg.com/736x/fe/57/10/fe571020f2e476bca20e1ae6441569ec.jpg){width=30%}
 
 Tecnologías base de la web utilizadas para estructurar el contenido de forma semántica y aplicar estilos visuales a los componentes de la interfaz, asegurando una presentación coherente en las aplicaciones front-end y páginas de aterrizaje.
 
@@ -24,7 +24,7 @@ Tecnologías base de la web utilizadas para estructurar el contenido de forma se
 
 **Vue.js Framework**
 
-![vue-logo](/assets/vue.png)
+![vue-logo](../assets/vue.png){width=30%}
 
 Framework progresivo de JavaScript utilizado para la construcción de interfaces de usuario y aplicaciones de una sola página (SPA). Se basa en una arquitectura de componentes reactivos y un sistema de renderizado optimizado que facilita la integración con otros proyectos y el manejo eficiente del DOM virtual.
 
@@ -34,7 +34,7 @@ Framework progresivo de JavaScript utilizado para la construcción de interfaces
 
 **Miro**
 
-![miro-logo](https://asset.brandfetch.io/idAnDTFapY/idDdbxxs3M.png) 
+![miro-logo](https://asset.brandfetch.io/idAnDTFapY/idDdbxxs3M.png){width=30%}
 
 Espacio de trabajo digital tipo pizarra blanca, ideal para el análisis de requerimientos y el modelado de procesos mediante metodologías como EventStorming, tanto a nivel de negocio como de diseño técnico.
 
@@ -44,7 +44,7 @@ Espacio de trabajo digital tipo pizarra blanca, ideal para el análisis de reque
 
 **Structurizr**
 
-![structurizr-logo](/assets/structurizr.png)
+![structurizr-logo](../assets/structurizr.png){width=30%}
 
 Solución de modelado especializada en la documentación técnica de sistemas. Permite visualizar la arquitectura del software bajo el estándar del Modelo C4, detallando diagramas de contexto, contenedores y componentes.
 
@@ -54,7 +54,7 @@ Solución de modelado especializada en la documentación técnica de sistemas. P
 
 **Microsoft SQL Server**
 
-![sql-logo](https://cdn-icons-png.flaticon.com/512/5968/5968364.png) 
+![sql-logo](https://cdn-icons-png.flaticon.com/512/5968/5968364.png){width=30%}
 
 Gestor de bases de datos relacionales encargado del almacenamiento seguro y estructurado de la información del sistema. Provee la base para mantener la integridad de los datos transaccionales dentro de los contextos delimitados del proyecto.
 
@@ -64,7 +64,7 @@ Gestor de bases de datos relacionales encargado del almacenamiento seguro y estr
 
 **ASP.NET Core (C#)**
 
-![csharp-logo](https://cdn-icons-png.flaticon.com/512/6132/6132221.png) 
+![csharp-logo](https://cdn-icons-png.flaticon.com/512/6132/6132221.png){width=30%}
 
 Framework de desarrollo para el lado del servidor que simplifica la creación de microservicios y servicios web RESTful en C#. Administra la lógica operativa, protocolos de seguridad y la exposición de datos hacia el front-end.
 
@@ -402,12 +402,12 @@ Durante la iteración inicial del proyecto OptiFlow, se consolidó el diseño es
 
 #### Software Deployment Evidence for Sprint Review
 En este primer sprint se desplegó la primera versión del landing page utilizando github pages.
-![static](../assets/static-yaml-evidence.png)
-![base](../assets/base-config-evidence.png)
-![jobs](../assets/jobs-evidences.png)
+![static](../assets/static-yaml-evidence.png){width=100%}
+![base](../assets/base-config-evidence.png){width=100%}
+![jobs](../assets/jobs-evidences.png){width=100%}
 
 Landing page deployed: https://1asi0730-2610-10203-optiflow.github.io/OptiFlow-Landing-Page/
-![landing-page](../assets/landing-page.png)
+![landing-page](../assets/landing-page.png){width=100%}
 #### Team Collaboration Insights during Sprint
 [Análisis de la colaboración del equipo: métricas de contribución, reuniones y herramientas utilizadas.]
 

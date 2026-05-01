@@ -128,7 +128,7 @@ Datos del entrevistado
 - **Duración:** 00:10:24
 - **Link de la entrevista individual:** [Ver grabación aquí](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b843_upc_edu_pe/IQAZEDLQjb3TQI-KfPgpdzw_ATQXFe5OTK8RGiCotvF5-TU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=jkQVAh)
 
-<img src="../assets/entrevista-luciana.png" width="500"/>
+![](../assets/entrevista-luciana.png){width=75%}
 
 **Resumen descriptivo:**
 
@@ -152,7 +152,7 @@ Datos del entrevistado
 - **Duración:** 00:11:44
 - **Link de la entrevista individual:** [Ver grabación aquí] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241c101_upc_edu_pe/IQD6_x6LnGFrRI1oRJKsXr-0AX0ZlYAGWkN-V3deJtd0eJw?e=VoLxyX) 
 
-<img src="../assets/Entrevista-Mia.png" width="500"/>
+![](../assets/Entrevista-Mia.png){width=75%}
   
   **Resumen descriptivo:**
 
@@ -176,7 +176,7 @@ Datos del entrevistado
 - **Duración:**  12:05
 - **Link de la entrevista individual:** [Ver grabación aquí] (https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411310_upc_edu_pe/IQDlX7mUq1RlTYbdQ23FI-W-AXmVTCt_OM-xCDBmMeOrfkc?e=m175qg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) 
 
-<img src="../assets/Entrevista-JuanPablo.png" width="500"/>
+![](../assets/Entrevista-JuanPablo.png){width=75%}
   
 **Resumen descriptivo:**
 
@@ -221,10 +221,10 @@ En esta sección se presentan las fichas de User Persona construidas a partir de
 Cada User Persona sintetiza estas características con el objetivo de facilitar la comprensión de los usuarios y orientar el diseño de la solución propuesta, asegurando que esta responda de manera efectiva a sus expectativas y problemáticas reales.
 
 #### Segmento 1: *Empleados de la óptica*
-<img src="../assets/user-persona-primer-segmento.png" width="500"/>
+![](../assets/user-persona-primer-segmento.png){width=75%}
 
 #### Segmento 2: *Clientes de la óptica*
-<img src="../assets/user-persona-segundo-segmento.png" width="500"/>
+![](../assets/user-persona-segundo-segmento.png){width=75%}
 
 ### User Task Matrix
 
@@ -248,28 +248,28 @@ Cada User Persona sintetiza estas características con el objetivo de facilitar 
 
 #### Segmento 1: *Empleados de la óptica*
 
-![](../assets/Customer-journey-Administradores.png)
+![](../assets/Customer-journey-Administradores.png){width=100%}
 
 #### Segmento 2: *Clientes de la óptica*
 
-![](../assets/Customer-journey-Cliente.png)
+![](../assets/Customer-journey-Cliente.png){width=100%}
 
 ### Empathy Mapping
 
 #### Segmento 1: *Empleados de la óptica*
 
 Empleado de la óptica: Marco Ruiz
-<img src = "../assets/optic-employee-em.png">
+![](../assets/optic-employee-em.png){width=75%}
 
 #### Segmento 2: *Clientes de la óptica*
 
 Cliente de la óptica: Adrian Geraldo Huamán Villacorta
-<img src = "../assets/client-em.png">
+![](../assets/client-em.png){width=75%}
 
 
 ## Big Picture Event Storming
 
-![Big.jpg](../assets/impactMap/Big.jpg)
+![Big.jpg](../assets/impactMap/Big.jpg){width=100%}
 
 ## Ubiquitous Language
 
