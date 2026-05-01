@@ -137,11 +137,11 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Wireframe US06 Gestión de Perfil – Mobile](<../docs/wireframes/jp/US-06_ Gestión de perifl Mobile.png>){width=100%}
 
-#### US10 – Nuevo Examen
+#### US08 – Registro de historia clínica
 
-![Wireframe US10 Nuevo Examen – Desktop](<../docs/wireframes/jp/US_ nuevo examen.png>){width=100%}
+![Wireframe US08 Nuevo Examen – Desktop](<../docs/wireframes/jp/US_ nuevo examen.png>){width=100%}
 
-![Wireframe US10 Nuevo Examen – Mobile](<../docs/wireframes/jp/US_ Nuevo Examen Mobile.png>){width=100%}
+![Wireframe US08 Nuevo Examen – Mobile](<../docs/wireframes/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
 #### US11 – Registro de Anamnesis
 
@@ -151,9 +151,9 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Wireframe US17 Registrar Venta](<../docs/wireframes/jp/US-17_ Registrar venta.png>){width=100%}
 
-#### US18 – Cotización desde Receta
+#### US15 – Cotización desde Receta
 
-![Wireframe US18 Cotización desde Receta – Mobile](<../docs/wireframes/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
+![Wireframe US1 Cotización desde Receta – Mobile](<../docs/wireframes/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
 
 #### US25 – Notificaciones a Clientes
 
@@ -225,11 +225,11 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US-06_ Gestión de perifl Mobile.png>){width=100%}
 
-#### US10 – Nuevo Examen
+#### US08 – Registro de Historia Clínica
 
 **Taskflow:**
 
-![](<../docs/taskflows/jp/Task flows - US-10.jpg>){width=100%}
+![](<../docs/taskflows/jp/Task flows - US-08.jpg>){width=100%}
 
 **Wireflow:**
 
@@ -247,45 +247,45 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![US11-wfw.png](../docs/wireflows/nico/US11-wfw.png){width=100%}
 
-#### US17 – Registrar Venta
+#### US14 – Registrar Venta
 
 **Wireflow:**
 
-![](<../docs/wireflows/jp/US-17_ Registrar venta.png>){width=100%}
+![](<../docs/wireflows/jp/US-14_ Registrar venta.png>){width=100%}
 
-#### US18 – Cotización desde Receta
+#### US15 – Cotización desde Receta
 
 **Taskflow:**
 
-![](<../docs/taskflows/jp/Task flows - US-18.jpg>){width=100%}
+![](<../docs/taskflows/jp/Task flows - US-15.jpg>){width=100%}
 
 **Wireflow:**
 
 ![](<../docs/wireflows/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
 
-#### US25 – Notificaciones a Clientes
+#### US22 – Notificaciones a Clientes
 
 **Taskflow:**
 
-![](<../docs/taskflows/jp/Task flows - US-025.jpg>){width=100%}
+![](<../docs/taskflows/jp/Task flows - US-022.jpg>){width=100%}
 
 **Wireflow:**
 
-![](<../docs/wireflows/jp/US 25_ Notificaciones clientes.png>){width=100%}
+![](<../docs/wireflows/jp/US 22_ Notificaciones clientes.png>){width=100%}
 
 ![](<../docs/wireflows/jp/US_ Notificaciones clientes.png>){width=100%}
 
-#### US37 – Control de Órdenes y Tablero Kanban
+#### US33 – Control de Órdenes y Tablero Kanban
 
 **Taskflow:**
 
-![](<../docs/taskflows/jp/Task flows - US-37.jpg>){width=100%}
+![](<../docs/taskflows/jp/Task flows - US-33.jpg>){width=100%}
 
 **Wireflow:**
 
-![](<../docs/wireflows/jp/US37_ Control de Órdenes y Tablero Kanban.png>){width=100%}
+![](<../docs/wireflows/jp/US33_ Control de Órdenes y Tablero Kanban.png>){width=100%}
 
-![](<../docs/wireflows/jp/US_ 37 MOBILE.png>){width=100%}
+![](<../docs/wireflows/jp/US_ 33 MOBILE.png>){width=100%}
 
 #### Registro de Empleado
 
@@ -295,13 +295,13 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US42 – Dashboard de Ventas
+#### US37 – Dashboard de Ventas
 
 **Wireflow:**
 
-![](<../docs/wireflows/jp/US-42_ Dashboard de ventas.png>){width=100%}
+![](<../docs/wireflows/jp/US-37_ Dashboard de ventas.png>){width=100%}
 
-![](<../docs/wireflows/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
+![](<../docs/wireflows/jp/US-37_ Dashboard de ventas MOBILE.png>){width=100%}
 
 ### Web Applications Mock-ups
 
@@ -325,29 +325,29 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Mockup US06 Gestión de Perfil – Mobile](<../docs/mockups/jp/US-06_ Gestión de perifl Mobile.png>){width=100%}
 
-#### US10 – Registro de Historia Clínica
+#### US08 – Registro de Historia Clínica
 
-![Mockup US10 Nuevo Examen – Desktop](<../docs/mockups/jp/US_ nuevo examen.png>){width=100%}
+![Mockup US08 Nuevo Examen – Desktop](<../docs/mockups/jp/US_ nuevo examen.png>){width=100%}
 
-![Mockup US10 Nuevo Examen – Mobile](<../docs/mockups/jp/US_ Nuevo Examen Mobile.png>){width=100%}
+![Mockup US08 Nuevo Examen – Mobile](<../docs/mockups/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
 
 
-#### US18 – Cotización desde Receta
+#### US15 – Cotización desde Receta
 
-![Mockup US18 Cotización desde Receta – Mobile](<../docs/mockups/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
+![Mockup US18 Cotización desde Receta – Mobile](<../docs/mockups/jp/US-15_ Cotización desde Receta Mobile.png>){width=100%}
 
-#### US25 – Notificaciones a Clientes
+#### US22 – Notificaciones a Clientes
 
-![Mockup US25 Notificaciones Clientes – Vista 1](<../docs/mockups/jp/US 25_ Notificaciones clientes.png>){width=100%}
+![Mockup US25 Notificaciones Clientes – Vista 1](<../docs/mockups/jp/US 22_ Notificaciones clientes.png>){width=100%}
 
 ![Mockup US25 Notificaciones Clientes – Vista 2](<../docs/mockups/jp/US_ Notificaciones clientes.png>){width=100%}
 
-#### US37 – Control de Órdenes y Tablero Kanban
+#### US33 – Control de Órdenes y Tablero Kanban
 
-![Mockup US37 Control de Órdenes – Desktop](<../docs/mockups/jp/US37_ Control de Órdenes y Tablero Kanban.png>){width=100%}
+![Mockup US37 Control de Órdenes – Desktop](<../docs/mockups/jp/US33_ Control de Órdenes y Tablero Kanban.png>){width=100%}
 
-![Mockup US37 Control de Órdenes – Mobile](<../docs/mockups/jp/US_ 37 MOBILE.png>){width=100%}
+![Mockup US37 Control de Órdenes – Mobile](<../docs/mockups/jp/US_ 33 MOBILE.png>){width=100%}
 
 #### Registro de Empleado
 
@@ -355,13 +355,12 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Mockup Registro de Empleado – Mobile](<../docs/mockups/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US42 – Dashboard de Ventas
+#### US37 – Dashboard de Ventas
 
-![Mockup US42 Dashboard de Ventas – Desktop](<../docs/mockups/jp/US-42_ Dashboard de ventas.png>){width=100%}
+![Mockup US42 Dashboard de Ventas – Desktop](<../docs/mockups/jp/US-37_ Dashboard de ventas.png>){width=100%}
 
-![Mockup US42 Dashboard de Ventas – Mobile](<../docs/mockups/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
+![Mockup US42 Dashboard de Ventas – Mobile](<../docs/mockups/jp/US-37_ Dashboard de ventas MOBILE.png>){width=100%}
 
-![Mockup Frame 76](<../docs/mockups/jp/Frame 76.png>){width=100%}
 
 ### Web Applications User Flow Diagrams
 
@@ -397,42 +396,42 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![User Flow US06 Gestión de Perfil – Mobile](<../docs/userflows/jp/US-06_ Gestión de perifl Mobile.png>){width=100%}
 
-#### US10 – Nuevo Examen
+#### US08 – Nuevo Examen
 
 - **Happy Path:** El optometrista selecciona al paciente → llena los campos de anamnesis y refracción → guarda el examen → el registro queda en la historia clínica del paciente.
 - **Unhappy Path:** Datos de refracción fuera de rango o paciente no encontrado → alertas de validación → el sistema impide guardar hasta corregir los valores ingresados.
 
-![User Flow US10 Nuevo Examen – Desktop](<../docs/userflows/jp/US_ nuevo examen.png>){width=100%}
+![User Flow US08 Nuevo Examen – Desktop](<../docs/userflows/jp/US_ nuevo examen.png>){width=100%}
 
-![User Flow US10 Nuevo Examen – Mobile](<../docs/userflows/jp/US_ Nuevo Examen Mobile.png>){width=100%}
-
-
+![User Flow US08 Nuevo Examen – Mobile](<../docs/userflows/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
 
-#### US18 – Cotización desde Receta
 
-![User Flow US18 Cotización desde Receta – Mobile](<../docs/userflows/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
+
+#### US15 – Cotización desde Receta
+
+![User Flow US18 Cotización desde Receta – Mobile](<../docs/userflows/jp/US-15_ Cotización desde Receta Mobile.png>){width=100%}
 - **Happy Path:** El asesor selecciona la receta del paciente → el sistema precalcula los productos recomendados → se genera la cotización y se envía al cliente.
 - **Unhappy Path:** Receta con información insuficiente o productos fuera de stock → el sistema notifica la inconsistencia → el asesor ajusta manualmente la cotización.
 
 
-#### US25 – Notificaciones a Clientes
+#### US22 – Notificaciones a Clientes
 
 - **Happy Path:** El sistema detecta un evento (entrega lista, pago pendiente) → genera y envía la notificación por el canal configurado → el cliente la recibe correctamente.
 - **Unhappy Path:** Canal de contacto no registrado o número inválido → la notificación se marca como fallida → aparece en el panel de incidencias para seguimiento manual.
 
-![User Flow US25 Notificaciones Clientes – Vista 1](<../docs/userflows/jp/US 25_ Notificaciones clientes.png>){width=100%}
+![User Flow US25 Notificaciones Clientes – Vista 1](<../docs/userflows/jp/US 22_ Notificaciones clientes.png>){width=100%}
 
 ![User Flow US25 Notificaciones Clientes – Vista 2](<../docs/userflows/jp/US_ Notificaciones clientes.png>){width=100%}
 
-#### US37 – Control de Órdenes y Tablero Kanban
+#### US33 – Control de Órdenes y Tablero Kanban
 
 - **Happy Path:** El técnico mueve la orden entre columnas del Kanban (Pendiente → Biselado → Montaje → Control de Calidad → Listo) → cada cambio queda registrado en el historial.
 - **Unhappy Path:** La orden falla en Control de Calidad → se marca como "Rework" → regresa a la fase de procesamiento con una nota de rechazo visible en el tablero.
 
-![User Flow US37 Control de Órdenes – Desktop](<../docs/userflows/jp/US37_ Control de Órdenes y Tablero Kanban.png>){width=100%}
+![User Flow US37 Control de Órdenes – Desktop](<../docs/userflows/jp/US33_ Control de Órdenes y Tablero Kanban.png>){width=100%}
 
-![User Flow US37 Control de Órdenes – Mobile](<../docs/userflows/jp/US_ 37 MOBILE.png>){width=100%}
+![User Flow US37 Control de Órdenes – Mobile](<../docs/userflows/jp/US_ 33 MOBILE.png>){width=100%}
 
 #### Registro de Empleado
 
@@ -443,23 +442,20 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![User Flow Registro de Empleado – Mobile](<../docs/userflows/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US42 – Dashboard de Ventas
+#### US37 – Dashboard de Ventas
 
 - **Happy Path:** El gerente accede al dashboard → visualiza métricas de ventas, conversión y rendimiento en tiempo real → puede filtrar por período, área o asesor.
 - **Unhappy Path:** Sin datos suficientes para el período seleccionado → el dashboard muestra un estado vacío con indicaciones para ampliar el rango de fechas o verificar la fuente de datos.
 
-![User Flow US42 Dashboard de Ventas – Desktop](<../docs/userflows/jp/US-42_ Dashboard de ventas.png>){width=100%}
+![User Flow US42 Dashboard de Ventas – Desktop](<../docs/userflows/jp/US-37_ Dashboard de ventas.png>){width=100%}
 
-![User Flow US42 Dashboard de Ventas – Mobile](<../docs/userflows/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
+![User Flow US42 Dashboard de Ventas – Mobile](<../docs/userflows/jp/US-37_ Dashboard de ventas MOBILE.png>){width=100%}
 
-#### Flujos de Navegación General
-
-![User Flow – Frame 76](<../docs/userflows/jp/Frame 76.png>){width=100%}
-
-![User Flow – Frame 79](<../docs/userflows/jp/Frame 79.png>){width=100%}
 
 ## Web Applications Prototyping
-[Descripción y enlace al prototipo interactivo de la aplicación web, con escenarios de prueba definidos.]
+
+https://www.figma.com/design/Pa0pYLdGRk2dqT8JHkb6Sw/OptiFlow-Figma?node-id=317-12353&t=rHKoqaawtu3y1jy5-1
+
 
 ## Domain-Driven Software Architecture
 
@@ -475,7 +471,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ### Software Architecture Components Diagrams
 ![container.png](../assets/C4/container.png){width=100%}
 
-#### Clinica Module
+#### Clinical Module
 ![context1.png](../assets/C4/context1.png){width=100%}
 
 #### Retail Module
