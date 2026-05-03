@@ -2,11 +2,11 @@
 
 <img src="assets/upc-logo.png" alt="UPC Logo" width="150"/>
 
-# Universidad Peruana de Ciencias Aplicadas
+# Universidad Peruana de Ciencias Aplicadas {.unnumbered}
 
-## Facultad de Ingeniería
+## Facultad de Ingeniería {.unnumbered}
 
-## Programa Académico de Ingeniería de Software
+## Programa Académico de Ingeniería de Software {.unnumbered}
 
 **Ciclo:** 2026-10  
 
@@ -18,17 +18,17 @@
 
 **Docente del curso:** Alex Humberto Sánchez Ponce  
 
----
+***
 
-# Informe de Trabajo Final
+# Informe de Trabajo Final {.unnumbered}
 
 **Nombre de la Startup:**  
 
 **Nombre del producto:** OptiFlow  
 
----
+***
 
-## Integrantes
+## Integrantes {.unnumbered}
 
 u20241d317 - Atoche Gonzales, Nicolas Fernando  
 u202411310 - Azama Fukuda, Juan Pablo  
@@ -36,30 +36,30 @@ u20241c101 - Capillo Lema, Mía Valentina
 u20241b843 - Mechan Montenegro, Luciana Carolina  
 u202411521 - Morocho Pinedo, Mariana  
 
----
+***
 
 *Abril, 2026*
 
 </div>
 
----
+***
 
-# Registro de Versiones del Informe
+# Registro de Versiones del Informe {.unnumbered}
 
 | Versión | Fecha | Autor | Descripción de modificación |
 |--------|------|------|-----------------------------|
 | 1.0.0 |25/04/26 | u20241d317 - Atoche Gonzales, Nicolas Fernando u202411310 - Azama Fukuda, Juan Pablo  u20241c101 - Capillo Lema, Mía Valentina  u20241b843 - Mechan Montenegro, Luciana Carolina  u202411521 - Morocho Pinedo, Mariana  | Se desarrollaron los artefactos Lean UX, el DDD, el Needfinding, el prototipo del frontend, el despliegue del landing page y una retralimentación final en relación al sprint 1 |
 
----
+***
 
-# Project Report Collaboration Insights
+# Project Report Collaboration Insights {.unnumbered}
 https://github.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable.git
 
----
+***
 
-# Contenido
+# Contenido {.unnumbered}
 
-## Tabla de Contenidos
+## Tabla de Contenidos {.unnumbered}
 
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
@@ -126,9 +126,10 @@ https://github.com/1asi0730-2610-10203-OptiFlow/OptiFlow-Report-Stable.git
             - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5216-services-documentation-evidence-for-sprint-review)
             - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5217-software-deployment-evidence-for-sprint-review)
             - [5.2.1.8. Team Collaboration Insights during Sprint](#5218-team-collaboration-insights-during-sprint)
----
 
-# Student Outcome
+***
+
+# Student Outcome {.unnumbered}
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
 
@@ -138,5 +139,5 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 *La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.*
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | Atoche Gonzales, Nicolas Fernando <br> **AV1** <br> … <br><br> Azama Fukuda, Juan Pablo <br> **AV1** <br> Desempeñé el rol de Scrum Master del equipo, asumiendo la dirección y facilitación de las reuniones de coordinación y ceremonias ágiles. Organicé y dirigí cada reunión estableciendo agendas estructuradas, distribuyendo la participación de forma equitativa y orientando las decisiones del equipo hacia los objetivos del Sprint. Mantuve una supervisión constante sobre el avance individual de cada integrante, consultando de forma periódica el estado de sus tareas y detectando bloqueos de manera temprana. Para los miembros que lo requirieron, apliqué un acompañamiento de microgestión personalizado, brindando orientación específica sobre sus tareas y apoyando la resolución de impedimentos puntuales. Estas acciones fomentaron la autogestión progresiva del equipo y aseguraron que las responsabilidades compartidas se cumplieran dentro de los plazos establecidos. <br><br> Capillo Lema, Mía Valentina <br> **AV1** <br> … <br><br> Mechan Montenegro, Luciana Carolina <br> **AV1** <br> Asumí un rol de apoyo al liderazgo técnico del backend, colaborando en la organización y seguimiento de las tareas relacionadas con el diseño y estructuración del sistema. Brindé indicaciones claras al equipo sobre la correcta implementación de convenciones de desarrollo, incluyendo la estandarización de commits, estructura de ramas y buenas prácticas en el uso de GitFlow.  <br><br> Morocho Pinedo, Mariana <br> **AV1** <br> … | Asumir la facilitación del marco de trabajo y la dirección de las reuniones permitió mantener un flujo de comunicación constante y efectivo. Se concluye que la supervisión activa y el liderazgo compartido son fundamentales para identificar bloqueos de forma temprana y guiar al equipo hacia la toma de decisiones conjuntas. |
-| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | Atoche Gonzales, Nicolas Fernando <br> **AV1** <br> … <br><br> Azama Fukuda, Juan Pablo <br> **AV1** <br> Lideré la planificación operativa del equipo mediante el desarrollo de una matriz de control en Excel, en la cual se estructuraron las tareas del Sprint asignando responsables, fechas límite específicas y criterios de cumplimiento para cada actividad. Establecí estimaciones de tiempo semanales por tarea, permitiendo al equipo visualizar la carga de trabajo esperada y ajustar el ritmo de avance de forma proactiva. Realicé consultas periódicas de progreso a cada integrante, validando el cumplimiento de los plazos definidos y replanificando cuando fue necesario. Adicionalmente, preparé y dicté una capacitación interna sobre GitFlow, asegurando que todos los miembros contaran con las mismas herramientas y conocimientos para contribuir en el repositorio de código de forma estandarizada y segura. <br><br> Capillo Lema, Mía Valentina <br> **AV1** <br> … <br><br> Mechan Montenegro, Luciana Carolina <br> **AV1** <br> Contribuí a la organización y planificación del trabajo técnico del backend mediante el diseño del diagrama de clases del sistema, el cual sirvió como base para estructurar las funcionalidades y responsabilidades de cada componente. A partir de este diseño, brindé lineamientos al equipo sobre cómo debían organizarse las entidades, relaciones y bounded contexts, facilitando una comprensión común de la arquitectura. <br><br> Morocho Pinedo, Mariana <br> **AV1** <br> … | La correcta estimación de tiempos y la delegación transparente de tareas garantizaron el cumplimiento de los objetivos dentro de los plazos establecidos. Asimismo, se concluye que capacitar al equipo en prácticas clave como GitFlow fomenta un entorno verdaderamente inclusivo, ya que empodera a todos los miembros para aportar código de manera estandarizada y segura, elevando la productividad general. |
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | Atoche Gonzales, Nicolas Fernando <br> **AV1** <br> … <br><br> Azama Fukuda, Juan Pablo <br> **AV1** <br> Desempeñé el rol de Scrum Master del equipo, asumiendo la dirección y facilitación de las reuniones de coordinación y ceremonias ágiles. Organicé y dirigí cada reunión estableciendo agendas estructuradas, distribuyendo la participación de forma equitativa y orientando las decisiones del equipo hacia los objetivos del Sprint. Mantuve una supervisión constante sobre el avance individual de cada integrante, consultando de forma periódica el estado de sus tareas y detectando bloqueos de manera temprana. Para los miembros que lo requirieron, apliqué un acompañamiento de microgestión personalizado, brindando orientación específica sobre sus tareas y apoyando la resolución de impedimentos puntuales. Estas acciones fomentaron la autogestión progresiva del equipo y aseguraron que las responsabilidades compartidas se cumplieran dentro de los plazos establecidos. <br><br> Capillo Lema, Mía Valentina <br> **AV1** <br> … <br><br> Mechan Montenegro, Luciana Carolina <br> **AV1** <br> … <br><br> Morocho Pinedo, Mariana <br> **AV1** <br> … | Asumir la facilitación del marco de trabajo y la dirección de las reuniones permitió mantener un flujo de comunicación constante y efectivo. Se concluye que la supervisión activa y el liderazgo compartido son fundamentales para identificar bloqueos de forma temprana y guiar al equipo hacia la toma de decisiones conjuntas. |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | Atoche Gonzales, Nicolas Fernando <br> **AV1** <br> … <br><br> Azama Fukuda, Juan Pablo <br> **AV1** <br> Lideré la planificación operativa del equipo mediante el desarrollo de una matriz de control en Excel, en la cual se estructuraron las tareas del Sprint asignando responsables, fechas límite específicas y criterios de cumplimiento para cada actividad. Establecí estimaciones de tiempo semanales por tarea, permitiendo al equipo visualizar la carga de trabajo esperada y ajustar el ritmo de avance de forma proactiva. Realicé consultas periódicas de progreso a cada integrante, validando el cumplimiento de los plazos definidos y replanificando cuando fue necesario. Adicionalmente, preparé y dicté una capacitación interna sobre GitFlow, asegurando que todos los miembros contaran con las mismas herramientas y conocimientos para contribuir en el repositorio de código de forma estandarizada y segura. <br><br> Capillo Lema, Mía Valentina <br> **AV1** <br> … <br><br> Mechan Montenegro, Luciana Carolina <br> **AV1** <br> … <br><br> Morocho Pinedo, Mariana <br> **AV1** <br> … | La correcta estimación de tiempos y la delegación transparente de tareas garantizaron el cumplimiento de los objetivos dentro de los plazos establecidos. Asimismo, se concluye que capacitar al equipo en prácticas clave como GitFlow fomenta un entorno verdaderamente inclusivo, ya que empodera a todos los miembros para aportar código de manera estandarizada y segura, elevando la productividad general. |

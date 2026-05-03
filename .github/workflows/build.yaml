@@ -22,16 +22,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             pandoc \
-            texlive-xetex \
+            texlive-luatex \
             texlive-fonts-recommended \
             texlive-fonts-extra \
+            texlive-latex-extra \
             texlive-lang-spanish
 
       - name: Build PDF
         run: |
           cd report
           pandoc 04-chapter4.md \
-            --pdf-engine=xelatex \
+            --pdf-engine=lualatex \
+            --include-in-header=../header.tex \
             --output=04-chapter4.pdf \
             --standalone \
             -V geometry:margin=2cm \
