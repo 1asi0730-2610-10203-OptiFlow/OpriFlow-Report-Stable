@@ -119,15 +119,16 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 #### US01 – Login
 
-![Wireframe US01 Login – Desktop](<../docs/wireframes/jp/US01_ Login.png>){width=100%}
+![Wireframe US01 Login – Desktop](<../docs/wireframes-new/jp/US01_ Login.png>){width=100%}
+![Wireframe US01 Login – Desktop](<../docs/wireframes-new/jp/US_ Login Mobile.png>){width=100%}
 
-![Wireframe US01 Login – Mobile](<../docs/wireframes/jp/US_ Login Mobile.png>){width=100%}
 
 #### US02 – Recuperar Contraseña
 
-![Wireframe US02 Recuperar Contraseña](<../docs/wireframes/jp/US02_ Recover password.png>){width=100%}
+![Wireframe US01 Login – Desktop](<../docs/wireframes-new/jp/US02_ Recover password.png>){width=100%}
+![Wireframe US01 Login – Desktop](<../docs/wireframes-new/jp/US02_ Recover password-1.png>){width=100%}
 
-#### US05
+#### US05 -
 
 ![Wireframe US05](<../docs/wireframes/jp/US05P.png>){width=100%}
 
@@ -143,47 +144,54 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Wireframe US08 Nuevo Examen – Mobile](<../docs/wireframes/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
-#### US11 – Registro de Anamnesis
+#### US09 - Carga de Exámenes Externos
+![US09-wfm.png](../docs/wireframes-new/jp/US-09G_%20Carga%20de%20exámenes%20externos.png){width=100%}
+![US09-wfm.png](../docs/wireframes-new/jp/US-09G_%20Carga%20de%20exámenes%20externos-1.png){width=100%}
 
-![US11-wfm.png](../docs/wireframes/nico/US11-wfm.png){width=100%}
 
-#### US17 – Registrar Venta
+#### US10 – Registro de clientes
 
-![Wireframe US17 Registrar Venta](<../docs/wireframes/jp/US-17_ Registrar venta.png>){width=100%}
+![US10-wfm.png](../docs/wireframes-new/jp/US-10G%20Registro%20de%20clientes/pacientes.png){width=100%}
 
-#### US15 – Cotización desde Receta
 
-![Wireframe US1 Cotización desde Receta – Mobile](<../docs/wireframes/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
+#### US11, 13, 14 - Registro de venta, aplicación de descuentos, pagos con múltiples métodos
 
-#### US20 – Aplicación de Descuentos
+![Wireframe US11, 13, 14](../docs/wireframes-new/jp/US-11F_%20Gestión%20de%20ventas,%20US-13F_%20Aplicación%20de%20descuentos,%20US-14F_%20Pagos%20con%20múltiples%20métodos.png)
+![Wireframe US11, 13, 14](../docs/wireframes-new/jp/US-11F_%20Gestión%20de%20ventas,%20US-13F_%20Aplicación%20de%20descuentos,%20US-14F_%20Pagos%20con%20múltiples%20métodos-1.png)
 
-![Wireframe US10](../docs/wireframes/nico/US20-wfm.png)
+#### US15 Devolución de orden
+![Wireframe US15 Devolución de orden](<../docs/wireframes-new/jp/US-15F Devolución de orden.png>){width=100%}
+![Wireframe US15 Devolución de orden](<../docs/wireframes-new/jp/US-15F Devolución de orden-1.png>){width=100%}
 
-#### US25 – Notificaciones a Clientes
 
-![Wireframe US25 Notificaciones Clientes – Vista 1](<../docs/wireframes/jp/US 25_ Notificaciones clientes.png>){width=100%}
+#### US16 – Notificaciones de recojo
 
-![Wireframe US25 Notificaciones Clientes – Vista 2](<../docs/wireframes/jp/US_ Notificaciones clientes.png>){width=100%}
+![Wireframe US16 Notificaciones Clientes – Vista 1](<../docs/wireframes-new/jp/US16_ Notificaciones de recojo.png>){width=100%}
+![Wireframe US16 Notificaciones Clientes – Vista 2](<../docs/wireframes-new/jp/US16_ Notificaciones de recojo-1.png>){width=100%}
 
-#### US37 – Control de Órdenes y Tablero Kanban
+#### US17 - Encuestas de satisfacción
+![Wireframe US17 - Encuestas de satisfacción](<../docs/wireframes-new/jp/US17F_ Encuestas de satisfacción.png>){width=100%}
+![Wireframe US17 - Encuestas de satisfacción](<../docs/wireframes-new/jp/US17F_ Encuestas de satisfacción-1.png>){width=100%}
 
-![Wireframe US37 Control de Órdenes – Desktop](<../docs/wireframes/jp/US37_ Control de Órdenes y Tablero Kanban.png>){width=100%}
 
-![Wireframe US37 Control de Órdenes – Mobile](<../docs/wireframes/jp/US_ 37 MOBILE.png>){width=100%}
+#### US23 – Control de Órdenes y Tablero Kanban
 
-#### Registro de Empleado
+![Wireframe US23 Control de Órdenes – Desktop](<../docs/wireframes/jp/US37_ Control de Órdenes y Tablero Kanban.png>){width=100%}
+
+![Wireframe US23 Control de Órdenes – Mobile](<../docs/wireframes/jp/US_ 37 MOBILE.png>){width=100%}
+
+#### US34 - Registro de Empleado
 
 ![Wireframe Registro de Empleado – Desktop](<../docs/wireframes/jp/US_ Registro de empleado.png>){width=100%}
 
 ![Wireframe Registro de Empleado – Mobile](<../docs/wireframes/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US42 – Dashboard de Ventas
+#### US27 – Dashboard de Ventas
 
-![Wireframe US42 Dashboard de Ventas – Desktop](<../docs/wireframes/jp/US-42_ Dashboard de ventas.png>){width=100%}
+![Wireframe US27 Dashboard de Ventas – Desktop](<../docs/wireframes/jp/US-42_ Dashboard de ventas.png>){width=100%}
 
-![Wireframe US42 Dashboard de Ventas – Mobile](<../docs/wireframes/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
+![Wireframe US27 Dashboard de Ventas – Mobile](<../docs/wireframes/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
 
-#### US43 – Dashboard de Ventas
 
 ### Web Applications Wireflow Diagrams
 
@@ -207,7 +215,8 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 **Wireflow:**
 
-![](<../docs/wireflows/jp/US02_ Recover password.png>){width=100%}
+![](<../docs/wireflows-new/jp/US02_ Recover password-1.png>){width=100%}
+![](<../docs/wireflows-new/jp/US02_ Recover password.png>){width=100%}
 
 #### US05
 
@@ -243,45 +252,67 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
-#### US11 – Registro de Anamnesis
+#### US09 – Carga de examenes externos
+**Taskflow:**
+![](<../docs/taskflows/jp/Task flows - US-09.jpg>){width=100%}
+
+**Wireflow:**
+![Wireflow US09 Devolución de orden](<../docs/wireflows-new/jp/US-09G_ Carga de exámenes externos.png>){width=100%}
+![Wireflow US09 Devolución de orden](<../docs/wireflows-new/jp/US-09G_ Carga de exámenes externos-1.png>){width=100%}
+
+
+#### US10 – Registro de clientes
 
 **Taskflow:**
 
-![task-11.jpg](../docs/taskflows/nico/task-11.jpg){width=100%}
+![task-11.jpg](../docs/taskflows/jp/Task%20flows%20-%20US-10.jpg){width=100%}
 
 **Wireflow:**
 
-![US11-wfw.png](../docs/wireflows/nico/US11-wfw.png){width=100%}
+![US11-wfw.png](../docs/wireflows-new/jp/US-10G%20Registro%20de%20clientes/pacientes.png){width=100%}
+![US11-wfw.png](../docs/wireflows-new/jp/US-10G%20Registro%20de%20clientes//pacientes-1.png){width=100%}
 
-#### US14 – Registrar Venta
-
-**Wireflow:**
-
-![](<../docs/wireflows/jp/US-14_ Registrar venta.png>){width=100%}
-
-#### US15 – Cotización desde Receta
-
+#### US-11F - Gestión de ventas, US-13F - Aplicación de descuentos, US-14F - Pagos con múltiples métodos
 **Taskflow:**
 
-![](<../docs/taskflows/jp/Task flows - US-15.jpg>){width=100%}
+![task-11.jpg](../docs/taskflows/jp/Task%20flows%20-%20US-11,%2013,%2014.jpg){width=100%}
 
 **Wireflow:**
+![](<../docs/wireflows-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos-1.png>){width=100%}
+![](<../docs/wireflows-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos.png>){width=100%}
 
-![](<../docs/wireflows/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
+#### US15 - Devolución de orden
+**Taskflow:**
+![](<../docs/taskflows/jp/Task flows - US-15F.jpg>){width=100%}
 
-#### US22 – Notificaciones a Clientes
+**Wireflow:**
+![Wireframe US15 Devolución de orden](<../docs/wireflows-new/jp/US-15F Devolución y cancelación de orden.png>){width=100%}
+![Wireframe US15 Devolución de orden](<../docs/wireflows-new/jp/US-15F Devolución y cancelación de orden-1.png>){width=100%}
+
+
+#### US16 – Notificaciones de recojo
 
 **Taskflow:**
 
 ![](<../docs/taskflows/jp/Task flows - US-022.jpg>){width=100%}
 
+
 **Wireflow:**
+![](<../docs/wireflows-new/jp/US 16_ Notificaciones de recojo-1.png>){width=100%}
+![](<../docs/wireflows-new/jp/US 16_ Notificaciones de recojo.png>){width=100%}
 
-![](<../docs/wireflows/jp/US 22_ Notificaciones clientes.png>){width=100%}
+#### US17 - Encuestas de satisfacción
+**Taskflow:**
+![](<../docs/taskflows/jp/Task flows - US-17F.jpg>){width=100%}
 
-![](<../docs/wireflows/jp/US_ Notificaciones clientes.png>){width=100%}
+**Wireflow:**
+![](<../docs/wireflows-new/jp/US-17_ Encuestas de satisfacción-1.png>){width=100%}
+![](<../docs/wireflows-new/jp/US-17_ Encuestas de satisfacción.png>){width=100%}
 
-#### US33 – Control de Órdenes y Tablero Kanban
+
+
+
+#### US23 – Control de Órdenes y Tablero Kanban
 
 **Taskflow:**
 
@@ -293,7 +324,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US_ 33 MOBILE.png>){width=100%}
 
-#### Registro de Empleado
+#### US-34G Registro de Empleado
 
 **Wireflow:**
 
@@ -301,7 +332,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US37 – Dashboard de Ventas
+#### US27 – Dashboard de Ventas
 
 **Wireflow:**
 
@@ -309,7 +340,6 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![](<../docs/wireflows/jp/US-37_ Dashboard de ventas MOBILE.png>){width=100%}
 
-#### US43 – Auditoría de Eficiencia
 
 **Taskflow:**
 ![task-43.jpg](../docs/taskflows/nico/task-43.jpg)
@@ -329,6 +359,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 #### US02 – Recuperar Contraseña
 
 ![Mockup US02 Recuperar Contraseña](<../docs/mockups/jp/US02_ Recover password.png>){width=100%}
+![Mockup US02 Recuperar Contraseña](<../docs/mockups/jp/US02_ Recover password-1.png>){width=100%}
 
 #### US05 - Seguimiento de Orden Web
 
@@ -346,19 +377,39 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Mockup US08 Nuevo Examen – Mobile](<../docs/mockups/jp/US_ Nuevo Examen Mobile.png>){width=100%}
 
+#### US09 - Carga de exámenes externos
+![](<../docs/mockups-new/jp/US-09G_ Carga de exámenes externos-1.png>){width=100%}
+![](<../docs/mockups-new/jp/US-09G_ Carga de exámenes externos.png>){width=100%}
 
 
-#### US15 – Cotización desde Receta
+#### US10 - Registro de cliente
+![](<../docs/mockups-new/jp/US-10G Registro de clientes/pacientes.png>){width=100%}
+![](<../docs/mockups-new/jp/US-10G Registro de clientes/pacientes-1.png>){width=100%}
 
-![Mockup US18 Cotización desde Receta – Mobile](<../docs/mockups/jp/US-15_ Cotización desde Receta Mobile.png>){width=100%}
 
-#### US22 – Notificaciones a Clientes
+#### US-11F - Gestión de ventas, US-13F - Aplicación de descuentos, US-14F - Pagos con múltiples métodos
+![](<../docs/mockups-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos.png>){width=100%}
+![](<../docs/mockups-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos-1.png>){width=100%}
 
-![Mockup US25 Notificaciones Clientes – Vista 1](<../docs/mockups/jp/US 22_ Notificaciones clientes.png>){width=100%}
 
-![Mockup US25 Notificaciones Clientes – Vista 2](<../docs/mockups/jp/US_ Notificaciones clientes.png>){width=100%}
 
-#### US33 – Control de Órdenes y Tablero Kanban
+#### US15 - Devolución de orden
+![](<../docs/mockups-new/jp/US-15F Devolución y cancelación de orden.png>){width=100%}
+![](<../docs/mockups-new/jp/US-15F Devolución y cancelación de orden-1.png>){width=100%}
+#### US16 - Notificaciones de recojo
+
+![Mockup US16 Notificaciones Clientes – Vista 1](<../docs/mockups/jp/US 22_ Notificaciones clientes.png>){width=100%}
+
+![Mockup US16 Notificaciones Clientes – Vista 2](<../docs/mockups/jp/US_ Notificaciones clientes.png>){width=100%}
+
+#### US17 - Encuestas de satisfacción
+![](<../docs/mockups-new/jp/US17_ Encuestas de satisfacción.png>){width=100%}
+![](<../docs/mockups-new/jp/US17_ Encuestas de satisfacción-1.png>){width=100%}
+
+
+
+
+#### US27 – Control de Órdenes y Tablero Kanban
 
 ![Mockup US37 Control de Órdenes – Desktop](<../docs/mockups/jp/US33_ Control de Órdenes y Tablero Kanban.png>){width=100%}
 
@@ -370,7 +421,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Mockup Registro de Empleado – Mobile](<../docs/mockups/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US37 – Dashboard de Ventas
+#### US27 – Dashboard de Ventas
 
 ![Mockup US42 Dashboard de Ventas – Desktop](<../docs/mockups/jp/US-37_ Dashboard de ventas.png>){width=100%}
 
@@ -422,24 +473,59 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 
 
+#### US09 - Carga de exámenes externos
 
-#### US15 – Cotización desde Receta
+- **Happy Path:** El optometrista accede al módulo de historia médica, completa los datos del examen externo y adjunta el archivo en formato válido → el sistema valida el archivo y lo sube correctamente → el examen queda registrado y vinculado al historial del paciente con confirmación de éxito.
+- **Unhappy Path:** El archivo adjunto tiene un formato no compatible o los campos obligatorios están vacíos → el sistema muestra mensajes de error de validación resaltados en rojo → el usuario corrige los datos o selecciona un archivo válido antes de reintentar.
 
-![User Flow US18 Cotización desde Receta – Mobile](<../docs/userflows/jp/US-15_ Cotización desde Receta Mobile.png>){width=100%}
-- **Happy Path:** El asesor selecciona la receta del paciente → el sistema precalcula los productos recomendados → se genera la cotización y se envía al cliente.
-- **Unhappy Path:** Receta con información insuficiente o productos fuera de stock → el sistema notifica la inconsistencia → el asesor ajusta manualmente la cotización.
+![](<../docs/userflows-new/jp/US-09G_ Carga de exámenes externos-1.png>){width=100%}
+![](<../docs/userflows-new/jp/US-09G_ Carga de exámenes externos.png>){width=100%}
+
+#### US10 - Registro de clientes
+
+- **Happy Path:** El asesor abre el módulo de pacientes y selecciona "Agregar Paciente" → completa el formulario con todos los campos requeridos (nombre, DNI, datos de contacto) → el sistema guarda el registro y muestra la confirmación de paciente creado exitosamente.
+- **Unhappy Path:** Se intenta guardar el formulario con campos obligatorios vacíos o con datos duplicados (DNI ya registrado, correo inválido) → el sistema resalta los campos con error en rojo e impide el guardado → el usuario corrige los datos y vuelve a intentar el registro.
+
+![](<../docs/userflows-new/jp/US-10G Registro de clientes/pacientes.png>){width=100%}
+![](<../docs/userflows-new/jp/US-10G Registro de clientes/pacientes-1.png>){width=100%}
+
+#### US-11F - Gestión de ventas, US-13F - Aplicación de descuentos, US-14F - Pagos con múltiples métodos
+
+![](<../docs/userflows-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos-1.png>){width=100%}
+![](<../docs/userflows-new/jp/US-11F_ Gestión de ventas, US-13F_ Aplicación de descuentos, US-14F_ Pagos con múltiples métodos.png>){width=100%}
+- **Happy Path:** El asesor inicia una nueva nota de venta seleccionando al cliente → agrega los productos al detalle de la orden → aplica un descuento válido si corresponde → elige uno o más métodos de pago que cubren el total → el sistema procesa el pago y confirma la venta registrada exitosamente.
+- **Unhappy Path (US11):** No se selecciona ningún producto o el stock disponible es insuficiente → el sistema bloquea el avance al paso siguiente y muestra la alerta de inventario. **Unhappy Path (US13):** El descuento ingresado supera el límite permitido para el rol del asesor → el sistema rechaza la aplicación del descuento. **Unhappy Path (US14):** La suma de los montos ingresados en los métodos de pago no cubre el total de la venta → el sistema indica el saldo pendiente e impide finalizar la transacción.
 
 
-#### US22 – Notificaciones a Clientes
+#### US15 - Devolución y cancelación de orden
+
+
+![](<../docs/userflows-new/jp/US-15F Devolución y cancelación de orden.png>){width=100%}
+![](<../docs/userflows-new/jp/US-15F Devolución y cancelación de orden-1.png>){width=100%}
+
+- **Happy Path (cancelación):** El asesor localiza la orden activa en la lista de ventas y selecciona la opción de cancelar → confirma la acción en el modal de "Confirmar Cancelación" → el sistema anula la orden y muestra la pantalla de confirmación "Producto devuelto".
+- **Happy Path (devolución):** El asesor localiza una orden con estado "Completada" y selecciona "Devolución" → el modal muestra los detalles del cliente y el monto a reembolsar → el asesor confirma → el sistema procesa la devolución y muestra "Devolución efectuada".
+- **Unhappy Path:** La orden se encuentra en un estado incompatible con la cancelación o devolución (ya cancelada, en producción o fuera del plazo permitido) → el sistema deshabilita la acción o muestra un mensaje de restricción que impide continuar.
+
+
+#### US16 – Notificaciones a Clientes
+
+
+
+![User Flow US16 Notificaciones Clientes – Vista 1](<../docs/userflows/jp/US 22_ Notificaciones clientes.png>){width=100%}
+
+![User Flow US16 Notificaciones Clientes – Vista 2](<../docs/userflows/jp/US_ Notificaciones clientes.png>){width=100%}
 
 - **Happy Path:** El sistema detecta un evento (entrega lista, pago pendiente) → genera y envía la notificación por el canal configurado → el cliente la recibe correctamente.
 - **Unhappy Path:** Canal de contacto no registrado o número inválido → la notificación se marca como fallida → aparece en el panel de incidencias para seguimiento manual.
 
-![User Flow US25 Notificaciones Clientes – Vista 1](<../docs/userflows/jp/US 22_ Notificaciones clientes.png>){width=100%}
+#### US17 - Encuestas de satisfacción
+![](<../docs/userflows-new/jp/US17_ Encuestas de satisfacción.png>){width=100%}
+![](<../docs/userflows-new/jp/US17_ Encuestas de satisfacción-1.png>){width=100%}
+- **Happy Path:** El sistema detecta la orden recibida, envía el cuestionario y luego el usuario tiene la opción de responder los cuestionarios que siguen o cancelar.
+- **Unhappy Path:** Sucede cuando el usuario trata de continuar con la encuesta sin haber responido los campos necesarios.
 
-![User Flow US25 Notificaciones Clientes – Vista 2](<../docs/userflows/jp/US_ Notificaciones clientes.png>){width=100%}
-
-#### US33 – Control de Órdenes y Tablero Kanban
+#### US27 – Control de Órdenes y Tablero Kanban
 
 - **Happy Path:** El técnico mueve la orden entre columnas del Kanban (Pendiente → Biselado → Montaje → Control de Calidad → Listo) → cada cambio queda registrado en el historial.
 - **Unhappy Path:** La orden falla en Control de Calidad → se marca como "Rework" → regresa a la fase de procesamiento con una nota de rechazo visible en el tablero.
@@ -448,7 +534,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![User Flow US37 Control de Órdenes – Mobile](<../docs/userflows/jp/US_ 33 MOBILE.png>){width=100%}
 
-#### Registro de Empleado
+#### US-34 Registro de Empleado
 
 - **Happy Path:** El administrador completa el formulario de registro → asigna roles y permisos → el sistema crea la cuenta y envía las credenciales al empleado por correo.
 - **Unhappy Path:** DNI o correo ya registrado en el sistema → error de duplicado → el administrador verifica y corrige los datos antes de reintentar.
@@ -457,7 +543,7 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![User Flow Registro de Empleado – Mobile](<../docs/userflows/jp/US_ Registro de empleado Mobile.png>){width=100%}
 
-#### US37 – Dashboard de Ventas
+#### US27 – Dashboard de Ventas
 
 - **Happy Path:** El gerente accede al dashboard → visualiza métricas de ventas, conversión y rendimiento en tiempo real → puede filtrar por período, área o asesor.
 - **Unhappy Path:** Sin datos suficientes para el período seleccionado → el dashboard muestra un estado vacío con indicaciones para ampliar el rango de fechas o verificar la fuente de datos.
