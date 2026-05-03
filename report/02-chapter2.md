@@ -65,52 +65,82 @@ Preguntas generales:
 
 <u>Entrevista 1:</u>
 
-Entrevistador: 
+Entrevistador: Mariana Morocho
 
 Datos del entrevistado
 
-- **Nombre:** 
-- **Apellidos:** 
-- **Edad:** 
-- **Distrito:** 
-- **Inicio:**
-- **Duración:** 
-- **Link de la entrevista individual:** 
+- **Nombre:** Liz
+- **Apellidos:** Guevara
+- **Edad:** 30
+- **Distrito:** Tarapoto
+- **Inicio:** 00:00
+- **Duración:** 13:22
+- **Link de la entrevista individual:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411521_upc_edu_pe/IQBXLLgufdLNR4wlRKUybGTaAT9_nKNDnHk8RC6EUQi7FB4?e=UPxDWc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+![](../assets\entrevista-op1.png) 
   
   **Resumen descriptivo:**
+
+  La entrevista se realizó a Liz Guevara, de 30 años, quien trabaja en una óptica en Tarapoto y cuenta con 7 años de experiencia en el sector. Su labor es atiender a los pacientes, realiza mediciones visuales, asesora sobre lentes y concreta ventas.
+
+Su principal objetivo es cumplir metas de ventas y garantizar la satisfacción del cliente. Utiliza principalmente el celular y redes como Facebook, TikTok y WhatsApp para comunicarse. La gestión de la óptica es sencilla, con bajo flujo de clientes, y muchas tareas se realizan de forma manual o básica (Word y Excel).
+
+El proceso de venta incluye la elección de montura, medición y pedido de lunas, que a veces prepara ella misma o envía al laboratorio. La comunicación con el laboratorio se da por llamadas o WhatsApp. El control de historiales e inventario es manual o visual, lo que limita la generación de reportes precisos.
+
+Valora la calidad del servicio y la satisfacción del paciente como factores clave de éxito. No enfrenta problemas de coordinación interna, ya que gestiona todo por sí misma. La fidelización de clientes se logra mediante recomendaciones y contacto directo.
+
+Entre las mejoras deseadas, destaca la automatización de recordatorios para pacientes, mayor publicidad y el uso de una aplicación que permita a los clientes ver el estado de sus pedidos y las monturas disponibles, facilitando así la atención y ampliando el alcance del negocio.
 
 
 <u>Entrevista 2:</u>
 
-Entrevistador: 
+Entrevistador: Mariana Morocho
 
 Datos del entrevistado
 
-- **Nombre:** 
-- **Apellidos:** 
-- **Edad:** 
-- **Distrito:** 
-- **Inicio:**
-- **Duración:** 
-- **Link de la entrevista individual:** 
+- **Nombre:** Marcos 
+- **Apellidos:** Ruiz Coba
+- **Edad:** 52
+- **Distrito:** Lambayeque
+- **Inicio:** 00:00
+- **Duración:** 15:17
+- **Link de la entrevista individual:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411521_upc_edu_pe/IQA_o5xWsuv7S64CxdxlRuxAATN3jH0bNCNtNslhofYA-TY?e=DTSMx8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
   
+![](../assets/entrevista-op2.png "Entrevista óptica 2")
+
   **Resumen descriptivo:**
+
+  La entrevista se realizó a Marcos Ruiz, optometrista de 52 años con 28 años de experiencia en optometría y 32 en el sector salud. Actualmente también se desempeña como docente universitario y busca seguir fortaleciendo la cartera de clientes en su óptica mediante un servicio de calidad.
+
+En su trabajo utiliza diversos equipos especializados para diagnóstico visual (como retinógrafo, queratómetro, oftalmoscopio, entre otros) y un sistema digital para registrar la información de los pacientes. Además, se mantiene informado a través de plataformas como LinkedIn, Facebook, TikTok y WhatsApp.
+
+La óptica cuenta con una base sólida de clientes frecuentes, lograda gracias a la calidad del servicio. La atención por paciente varía entre 20 y 45 minutos según el caso. Sus principales responsabilidades son garantizar el cumplimiento del servicio y la satisfacción del paciente.
+
+A diferencia de ópticas más pequeñas, utiliza un sistema que automatiza recordatorios de citas, controles y seguimiento de pedidos, lo que permite respuestas rápidas y mejor organización. También destaca como valor diferencial la posibilidad de derivar a servicios especializados como oftalmología o cirugía.
+
+Entre las mejoras futuras, busca optimizar y digitalizar aún más los procesos para hacerlos más ágiles y eficientes. Considera fundamental que las ópticas evolucionen integrando herramientas digitales, internet e inteligencia artificial, tanto para mejorar la atención como para agilizar la investigación y gestión de casos, manteniéndose competitivas en un entorno cada vez más tecnológico.
 
 <u>Entrevista 3:</u>
 
-Entrevistador: 
+Entrevistador: Mariana Morocho
 
 Datos del entrevistado
 
-- **Nombre:** 
-- **Apellidos:** 
-- **Edad:** 
-- **Distrito:** 
-- **Inicio:**
-- **Duración:** 
-- **Link de la entrevista individual:** 
+- **Nombre:** Adan
+- **Apellidos:** Ruiz
+- **Edad:** 34
+- **Distrito:** Tarapoto
+- **Inicio:** 00:00
+- **Duración:** 45:00
+- **Link de la entrevista individual:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202411521_upc_edu_pe/IQCQotJFa40lRYgoZDHd8J7YAX1rOEMI58vA1Df2vhpqixQ?e=ZJP0PV&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+![](../assets/entrevista-op3.png "Entrevista óptica 3")
   
   **Resumen descriptivo:**
+
+Adan Ruiz es un optómetra con experiencia que dice que la atención al cliente lo es todo.
+Nos comenta que tiene problemas con los laboratorios al elaborar monturas más especiales.
+Dice que la IA puede ser un complemento, mas no un sustituto.
 
 **SEGUNDO SEGMENTO OBJETIVO**
 

@@ -155,6 +155,10 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 
 ![Wireframe US1 Cotización desde Receta – Mobile](<../docs/wireframes/jp/US-18_ Cotización desde Receta Mobile.png>){width=100%}
 
+#### US20 – Aplicación de Descuentos
+
+![Wireframe US10](../docs/wireframes/nico/US20-wfm.png)
+
 #### US25 – Notificaciones a Clientes
 
 ![Wireframe US25 Notificaciones Clientes – Vista 1](<../docs/wireframes/jp/US 25_ Notificaciones clientes.png>){width=100%}
@@ -178,6 +182,8 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ![Wireframe US42 Dashboard de Ventas – Desktop](<../docs/wireframes/jp/US-42_ Dashboard de ventas.png>){width=100%}
 
 ![Wireframe US42 Dashboard de Ventas – Mobile](<../docs/wireframes/jp/US-42_ Dashboard de ventas MOBILE.png>){width=100%}
+
+#### US43 – Dashboard de Ventas
 
 ### Web Applications Wireflow Diagrams
 
@@ -302,6 +308,15 @@ Estructura de navegación diseñada para guiar al usuario hacia la resolución d
 ![](<../docs/wireflows/jp/US-37_ Dashboard de ventas.png>){width=100%}
 
 ![](<../docs/wireflows/jp/US-37_ Dashboard de ventas MOBILE.png>){width=100%}
+
+#### US43 – Auditoría de Eficiencia
+
+**Taskflow:**
+![task-43.jpg](../docs/taskflows/nico/task-43.jpg)
+
+**Wireflow:**
+
+![US43-wfw.png](../docs/wireflows/nico/US43-wfw.png)
 
 ### Web Applications Mock-ups
 
